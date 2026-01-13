@@ -5,7 +5,13 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-
+# Ignore only large files
+sales_transactions.csv
+!sales_dashboard_data/products.csv  # Keep small files
+!sales_dashboard_data/customers.csv
+!sales_dashboard_data/regions.csv
+!sales_dashboard_data/dates.csv
+!sales_dashboard_data/DATASET_SUMMARY.md
 # Virtual Environment
 venv/
 env/
