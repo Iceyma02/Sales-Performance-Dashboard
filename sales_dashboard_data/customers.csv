@@ -1,0 +1,1001 @@
+CustomerID,CustomerName,Segment,Tier,FirstPurchaseDate,LastPurchaseDate,TotalPurchaseValue,NumberOfOrders,AvgOrderValue,PreferredChannel,Region,Country
+C1000,Enterprise_Customer_1000,Enterprise,Bronze,2022-01-31,2024-07-20,4971.85,6,828.64,Corporate,North America,Canada
+C1001,SMB_Customer_1001,SMB,Bronze,2023-11-16,2024-05-14,1348.65,2,674.32,Online,North America,Canada
+C1002,Enterprise_Customer_1002,Enterprise,Bronze,2022-05-01,2024-10-22,3227.93,7,461.13,Corporate,North America,Canada
+C1003,SMB_Customer_1003,SMB,Bronze,2023-04-12,2024-09-23,830.65,5,166.13,Online,Asia Pacific,Australia
+C1004,SMB_Customer_1004,SMB,Silver,2022-05-27,2024-12-14,5775.26,5,1155.05,Online,Europe,China
+C1005,Retail_Customer_1005,Retail,Bronze,2022-01-27,2024-09-09,4566.96,9,507.44,Online,North America,USA
+C1006,SMB_Customer_1006,SMB,Bronze,2022-04-04,2024-11-26,4577.62,7,653.95,Retail Store,Asia Pacific,USA
+C1007,Retail_Customer_1007,Retail,Silver,2022-04-03,2024-11-17,5337.84,6,889.64,Online,North America,Australia
+C1008,SMB_Customer_1008,SMB,Silver,2022-01-24,2024-05-27,5795.18,5,1159.04,Online,North America,USA
+C1009,SMB_Customer_1009,SMB,Silver,2022-04-01,2024-02-05,5016.0,5,1003.2,Online,Europe,France
+C1010,Enterprise_Customer_1010,Enterprise,Bronze,2022-04-01,2023-05-09,1246.21,4,311.55,Retail Store,Asia Pacific,Canada
+C1011,Retail_Customer_1011,Retail,Bronze,2022-05-16,2024-02-28,3179.72,4,794.93,Corporate,North America,Mexico
+C1012,Retail_Customer_1012,Retail,Bronze,2023-01-15,2023-09-05,3517.54,4,879.38,Corporate,North America,Mexico
+C1013,Retail_Customer_1013,Retail,Silver,2022-02-08,2024-08-14,5227.63,5,1045.53,Online,Europe,Canada
+C1014,Enterprise_Customer_1014,Enterprise,Bronze,2022-05-10,2024-09-06,3014.97,6,502.5,Online,Europe,Italy
+C1015,SMB_Customer_1015,SMB,Bronze,2022-05-14,2024-03-10,729.15,2,364.58,Distributor,North America,Canada
+C1016,Retail_Customer_1016,Retail,Silver,2022-11-09,2024-08-21,7002.08,8,875.26,Online,Europe,Spain
+C1017,Retail_Customer_1017,Retail,Bronze,2022-01-12,2024-02-23,4613.54,5,922.71,Distributor,Asia Pacific,Japan
+C1018,Retail_Customer_1018,Retail,Bronze,2022-06-06,2023-10-06,4149.4,5,829.88,Retail Store,North America,USA
+C1019,SMB_Customer_1019,SMB,Bronze,2022-05-30,2024-06-16,1933.4,3,644.47,Corporate,Asia Pacific,Australia
+C1020,Retail_Customer_1020,Retail,Silver,2022-09-27,2024-09-08,5200.26,6,866.71,Online,Asia Pacific,USA
+C1021,Enterprise_Customer_1021,Enterprise,Bronze,2022-11-27,2024-10-15,1267.57,4,316.89,Distributor,Europe,Australia
+C1022,SMB_Customer_1022,SMB,Bronze,2022-03-15,2022-03-15,143.91,1,143.91,Corporate,Asia Pacific,Australia
+C1023,SMB_Customer_1023,SMB,Bronze,2022-02-03,2024-07-13,1986.17,6,331.03,Online,Asia Pacific,Japan
+C1024,SMB_Customer_1024,SMB,Bronze,2023-05-24,2023-05-24,289.32,1,289.32,Retail Store,North America,Mexico
+C1025,Government_Customer_1025,Government,Bronze,2022-01-26,2024-11-09,2077.09,6,346.18,Online,North America,Mexico
+C1026,SMB_Customer_1026,SMB,Bronze,2022-03-16,2024-06-20,4122.0,6,687.0,Online,Europe,Italy
+C1027,Enterprise_Customer_1027,Enterprise,Bronze,2022-09-13,2023-02-02,381.36,3,127.12,Retail Store,North America,USA
+C1028,SMB_Customer_1028,SMB,Bronze,2022-04-27,2024-02-16,806.43,4,201.61,Online,Europe,China
+C1029,Enterprise_Customer_1029,Enterprise,Bronze,2022-06-23,2023-10-02,1868.51,3,622.84,Online,North America,USA
+C1030,Retail_Customer_1030,Retail,Bronze,2022-01-02,2024-09-02,3882.53,7,554.65,Online,Europe,Canada
+C1031,Retail_Customer_1031,Retail,Bronze,2022-11-03,2023-05-26,1425.22,4,356.3,Online,Europe,Canada
+C1032,Retail_Customer_1032,Retail,Bronze,2022-04-02,2024-06-25,4552.7,5,910.54,Corporate,Europe,China
+C1033,Retail_Customer_1033,Retail,Bronze,2022-06-15,2024-12-23,3512.89,4,878.22,Online,Europe,France
+C1034,SMB_Customer_1034,SMB,Bronze,2023-01-03,2024-05-10,777.49,3,259.16,Corporate,North America,Canada
+C1035,Retail_Customer_1035,Retail,Bronze,2022-11-19,2023-06-09,1191.75,4,297.94,Online,North America,Canada
+C1036,Government_Customer_1036,Government,Bronze,2022-01-27,2024-09-18,2678.03,7,382.58,Online,North America,Canada
+C1037,SMB_Customer_1037,SMB,Bronze,2022-03-05,2024-05-26,2303.24,5,460.65,Online,Asia Pacific,Australia
+C1038,Enterprise_Customer_1038,Enterprise,Silver,2022-05-28,2024-08-23,5202.3,5,1040.46,Retail Store,Europe,France
+C1039,Retail_Customer_1039,Retail,Silver,2022-03-04,2024-04-03,5507.35,8,688.42,Retail Store,North America,Canada
+C1040,Retail_Customer_1040,Retail,Bronze,2023-04-04,2024-12-29,3278.86,4,819.72,Online,North America,Canada
+C1041,Retail_Customer_1041,Retail,Silver,2023-02-19,2024-10-05,6288.39,6,1048.06,Corporate,North America,USA
+C1042,SMB_Customer_1042,SMB,Bronze,2023-03-07,2024-08-02,2906.28,5,581.26,Corporate,Europe,Australia
+C1043,Retail_Customer_1043,Retail,Bronze,2024-02-19,2024-10-02,1920.14,3,640.05,Online,North America,Canada
+C1044,SMB_Customer_1044,SMB,Silver,2022-08-15,2024-09-23,11027.31,5,2205.46,Retail Store,North America,Canada
+C1045,Retail_Customer_1045,Retail,Silver,2023-08-30,2023-11-17,6031.29,2,3015.64,Online,North America,Mexico
+C1046,SMB_Customer_1046,SMB,Silver,2022-10-05,2024-10-02,12635.28,9,1403.92,Corporate,North America,Germany
+C1047,Retail_Customer_1047,Retail,Bronze,2022-06-22,2024-05-02,1350.76,3,450.25,Distributor,Europe,Germany
+C1048,Retail_Customer_1048,Retail,Bronze,2022-01-16,2024-05-28,781.84,3,260.61,Distributor,North America,Mexico
+C1049,SMB_Customer_1049,SMB,Bronze,2022-03-08,2024-10-15,215.07,3,71.69,Retail Store,North America,Canada
+C1050,Retail_Customer_1050,Retail,Bronze,2023-02-10,2024-06-29,2128.34,4,532.08,Corporate,Europe,France
+C1051,Retail_Customer_1051,Retail,Bronze,2022-03-23,2022-10-08,4101.37,3,1367.12,Online,North America,Mexico
+C1052,Retail_Customer_1052,Retail,Bronze,2022-02-12,2023-08-17,1159.99,5,232.0,Online,North America,Mexico
+C1053,Retail_Customer_1053,Retail,Silver,2022-08-12,2024-11-22,5341.64,6,890.27,Online,North America,USA
+C1054,Retail_Customer_1054,Retail,Bronze,2023-06-13,2024-11-20,1215.53,3,405.18,Retail Store,North America,Canada
+C1055,Enterprise_Customer_1055,Enterprise,Silver,2023-02-25,2023-09-29,6352.79,2,3176.4,Distributor,Europe,Spain
+C1056,Enterprise_Customer_1056,Enterprise,Bronze,2022-11-12,2024-09-27,1518.84,3,506.28,Online,Europe,Canada
+C1057,SMB_Customer_1057,SMB,Bronze,2022-07-16,2023-11-12,3432.84,5,686.57,Online,Europe,Canada
+C1058,Retail_Customer_1058,Retail,Silver,2022-02-28,2024-03-24,6397.53,6,1066.25,Online,Europe,Germany
+C1059,Retail_Customer_1059,Retail,Silver,2022-05-09,2024-11-15,15181.73,8,1897.72,Online,Asia Pacific,USA
+C1060,Retail_Customer_1060,Retail,Silver,2022-06-14,2024-12-30,9465.61,13,728.12,Online,North America,Canada
+C1061,Retail_Customer_1061,Retail,Bronze,2022-06-12,2024-04-13,2709.54,6,451.59,Online,Asia Pacific,Japan
+C1062,Retail_Customer_1062,Retail,Bronze,2022-04-02,2024-11-30,1909.0,6,318.17,Retail Store,North America,Japan
+C1063,Enterprise_Customer_1063,Enterprise,Bronze,2022-01-08,2024-05-15,1424.55,6,237.43,Distributor,North America,USA
+C1064,Retail_Customer_1064,Retail,Bronze,2023-06-16,2024-02-21,2307.21,2,1153.6,Distributor,Europe,Spain
+C1065,Retail_Customer_1065,Retail,Silver,2022-05-18,2024-06-18,6177.35,6,1029.56,Online,Europe,UK
+C1066,Retail_Customer_1066,Retail,Bronze,2022-11-28,2024-12-30,4670.76,5,934.15,Online,Europe,Australia
+C1067,Retail_Customer_1067,Retail,Bronze,2022-06-23,2024-11-13,4928.61,6,821.44,Corporate,North America,Canada
+C1068,Retail_Customer_1068,Retail,Bronze,2022-01-24,2024-01-31,1633.91,2,816.96,Online,North America,Canada
+C1069,Retail_Customer_1069,Retail,Silver,2022-10-05,2024-06-08,5833.86,7,833.41,Online,North America,Canada
+C1070,Retail_Customer_1070,Retail,Bronze,2022-03-23,2024-03-13,2756.38,7,393.77,Retail Store,Europe,Canada
+C1071,SMB_Customer_1071,SMB,Bronze,2022-03-14,2024-12-15,2775.56,7,396.51,Corporate,Europe,Germany
+C1072,Retail_Customer_1072,Retail,Bronze,2023-01-30,2023-08-01,803.11,3,267.7,Corporate,Asia Pacific,Germany
+C1073,Retail_Customer_1073,Retail,Bronze,2023-12-24,2024-05-12,432.24,2,216.12,Online,Europe,Mexico
+C1074,Retail_Customer_1074,Retail,Bronze,2022-03-30,2024-10-02,1204.13,4,301.03,Retail Store,Europe,Spain
+C1075,SMB_Customer_1075,SMB,Silver,2022-10-06,2024-12-22,7745.43,5,1549.09,Online,Europe,Australia
+C1076,Retail_Customer_1076,Retail,Bronze,2022-05-25,2024-02-21,1438.09,5,287.62,Online,North America,USA
+C1077,Retail_Customer_1077,Retail,Bronze,2022-04-01,2024-04-27,1160.3,3,386.77,Online,Asia Pacific,Italy
+C1078,SMB_Customer_1078,SMB,Bronze,2022-02-23,2024-12-08,3518.05,6,586.34,Corporate,Europe,Germany
+C1079,Retail_Customer_1079,Retail,Bronze,2022-05-08,2024-05-15,4659.04,5,931.81,Online,Europe,Italy
+C1080,Enterprise_Customer_1080,Enterprise,Bronze,2022-10-23,2024-03-18,2452.53,6,408.75,Online,North America,Canada
+C1081,SMB_Customer_1081,SMB,Bronze,2022-04-01,2023-09-24,4210.92,3,1403.64,Online,North America,Australia
+C1082,SMB_Customer_1082,SMB,Bronze,2023-08-16,2023-08-16,35.08,1,35.08,Online,North America,USA
+C1083,Retail_Customer_1083,Retail,Bronze,2024-05-05,2024-11-15,608.06,2,304.03,Distributor,Europe,Canada
+C1084,Retail_Customer_1084,Retail,Bronze,2023-02-07,2024-11-30,1129.59,6,188.26,Online,North America,Canada
+C1085,Retail_Customer_1085,Retail,Bronze,2022-08-05,2024-06-20,860.19,4,215.05,Corporate,Europe,France
+C1086,Retail_Customer_1086,Retail,Bronze,2022-07-05,2024-08-08,2747.0,6,457.83,Online,Europe,Canada
+C1087,Retail_Customer_1087,Retail,Bronze,2022-02-12,2024-07-11,4697.12,7,671.02,Corporate,North America,Mexico
+C1088,SMB_Customer_1088,SMB,Bronze,2022-03-26,2024-09-14,610.06,2,305.03,Online,North America,Mexico
+C1089,Retail_Customer_1089,Retail,Bronze,2023-05-06,2024-08-07,3575.47,4,893.87,Online,North America,Canada
+C1090,Enterprise_Customer_1090,Enterprise,Bronze,2022-11-04,2024-05-31,2877.94,4,719.48,Retail Store,Europe,Australia
+C1091,SMB_Customer_1091,SMB,Silver,2022-02-14,2024-10-16,6139.18,7,877.03,Online,Asia Pacific,China
+C1092,SMB_Customer_1092,SMB,Silver,2022-03-02,2023-12-20,8269.35,11,751.76,Online,Europe,Australia
+C1093,Retail_Customer_1093,Retail,Bronze,2023-02-12,2024-07-10,1857.2,4,464.3,Corporate,North America,Canada
+C1094,Retail_Customer_1094,Retail,Silver,2022-08-05,2024-10-09,7053.94,7,1007.71,Online,Asia Pacific,Australia
+C1095,SMB_Customer_1095,SMB,Silver,2022-10-19,2023-08-07,6579.74,4,1644.94,Retail Store,North America,Australia
+C1096,Retail_Customer_1096,Retail,Bronze,2022-03-28,2023-12-17,1855.17,3,618.39,Corporate,North America,China
+C1097,Retail_Customer_1097,Retail,Bronze,2022-02-08,2024-08-18,4558.29,5,911.66,Distributor,North America,Canada
+C1098,SMB_Customer_1098,SMB,Bronze,2022-03-26,2024-02-04,2002.92,4,500.73,Retail Store,Asia Pacific,Australia
+C1099,SMB_Customer_1099,SMB,Silver,2022-06-01,2024-08-06,5918.95,6,986.49,Online,Asia Pacific,China
+C1100,Enterprise_Customer_1100,Enterprise,Bronze,2022-03-31,2023-12-15,1153.01,3,384.34,Online,Europe,France
+C1101,Retail_Customer_1101,Retail,Bronze,2023-01-09,2023-04-21,3350.02,2,1675.01,Corporate,Asia Pacific,Japan
+C1102,Retail_Customer_1102,Retail,Silver,2022-05-28,2024-03-26,5349.92,4,1337.48,Online,Asia Pacific,Canada
+C1103,Retail_Customer_1103,Retail,Bronze,2024-01-23,2024-05-21,686.53,3,228.84,Retail Store,Asia Pacific,Italy
+C1104,Enterprise_Customer_1104,Enterprise,Bronze,2023-10-20,2024-02-05,2461.16,3,820.39,Online,North America,Canada
+C1105,Retail_Customer_1105,Retail,Bronze,2022-11-24,2024-09-25,4203.82,3,1401.27,Corporate,North America,Australia
+C1106,Retail_Customer_1106,Retail,Bronze,2022-08-23,2024-03-06,3846.63,5,769.33,Retail Store,North America,Canada
+C1107,Retail_Customer_1107,Retail,Bronze,2022-09-02,2023-08-08,2770.88,3,923.63,Online,Europe,France
+C1108,SMB_Customer_1108,SMB,Silver,2022-04-25,2024-10-13,8563.37,4,2140.84,Online,Europe,UK
+C1109,Retail_Customer_1109,Retail,Bronze,2022-11-11,2024-08-15,3741.32,3,1247.11,Retail Store,Asia Pacific,Australia
+C1110,SMB_Customer_1110,SMB,Bronze,2023-05-01,2024-05-20,650.95,5,130.19,Online,North America,Mexico
+C1111,Government_Customer_1111,Government,Bronze,2023-09-11,2024-12-03,2909.7,6,484.95,Corporate,North America,Mexico
+C1112,Retail_Customer_1112,Retail,Bronze,2022-09-13,2024-03-30,796.56,3,265.52,Retail Store,Europe,Spain
+C1113,Retail_Customer_1113,Retail,Bronze,2023-01-01,2024-05-03,3903.22,4,975.8,Corporate,Europe,UK
+C1114,Retail_Customer_1114,Retail,Silver,2023-02-05,2024-04-11,6866.46,4,1716.61,Online,North America,USA
+C1115,SMB_Customer_1115,SMB,Bronze,2022-01-22,2024-07-09,1259.7,4,314.92,Online,North America,Mexico
+C1116,Retail_Customer_1116,Retail,Bronze,2022-11-24,2024-01-19,631.08,2,315.54,Corporate,Asia Pacific,Japan
+C1117,SMB_Customer_1117,SMB,Bronze,2022-09-25,2024-10-10,1804.83,5,360.97,Online,Europe,Italy
+C1118,SMB_Customer_1118,SMB,Bronze,2023-08-15,2024-03-31,2023.9,2,1011.95,Online,North America,Mexico
+C1119,Retail_Customer_1119,Retail,Bronze,2023-02-12,2023-02-12,3415.56,1,3415.56,Online,Europe,Italy
+C1120,Retail_Customer_1120,Retail,Bronze,2023-06-03,2023-11-28,3787.5,3,1262.5,Corporate,Europe,France
+C1121,Retail_Customer_1121,Retail,Silver,2022-04-18,2023-09-23,10702.56,5,2140.51,Online,North America,Canada
+C1122,Enterprise_Customer_1122,Enterprise,Bronze,2022-04-16,2024-01-20,1704.5,3,568.17,Corporate,North America,Canada
+C1123,Government_Customer_1123,Government,Bronze,2022-05-08,2024-08-25,992.4,4,248.1,Corporate,Asia Pacific,Australia
+C1124,Retail_Customer_1124,Retail,Bronze,2023-11-17,2024-08-26,1696.94,4,424.24,Online,Europe,Canada
+C1125,Retail_Customer_1125,Retail,Bronze,2022-07-29,2024-08-26,871.72,4,217.93,Distributor,North America,Canada
+C1126,Retail_Customer_1126,Retail,Bronze,2022-02-27,2024-09-05,1277.27,5,255.45,Online,Asia Pacific,Australia
+C1127,SMB_Customer_1127,SMB,Bronze,2022-05-24,2024-07-11,1181.85,6,196.98,Distributor,North America,USA
+C1128,SMB_Customer_1128,SMB,Silver,2022-11-20,2024-11-01,6355.24,5,1271.05,Online,North America,Canada
+C1129,Government_Customer_1129,Government,Bronze,2024-07-23,2024-10-11,4109.23,2,2054.62,Retail Store,Europe,France
+C1130,SMB_Customer_1130,SMB,Bronze,2022-08-11,2024-04-24,376.73,3,125.58,Distributor,North America,Italy
+C1131,SMB_Customer_1131,SMB,Bronze,2022-03-11,2024-04-10,2264.79,3,754.93,Distributor,Asia Pacific,Germany
+C1132,Retail_Customer_1132,Retail,Bronze,2022-01-14,2024-09-22,868.68,3,289.56,Distributor,Europe,Italy
+C1133,Retail_Customer_1133,Retail,Bronze,2022-07-17,2024-05-01,1784.85,3,594.95,Distributor,Europe,China
+C1134,Retail_Customer_1134,Retail,Bronze,2022-03-27,2024-11-26,3390.58,8,423.82,Online,Europe,Canada
+C1135,Enterprise_Customer_1135,Enterprise,Bronze,2022-10-02,2024-09-28,2197.44,5,439.49,Online,North America,Mexico
+C1136,Enterprise_Customer_1136,Enterprise,Bronze,2022-12-18,2024-10-08,2052.82,4,513.2,Retail Store,Europe,France
+C1137,Retail_Customer_1137,Retail,Silver,2022-05-01,2024-10-06,5174.57,6,862.43,Corporate,North America,Canada
+C1138,Retail_Customer_1138,Retail,Silver,2022-09-30,2023-11-29,5414.34,2,2707.17,Online,Europe,Canada
+C1139,SMB_Customer_1139,SMB,Bronze,2023-04-26,2024-12-19,1708.24,4,427.06,Online,North America,Canada
+C1140,Retail_Customer_1140,Retail,Silver,2022-01-16,2024-08-20,5652.93,8,706.62,Corporate,North America,Canada
+C1141,SMB_Customer_1141,SMB,Bronze,2022-05-07,2023-10-19,2061.09,3,687.03,Distributor,North America,Italy
+C1142,Enterprise_Customer_1142,Enterprise,Bronze,2023-02-04,2024-05-24,1886.18,2,943.09,Corporate,Europe,Spain
+C1143,SMB_Customer_1143,SMB,Silver,2022-08-27,2024-11-09,6927.0,7,989.57,Online,North America,Australia
+C1144,Enterprise_Customer_1144,Enterprise,Silver,2022-06-30,2024-09-22,11332.15,9,1259.13,Retail Store,Asia Pacific,Australia
+C1145,Retail_Customer_1145,Retail,Bronze,2022-12-31,2024-10-13,3003.91,4,750.98,Online,Asia Pacific,Australia
+C1146,SMB_Customer_1146,SMB,Bronze,2022-02-22,2023-11-18,3113.07,6,518.84,Online,Asia Pacific,Canada
+C1147,Retail_Customer_1147,Retail,Silver,2023-02-06,2024-08-07,5329.43,4,1332.36,Online,North America,Canada
+C1148,SMB_Customer_1148,SMB,Bronze,2022-06-25,2024-09-27,1815.45,3,605.15,Online,Asia Pacific,China
+C1149,Retail_Customer_1149,Retail,Bronze,2022-03-15,2023-11-19,1048.16,4,262.04,Online,Europe,Canada
+C1150,Retail_Customer_1150,Retail,Bronze,2022-01-14,2024-06-17,3245.86,4,811.46,Retail Store,Europe,Canada
+C1151,Retail_Customer_1151,Retail,Bronze,2024-03-23,2024-03-23,477.8,1,477.8,Online,North America,Canada
+C1152,Retail_Customer_1152,Retail,Bronze,2022-02-04,2023-09-06,2807.8,6,467.97,Corporate,Europe,Canada
+C1153,SMB_Customer_1153,SMB,Bronze,2022-02-01,2024-05-08,2959.01,4,739.75,Online,Europe,Spain
+C1154,Retail_Customer_1154,Retail,Silver,2022-12-01,2024-04-24,8612.23,7,1230.32,Online,North America,France
+C1155,Retail_Customer_1155,Retail,Bronze,2023-11-20,2024-03-23,571.56,2,285.78,Retail Store,Asia Pacific,Canada
+C1156,Enterprise_Customer_1156,Enterprise,Bronze,2022-12-09,2024-02-08,1441.43,3,480.48,Corporate,Asia Pacific,Australia
+C1157,SMB_Customer_1157,SMB,Bronze,2022-11-17,2024-06-01,4213.38,4,1053.34,Retail Store,North America,Canada
+C1158,Retail_Customer_1158,Retail,Bronze,2022-02-05,2024-02-28,1255.79,4,313.95,Retail Store,North America,Mexico
+C1159,Retail_Customer_1159,Retail,Bronze,2023-07-20,2024-09-12,2842.52,5,568.5,Retail Store,North America,Canada
+C1160,Retail_Customer_1160,Retail,Bronze,2024-03-30,2024-11-06,4384.72,4,1096.18,Retail Store,Asia Pacific,China
+C1161,Retail_Customer_1161,Retail,Bronze,2022-04-08,2024-03-26,2942.09,9,326.9,Corporate,North America,Canada
+C1162,SMB_Customer_1162,SMB,Bronze,2022-01-05,2024-02-20,933.43,5,186.69,Online,Europe,Canada
+C1163,Retail_Customer_1163,Retail,Bronze,2022-05-09,2023-11-05,2812.32,6,468.72,Online,Asia Pacific,Australia
+C1164,Retail_Customer_1164,Retail,Bronze,2022-03-17,2023-10-19,3007.98,4,751.99,Corporate,Europe,Canada
+C1165,Enterprise_Customer_1165,Enterprise,Bronze,2024-02-06,2024-10-17,2017.8,4,504.45,Online,North America,Mexico
+C1166,Retail_Customer_1166,Retail,Bronze,2022-10-18,2024-04-27,2761.61,4,690.4,Retail Store,Europe,Canada
+C1167,Retail_Customer_1167,Retail,Bronze,2023-08-09,2024-11-22,1140.61,3,380.2,Online,North America,USA
+C1168,SMB_Customer_1168,SMB,Silver,2022-03-01,2024-06-23,5101.92,4,1275.48,Online,Europe,Canada
+C1169,SMB_Customer_1169,SMB,Silver,2022-04-22,2024-05-14,5929.6,6,988.27,Distributor,Asia Pacific,China
+C1170,Retail_Customer_1170,Retail,Bronze,2022-10-26,2024-07-04,1625.9,3,541.97,Online,Asia Pacific,Canada
+C1171,Enterprise_Customer_1171,Enterprise,Bronze,2022-02-26,2024-06-29,3499.28,6,583.21,Retail Store,North America,Canada
+C1172,Enterprise_Customer_1172,Enterprise,Bronze,2024-02-26,2024-03-26,2643.76,2,1321.88,Corporate,Asia Pacific,Canada
+C1173,SMB_Customer_1173,SMB,Bronze,2023-09-17,2024-11-12,1815.69,3,605.23,Online,Asia Pacific,Japan
+C1174,Retail_Customer_1174,Retail,Silver,2024-01-13,2024-08-09,5212.94,3,1737.65,Online,North America,Canada
+C1175,Government_Customer_1175,Government,Bronze,2023-12-20,2024-08-24,558.36,2,279.18,Online,Europe,Mexico
+C1176,SMB_Customer_1176,SMB,Bronze,2022-07-15,2024-04-22,3001.08,3,1000.36,Distributor,North America,USA
+C1177,SMB_Customer_1177,SMB,Bronze,2023-07-24,2024-05-27,684.42,3,228.14,Corporate,Europe,China
+C1178,Retail_Customer_1178,Retail,Bronze,2022-03-05,2024-10-19,1753.38,6,292.23,Online,Asia Pacific,China
+C1179,SMB_Customer_1179,SMB,Bronze,2022-11-20,2024-11-14,1951.82,3,650.61,Online,North America,Mexico
+C1180,Retail_Customer_1180,Retail,Silver,2022-07-17,2024-12-29,8522.17,6,1420.36,Online,North America,Canada
+C1181,Retail_Customer_1181,Retail,Bronze,2022-09-04,2022-12-31,212.98,2,106.49,Online,Asia Pacific,China
+C1182,Retail_Customer_1182,Retail,Bronze,2022-03-31,2024-02-23,2573.42,3,857.81,Retail Store,Europe,France
+C1183,Retail_Customer_1183,Retail,Bronze,2024-02-26,2024-12-21,875.42,3,291.81,Distributor,Asia Pacific,Canada
+C1184,SMB_Customer_1184,SMB,Silver,2022-07-15,2024-10-22,10083.22,7,1440.46,Retail Store,North America,Canada
+C1185,Enterprise_Customer_1185,Enterprise,Bronze,2023-10-11,2024-03-27,516.88,2,258.44,Corporate,Europe,Germany
+C1186,SMB_Customer_1186,SMB,Bronze,2022-05-19,2022-12-04,1223.9,4,305.98,Online,North America,USA
+C1187,Retail_Customer_1187,Retail,Bronze,2022-06-22,2024-12-19,4648.72,6,774.79,Retail Store,Europe,France
+C1188,SMB_Customer_1188,SMB,Bronze,2023-04-30,2024-11-17,2967.58,7,423.94,Online,North America,Mexico
+C1189,Enterprise_Customer_1189,Enterprise,Bronze,2022-06-12,2024-03-12,2019.81,6,336.64,Online,Europe,UK
+C1190,Retail_Customer_1190,Retail,Bronze,2022-03-08,2024-08-01,1615.76,5,323.15,Online,North America,Canada
+C1191,Retail_Customer_1191,Retail,Bronze,2023-09-16,2024-05-08,320.7,2,160.35,Corporate,North America,USA
+C1192,SMB_Customer_1192,SMB,Bronze,2022-04-18,2024-10-14,4771.99,7,681.71,Retail Store,North America,Mexico
+C1193,Retail_Customer_1193,Retail,Bronze,2022-11-19,2024-10-31,1052.06,3,350.69,Online,Asia Pacific,Australia
+C1194,Retail_Customer_1194,Retail,Bronze,2022-02-15,2023-11-18,1035.86,3,345.29,Online,North America,Mexico
+C1195,Retail_Customer_1195,Retail,Bronze,2022-09-20,2024-12-29,2433.43,4,608.36,Online,Asia Pacific,Canada
+C1196,Retail_Customer_1196,Retail,Silver,2022-03-17,2024-10-07,6203.15,7,886.16,Online,Europe,Canada
+C1197,Retail_Customer_1197,Retail,Bronze,2024-04-15,2024-11-30,1212.39,3,404.13,Online,North America,Canada
+C1198,Government_Customer_1198,Government,Bronze,2022-10-31,2024-04-24,2091.43,2,1045.72,Distributor,Europe,Spain
+C1199,Retail_Customer_1199,Retail,Bronze,2022-04-13,2024-02-02,1093.44,2,546.72,Distributor,Europe,Italy
+C1200,Retail_Customer_1200,Retail,Bronze,2022-09-21,2024-07-12,4240.74,3,1413.58,Corporate,North America,Canada
+C1201,Retail_Customer_1201,Retail,Silver,2022-01-11,2024-04-23,9869.06,4,2467.26,Online,North America,USA
+C1202,Retail_Customer_1202,Retail,Bronze,2022-02-09,2024-12-11,4057.24,7,579.61,Online,North America,Canada
+C1203,Government_Customer_1203,Government,Silver,2022-06-13,2024-12-26,9083.56,5,1816.71,Online,Asia Pacific,Canada
+C1204,SMB_Customer_1204,SMB,Bronze,2022-09-29,2024-02-03,2242.05,4,560.51,Online,Europe,Australia
+C1205,Retail_Customer_1205,Retail,Bronze,2023-09-25,2023-09-25,3027.39,1,3027.39,Online,North America,USA
+C1206,SMB_Customer_1206,SMB,Silver,2022-07-21,2024-03-26,9698.91,4,2424.73,Distributor,North America,Canada
+C1207,Enterprise_Customer_1207,Enterprise,Bronze,2022-04-07,2024-09-24,3211.38,4,802.84,Retail Store,Europe,Mexico
+C1208,SMB_Customer_1208,SMB,Bronze,2022-07-06,2023-09-21,892.89,2,446.44,Online,Europe,France
+C1209,Retail_Customer_1209,Retail,Bronze,2022-06-09,2022-06-09,325.96,1,325.96,Corporate,North America,Canada
+C1210,SMB_Customer_1210,SMB,Bronze,2022-01-24,2024-01-20,2140.54,3,713.51,Online,North America,USA
+C1211,Enterprise_Customer_1211,Enterprise,Bronze,2022-09-18,2024-11-19,2793.29,7,399.04,Online,North America,USA
+C1212,SMB_Customer_1212,SMB,Bronze,2022-06-03,2024-11-15,2164.43,5,432.89,Online,Europe,UK
+C1213,Enterprise_Customer_1213,Enterprise,Bronze,2022-11-22,2023-08-30,1980.91,4,495.23,Retail Store,Europe,China
+C1214,Retail_Customer_1214,Retail,Bronze,2022-01-08,2023-09-29,4079.98,6,680.0,Online,North America,Mexico
+C1215,Retail_Customer_1215,Retail,Bronze,2022-03-12,2024-06-19,1667.59,4,416.9,Online,Europe,Canada
+C1216,Retail_Customer_1216,Retail,Bronze,2022-12-10,2024-05-10,553.24,3,184.41,Online,Asia Pacific,Australia
+C1217,Government_Customer_1217,Government,Bronze,2022-08-06,2024-07-23,4996.36,4,1249.09,Online,North America,USA
+C1218,Retail_Customer_1218,Retail,Bronze,2023-06-13,2024-12-22,3894.93,2,1947.46,Corporate,North America,Mexico
+C1219,Retail_Customer_1219,Retail,Silver,2022-03-02,2024-06-01,8961.03,6,1493.5,Corporate,Europe,Canada
+C1220,SMB_Customer_1220,SMB,Bronze,2022-02-04,2024-08-26,1879.45,5,375.89,Retail Store,North America,Canada
+C1221,Retail_Customer_1221,Retail,Bronze,2022-01-04,2024-11-15,2216.0,5,443.2,Retail Store,Europe,Germany
+C1222,Enterprise_Customer_1222,Enterprise,Bronze,2022-07-02,2024-09-15,2609.78,5,521.96,Retail Store,North America,Mexico
+C1223,SMB_Customer_1223,SMB,Bronze,2023-02-16,2024-08-28,555.46,2,277.73,Corporate,Asia Pacific,Australia
+C1224,SMB_Customer_1224,SMB,Silver,2023-04-07,2024-10-31,8287.02,5,1657.4,Online,North America,USA
+C1225,Retail_Customer_1225,Retail,Bronze,2022-12-26,2023-05-31,494.06,3,164.69,Distributor,Asia Pacific,Canada
+C1226,SMB_Customer_1226,SMB,Silver,2022-09-28,2024-04-16,8850.13,6,1475.02,Online,Europe,Canada
+C1227,SMB_Customer_1227,SMB,Bronze,2022-02-06,2024-11-13,3247.67,6,541.28,Retail Store,Asia Pacific,Singapore
+C1228,Retail_Customer_1228,Retail,Bronze,2023-09-04,2023-09-04,104.67,1,104.67,Corporate,North America,Mexico
+C1229,Retail_Customer_1229,Retail,Bronze,2023-01-24,2023-11-23,2891.0,4,722.75,Retail Store,North America,Mexico
+C1230,Enterprise_Customer_1230,Enterprise,Silver,2022-07-18,2024-12-05,9794.75,8,1224.34,Online,Asia Pacific,Australia
+C1231,Retail_Customer_1231,Retail,Bronze,2022-08-30,2024-09-03,1021.34,6,170.22,Online,Europe,Canada
+C1232,Retail_Customer_1232,Retail,Bronze,2022-06-22,2024-12-18,4462.47,7,637.5,Online,North America,USA
+C1233,Retail_Customer_1233,Retail,Silver,2023-03-05,2024-02-10,5162.31,3,1720.77,Corporate,North America,Canada
+C1234,SMB_Customer_1234,SMB,Silver,2022-04-13,2024-10-24,7036.08,5,1407.22,Corporate,Europe,Spain
+C1235,Retail_Customer_1235,Retail,Bronze,2022-07-30,2023-05-28,4340.9,3,1446.97,Distributor,Asia Pacific,China
+C1236,Enterprise_Customer_1236,Enterprise,Bronze,2022-10-02,2023-04-27,451.85,2,225.92,Distributor,Asia Pacific,Australia
+C1237,Enterprise_Customer_1237,Enterprise,Bronze,2022-10-08,2024-04-07,542.27,4,135.57,Online,Europe,China
+C1238,Retail_Customer_1238,Retail,Bronze,2022-05-13,2024-11-18,1857.31,3,619.1,Online,North America,Italy
+C1239,SMB_Customer_1239,SMB,Silver,2023-08-21,2024-12-30,6621.42,5,1324.28,Retail Store,Europe,Italy
+C1240,SMB_Customer_1240,SMB,Bronze,2022-06-24,2024-09-09,4796.55,5,959.31,Retail Store,North America,Mexico
+C1241,Enterprise_Customer_1241,Enterprise,Silver,2022-04-25,2024-10-22,5675.76,3,1891.92,Corporate,North America,Canada
+C1242,SMB_Customer_1242,SMB,Silver,2022-04-04,2024-11-05,7148.23,6,1191.37,Online,North America,Mexico
+C1243,Retail_Customer_1243,Retail,Silver,2022-03-30,2024-04-06,8450.11,6,1408.35,Online,North America,Canada
+C1244,Retail_Customer_1244,Retail,Bronze,2023-10-25,2024-02-17,1217.37,2,608.68,Online,Europe,Canada
+C1245,Retail_Customer_1245,Retail,Bronze,2023-04-04,2023-11-08,641.8,3,213.93,Retail Store,Asia Pacific,Canada
+C1246,Enterprise_Customer_1246,Enterprise,Bronze,2022-11-01,2024-11-24,2538.67,5,507.73,Distributor,North America,Japan
+C1247,Enterprise_Customer_1247,Enterprise,Bronze,2022-01-10,2022-12-31,3508.54,4,877.14,Online,Europe,China
+C1248,Retail_Customer_1248,Retail,Bronze,2022-03-15,2024-01-13,799.23,3,266.41,Retail Store,Europe,Germany
+C1249,Retail_Customer_1249,Retail,Bronze,2023-04-09,2024-07-15,4354.12,3,1451.37,Corporate,North America,Germany
+C1250,Retail_Customer_1250,Retail,Bronze,2022-05-27,2024-02-05,1028.12,2,514.06,Online,Asia Pacific,Singapore
+C1251,Enterprise_Customer_1251,Enterprise,Bronze,2022-04-06,2022-04-06,186.24,1,186.24,Retail Store,Asia Pacific,Japan
+C1252,Enterprise_Customer_1252,Enterprise,Bronze,2022-04-09,2023-08-31,566.09,4,141.52,Retail Store,Europe,France
+C1253,Retail_Customer_1253,Retail,Bronze,2023-04-06,2024-05-29,1276.05,5,255.21,Corporate,Asia Pacific,Australia
+C1254,Government_Customer_1254,Government,Silver,2022-09-25,2024-12-12,7805.41,6,1300.9,Online,Europe,USA
+C1255,Enterprise_Customer_1255,Enterprise,Bronze,2022-10-01,2024-05-04,380.58,3,126.86,Corporate,Europe,Mexico
+C1256,Retail_Customer_1256,Retail,Silver,2023-03-05,2024-05-27,6180.64,4,1545.16,Online,Europe,Canada
+C1257,Retail_Customer_1257,Retail,Silver,2022-04-07,2024-10-09,5448.12,5,1089.62,Online,Asia Pacific,Canada
+C1258,Enterprise_Customer_1258,Enterprise,Bronze,2022-09-27,2024-06-26,891.42,4,222.86,Online,North America,USA
+C1259,Retail_Customer_1259,Retail,Bronze,2022-10-14,2024-06-15,3456.32,7,493.76,Corporate,North America,Canada
+C1260,Enterprise_Customer_1260,Enterprise,Silver,2022-06-24,2024-03-04,5289.35,6,881.56,Retail Store,North America,Canada
+C1261,Enterprise_Customer_1261,Enterprise,Bronze,2022-01-19,2023-08-07,4466.18,3,1488.73,Distributor,North America,Canada
+C1262,Retail_Customer_1262,Retail,Bronze,2023-10-20,2024-04-10,2629.37,2,1314.68,Online,Asia Pacific,Australia
+C1263,Retail_Customer_1263,Retail,Bronze,2022-12-23,2023-03-08,316.16,2,158.08,Corporate,Europe,Germany
+C1264,Retail_Customer_1264,Retail,Silver,2022-01-25,2024-05-23,7867.99,6,1311.33,Online,Europe,Australia
+C1265,SMB_Customer_1265,SMB,Bronze,2022-05-10,2024-07-02,657.39,3,219.13,Distributor,Europe,Germany
+C1266,SMB_Customer_1266,SMB,Silver,2022-06-02,2024-07-18,7912.09,7,1130.3,Online,North America,Canada
+C1267,SMB_Customer_1267,SMB,Bronze,2022-02-26,2022-10-17,546.85,3,182.28,Corporate,North America,USA
+C1268,SMB_Customer_1268,SMB,Bronze,2023-01-05,2024-05-19,1578.08,5,315.62,Corporate,North America,Canada
+C1269,Retail_Customer_1269,Retail,Bronze,2022-02-21,2023-06-10,4793.72,3,1597.91,Corporate,North America,Mexico
+C1270,Retail_Customer_1270,Retail,Bronze,2022-03-18,2022-11-09,468.19,3,156.06,Online,Asia Pacific,Canada
+C1271,Retail_Customer_1271,Retail,Bronze,2022-06-17,2023-10-26,3452.42,3,1150.81,Online,Asia Pacific,Australia
+C1272,SMB_Customer_1272,SMB,Bronze,2022-03-24,2024-04-09,326.0,2,163.0,Distributor,Europe,Canada
+C1273,Enterprise_Customer_1273,Enterprise,Bronze,2022-02-02,2024-03-16,2529.57,4,632.39,Retail Store,Europe,Germany
+C1274,Retail_Customer_1274,Retail,Bronze,2022-02-21,2024-09-17,2103.11,7,300.44,Online,North America,Canada
+C1275,Enterprise_Customer_1275,Enterprise,Bronze,2022-03-19,2023-06-24,1684.23,5,336.85,Online,Europe,UK
+C1276,Enterprise_Customer_1276,Enterprise,Bronze,2022-07-17,2024-10-14,2038.12,5,407.62,Online,North America,USA
+C1277,Retail_Customer_1277,Retail,Bronze,2024-04-29,2024-12-14,1591.74,3,530.58,Retail Store,Asia Pacific,France
+C1278,SMB_Customer_1278,SMB,Silver,2022-11-02,2023-10-31,5568.37,4,1392.09,Corporate,Asia Pacific,China
+C1279,Enterprise_Customer_1279,Enterprise,Bronze,2022-03-27,2022-12-16,365.65,2,182.82,Corporate,North America,Canada
+C1280,Retail_Customer_1280,Retail,Bronze,2023-12-03,2024-06-14,1368.69,4,342.17,Online,Asia Pacific,Japan
+C1281,SMB_Customer_1281,SMB,Bronze,2022-01-03,2024-05-25,996.21,4,249.05,Retail Store,Asia Pacific,China
+C1282,Retail_Customer_1282,Retail,Bronze,2023-10-09,2024-07-09,1261.29,3,420.43,Corporate,Asia Pacific,Australia
+C1283,SMB_Customer_1283,SMB,Bronze,2023-02-25,2024-11-27,723.62,3,241.21,Online,Europe,France
+C1284,Enterprise_Customer_1284,Enterprise,Bronze,2022-10-28,2024-05-17,2790.84,2,1395.42,Online,Europe,Germany
+C1285,Retail_Customer_1285,Retail,Bronze,2022-07-27,2023-11-07,3157.13,5,631.43,Online,Europe,Australia
+C1286,Enterprise_Customer_1286,Enterprise,Silver,2022-01-09,2024-10-24,10816.08,8,1352.01,Retail Store,North America,Mexico
+C1287,Retail_Customer_1287,Retail,Bronze,2022-08-16,2023-10-04,4076.51,4,1019.13,Retail Store,North America,Canada
+C1288,Retail_Customer_1288,Retail,Bronze,2023-06-01,2024-11-27,914.04,3,304.68,Online,North America,Germany
+C1289,Retail_Customer_1289,Retail,Bronze,2022-07-04,2024-01-21,1063.54,4,265.88,Online,Europe,Canada
+C1290,Government_Customer_1290,Government,Bronze,2022-03-16,2024-07-15,4175.31,7,596.47,Corporate,North America,Canada
+C1291,Retail_Customer_1291,Retail,Bronze,2022-02-26,2024-07-03,2437.21,5,487.44,Online,North America,Canada
+C1292,Retail_Customer_1292,Retail,Bronze,2022-01-20,2024-08-24,508.63,2,254.32,Corporate,Europe,France
+C1293,Enterprise_Customer_1293,Enterprise,Bronze,2022-11-16,2024-11-25,2238.66,6,373.11,Online,Europe,Germany
+C1294,Retail_Customer_1294,Retail,Bronze,2022-06-10,2022-06-10,105.6,1,105.6,Online,Europe,Italy
+C1295,Enterprise_Customer_1295,Enterprise,Bronze,2023-12-13,2024-07-10,686.34,2,343.17,Retail Store,Asia Pacific,Mexico
+C1296,Government_Customer_1296,Government,Bronze,2022-11-28,2023-03-08,602.64,2,301.32,Online,Asia Pacific,Singapore
+C1297,Retail_Customer_1297,Retail,Bronze,2023-04-14,2023-04-14,474.05,1,474.05,Online,Asia Pacific,Singapore
+C1298,Retail_Customer_1298,Retail,Bronze,2022-09-26,2024-05-13,758.67,4,189.67,Online,North America,Canada
+C1299,Retail_Customer_1299,Retail,Bronze,2022-12-09,2023-06-12,836.52,2,418.26,Online,North America,Canada
+C1300,Retail_Customer_1300,Retail,Bronze,2022-12-24,2023-01-08,590.64,2,295.32,Corporate,Asia Pacific,Singapore
+C1301,SMB_Customer_1301,SMB,Bronze,2022-01-01,2023-12-05,1058.83,3,352.94,Online,North America,Canada
+C1302,SMB_Customer_1302,SMB,Bronze,2022-03-15,2024-12-02,1041.26,4,260.32,Retail Store,Europe,France
+C1303,Retail_Customer_1303,Retail,Bronze,2022-09-11,2024-12-09,1159.42,2,579.71,Corporate,Europe,Spain
+C1304,Retail_Customer_1304,Retail,Bronze,2022-01-15,2024-10-25,2502.67,7,357.52,Online,North America,Italy
+C1305,Retail_Customer_1305,Retail,Bronze,2022-11-27,2024-08-06,1825.4,6,304.23,Online,North America,Spain
+C1306,SMB_Customer_1306,SMB,Bronze,2022-01-22,2024-06-19,4682.32,5,936.46,Online,Europe,Germany
+C1307,Retail_Customer_1307,Retail,Bronze,2024-01-28,2024-11-17,340.7,3,113.57,Online,Asia Pacific,Singapore
+C1308,Retail_Customer_1308,Retail,Bronze,2022-06-25,2024-01-31,2940.71,4,735.18,Corporate,Europe,Germany
+C1309,Retail_Customer_1309,Retail,Bronze,2023-04-22,2023-09-01,989.7,3,329.9,Corporate,North America,Mexico
+C1310,SMB_Customer_1310,SMB,Silver,2022-03-06,2024-10-09,9406.19,7,1343.74,Retail Store,North America,Italy
+C1311,SMB_Customer_1311,SMB,Bronze,2022-07-12,2024-07-15,3182.01,3,1060.67,Distributor,Europe,Spain
+C1312,Retail_Customer_1312,Retail,Bronze,2024-12-02,2024-12-02,902.86,1,902.86,Corporate,North America,Canada
+C1313,Government_Customer_1313,Government,Bronze,2022-11-14,2023-02-24,594.39,2,297.2,Online,Asia Pacific,Japan
+C1314,SMB_Customer_1314,SMB,Bronze,2022-05-03,2024-02-13,230.88,2,115.44,Online,North America,Mexico
+C1315,Retail_Customer_1315,Retail,Bronze,2022-04-24,2024-09-30,1933.42,3,644.47,Online,North America,Canada
+C1316,Enterprise_Customer_1316,Enterprise,Silver,2022-06-04,2024-12-09,6542.14,5,1308.43,Retail Store,North America,Canada
+C1317,Retail_Customer_1317,Retail,Bronze,2023-02-27,2024-12-09,2057.99,5,411.6,Retail Store,Europe,USA
+C1318,Retail_Customer_1318,Retail,Bronze,2022-05-17,2024-11-18,2334.11,5,466.82,Retail Store,Asia Pacific,USA
+C1319,Retail_Customer_1319,Retail,Bronze,2024-10-03,2024-10-03,609.4,1,609.4,Retail Store,Asia Pacific,Japan
+C1320,Retail_Customer_1320,Retail,Bronze,2022-08-17,2024-07-14,755.92,4,188.98,Corporate,Europe,Canada
+C1321,Retail_Customer_1321,Retail,Silver,2022-08-02,2024-10-17,5735.64,8,716.96,Online,Europe,Mexico
+C1322,SMB_Customer_1322,SMB,Bronze,2022-04-09,2023-05-18,4976.37,4,1244.09,Online,Europe,Canada
+C1323,Government_Customer_1323,Government,Silver,2023-01-26,2024-07-15,7195.05,6,1199.18,Online,Asia Pacific,Australia
+C1324,Retail_Customer_1324,Retail,Bronze,2022-01-21,2024-12-30,3424.25,3,1141.42,Corporate,Europe,France
+C1325,Retail_Customer_1325,Retail,Bronze,2022-07-08,2024-01-10,3108.31,3,1036.1,Corporate,Asia Pacific,Australia
+C1326,Retail_Customer_1326,Retail,Bronze,2022-05-04,2024-08-11,903.8,4,225.95,Online,Europe,Italy
+C1327,Retail_Customer_1327,Retail,Bronze,2022-07-02,2024-10-19,2851.15,5,570.23,Corporate,Europe,Germany
+C1328,Retail_Customer_1328,Retail,Bronze,2024-05-13,2024-07-01,753.72,2,376.86,Corporate,Europe,Spain
+C1329,Enterprise_Customer_1329,Enterprise,Bronze,2023-02-06,2024-10-19,1163.6,2,581.8,Corporate,Europe,Germany
+C1330,Government_Customer_1330,Government,Bronze,2023-03-08,2024-05-21,629.13,3,209.71,Online,North America,Canada
+C1331,Retail_Customer_1331,Retail,Bronze,2022-02-11,2024-04-28,4533.33,3,1511.11,Online,North America,Australia
+C1332,Retail_Customer_1332,Retail,Bronze,2022-02-20,2024-10-30,1072.33,5,214.47,Retail Store,Europe,Mexico
+C1333,Retail_Customer_1333,Retail,Bronze,2022-05-17,2022-06-26,3116.02,2,1558.01,Corporate,Asia Pacific,Australia
+C1334,Enterprise_Customer_1334,Enterprise,Silver,2022-07-23,2024-06-12,16058.46,5,3211.69,Retail Store,North America,Australia
+C1335,SMB_Customer_1335,SMB,Bronze,2022-04-07,2024-10-23,1956.51,3,652.17,Retail Store,North America,Japan
+C1336,Retail_Customer_1336,Retail,Bronze,2022-08-06,2024-03-22,2276.28,3,758.76,Online,North America,Canada
+C1337,Enterprise_Customer_1337,Enterprise,Bronze,2022-03-03,2023-02-23,1806.68,5,361.34,Online,Asia Pacific,Canada
+C1338,SMB_Customer_1338,SMB,Bronze,2022-05-19,2024-09-17,916.09,3,305.36,Retail Store,Europe,France
+C1339,Retail_Customer_1339,Retail,Bronze,2022-03-28,2024-10-03,4515.37,5,903.07,Online,North America,Canada
+C1340,SMB_Customer_1340,SMB,Silver,2022-10-30,2024-02-27,8907.54,5,1781.51,Retail Store,North America,Canada
+C1341,Retail_Customer_1341,Retail,Bronze,2022-06-11,2024-12-14,4482.4,5,896.48,Distributor,Europe,UK
+C1342,Retail_Customer_1342,Retail,Silver,2023-10-28,2024-04-13,5543.68,2,2771.84,Online,Asia Pacific,Australia
+C1343,Enterprise_Customer_1343,Enterprise,Bronze,2022-01-12,2024-01-31,1445.56,3,481.85,Corporate,Europe,China
+C1344,Retail_Customer_1344,Retail,Bronze,2023-06-16,2024-09-09,2337.42,3,779.14,Online,Asia Pacific,Canada
+C1345,Retail_Customer_1345,Retail,Bronze,2022-06-24,2024-07-11,3841.2,6,640.2,Online,Europe,France
+C1346,SMB_Customer_1346,SMB,Bronze,2024-11-13,2024-11-13,83.03,1,83.03,Online,Europe,Germany
+C1347,Retail_Customer_1347,Retail,Silver,2022-06-27,2024-02-18,5621.16,4,1405.29,Online,North America,Canada
+C1348,SMB_Customer_1348,SMB,Bronze,2022-04-15,2024-10-07,4669.89,4,1167.47,Retail Store,North America,Canada
+C1349,Retail_Customer_1349,Retail,Bronze,2022-05-04,2024-12-15,722.36,3,240.79,Online,North America,USA
+C1350,Retail_Customer_1350,Retail,Bronze,2022-12-30,2024-04-08,4518.13,2,2259.06,Online,Asia Pacific,Mexico
+C1351,SMB_Customer_1351,SMB,Bronze,2022-01-15,2024-12-19,488.47,2,244.24,Online,Asia Pacific,China
+C1352,Enterprise_Customer_1352,Enterprise,Bronze,2022-12-30,2024-12-22,833.84,4,208.46,Online,Europe,Italy
+C1353,Retail_Customer_1353,Retail,Bronze,2022-02-22,2023-07-31,1036.91,2,518.46,Corporate,Asia Pacific,China
+C1354,Enterprise_Customer_1354,Enterprise,Silver,2022-03-01,2024-12-30,10162.31,4,2540.58,Online,Asia Pacific,Australia
+C1355,Government_Customer_1355,Government,Bronze,2022-02-03,2024-10-07,1795.75,4,448.94,Online,Europe,Canada
+C1356,Retail_Customer_1356,Retail,Bronze,2023-07-29,2023-07-29,340.0,1,340.0,Retail Store,Asia Pacific,Singapore
+C1357,SMB_Customer_1357,SMB,Silver,2022-02-26,2024-10-05,7275.35,8,909.42,Retail Store,Europe,Spain
+C1358,Retail_Customer_1358,Retail,Bronze,2022-04-04,2024-06-13,4392.25,5,878.45,Online,Asia Pacific,Canada
+C1359,SMB_Customer_1359,SMB,Bronze,2022-11-08,2024-06-06,4518.16,3,1506.05,Corporate,Asia Pacific,Australia
+C1360,Government_Customer_1360,Government,Bronze,2023-01-30,2024-12-02,871.48,3,290.49,Corporate,North America,Canada
+C1361,Retail_Customer_1361,Retail,Bronze,2022-12-17,2022-12-17,244.64,1,244.64,Online,North America,Mexico
+C1362,Retail_Customer_1362,Retail,Bronze,2022-05-20,2024-10-29,3709.57,6,618.26,Online,Asia Pacific,Canada
+C1363,SMB_Customer_1363,SMB,Bronze,2023-04-20,2024-12-18,723.75,4,180.94,Retail Store,Asia Pacific,Singapore
+C1364,SMB_Customer_1364,SMB,Bronze,2023-10-28,2024-11-04,1210.92,4,302.73,Online,North America,USA
+C1365,SMB_Customer_1365,SMB,Bronze,2022-08-27,2024-07-09,4177.29,4,1044.32,Online,Europe,Spain
+C1366,Retail_Customer_1366,Retail,Bronze,2022-08-20,2024-11-18,3076.75,3,1025.58,Distributor,Asia Pacific,Australia
+C1367,Enterprise_Customer_1367,Enterprise,Bronze,2022-09-27,2024-02-16,4932.43,2,2466.22,Corporate,Asia Pacific,Australia
+C1368,Retail_Customer_1368,Retail,Bronze,2022-10-28,2024-10-24,2502.83,4,625.71,Online,Europe,Italy
+C1369,Retail_Customer_1369,Retail,Silver,2023-08-26,2024-04-10,6369.85,2,3184.92,Distributor,North America,Canada
+C1370,Enterprise_Customer_1370,Enterprise,Bronze,2022-03-05,2024-10-31,2772.38,3,924.13,Online,North America,Mexico
+C1371,SMB_Customer_1371,SMB,Bronze,2022-02-02,2023-04-15,1089.94,5,217.99,Distributor,North America,USA
+C1372,Retail_Customer_1372,Retail,Bronze,2022-08-25,2024-09-06,1025.74,3,341.91,Online,Asia Pacific,Australia
+C1373,Retail_Customer_1373,Retail,Bronze,2023-10-12,2024-09-13,563.09,2,281.54,Corporate,Asia Pacific,Japan
+C1374,Retail_Customer_1374,Retail,Bronze,2023-07-30,2024-12-07,2599.34,2,1299.67,Distributor,Asia Pacific,Australia
+C1375,SMB_Customer_1375,SMB,Bronze,2022-02-04,2024-03-01,4098.73,4,1024.68,Corporate,Europe,France
+C1376,Retail_Customer_1376,Retail,Bronze,2023-06-18,2024-07-11,1951.6,2,975.8,Distributor,Europe,Canada
+C1377,Enterprise_Customer_1377,Enterprise,Bronze,2022-03-01,2024-06-15,4261.7,4,1065.42,Online,North America,USA
+C1378,Retail_Customer_1378,Retail,Bronze,2022-03-09,2022-12-13,1143.83,3,381.28,Corporate,Europe,Italy
+C1379,Retail_Customer_1379,Retail,Silver,2022-03-21,2024-11-23,5606.88,8,700.86,Retail Store,North America,Mexico
+C1380,Government_Customer_1380,Government,Bronze,2023-05-22,2024-07-08,454.49,2,227.24,Corporate,Asia Pacific,Canada
+C1381,Enterprise_Customer_1381,Enterprise,Bronze,2022-10-14,2023-02-19,672.01,3,224.0,Corporate,Europe,Germany
+C1382,Retail_Customer_1382,Retail,Bronze,2024-07-02,2024-07-02,876.32,1,876.32,Retail Store,North America,Mexico
+C1383,SMB_Customer_1383,SMB,Silver,2022-11-07,2024-04-17,6902.43,5,1380.49,Online,Europe,Spain
+C1384,Retail_Customer_1384,Retail,Bronze,2022-06-29,2022-11-28,625.32,2,312.66,Corporate,Europe,France
+C1385,Enterprise_Customer_1385,Enterprise,Bronze,2022-07-31,2024-06-20,1480.65,2,740.32,Online,Asia Pacific,Singapore
+C1386,Retail_Customer_1386,Retail,Bronze,2024-01-30,2024-05-06,854.58,3,284.86,Online,North America,Canada
+C1387,Enterprise_Customer_1387,Enterprise,Bronze,2022-09-06,2022-09-06,356.4,1,356.4,Retail Store,Europe,France
+C1388,Government_Customer_1388,Government,Bronze,2022-05-16,2024-12-30,385.66,3,128.55,Corporate,Europe,Germany
+C1389,Retail_Customer_1389,Retail,Silver,2022-04-01,2024-04-10,6763.62,5,1352.72,Online,Europe,China
+C1390,Retail_Customer_1390,Retail,Bronze,2022-08-12,2024-03-09,2819.84,5,563.97,Retail Store,Europe,UK
+C1391,Enterprise_Customer_1391,Enterprise,Silver,2022-04-04,2024-06-24,9516.26,5,1903.25,Distributor,North America,Australia
+C1392,Retail_Customer_1392,Retail,Bronze,2022-03-27,2024-10-10,4960.71,4,1240.18,Retail Store,Asia Pacific,Australia
+C1393,Retail_Customer_1393,Retail,Bronze,2022-04-04,2024-05-15,3755.54,3,1251.85,Corporate,Europe,France
+C1394,Enterprise_Customer_1394,Enterprise,Silver,2022-03-25,2023-10-04,8093.28,4,2023.32,Online,North America,USA
+C1395,Government_Customer_1395,Government,Bronze,2023-04-14,2023-07-09,998.99,2,499.5,Online,Europe,Italy
+C1396,Retail_Customer_1396,Retail,Silver,2022-10-15,2024-05-16,8068.36,5,1613.67,Retail Store,Asia Pacific,China
+C1397,SMB_Customer_1397,SMB,Bronze,2022-10-31,2024-10-15,3023.43,4,755.86,Online,North America,Mexico
+C1398,Retail_Customer_1398,Retail,Bronze,2022-08-02,2023-10-06,3831.46,4,957.86,Retail Store,Europe,Canada
+C1399,Retail_Customer_1399,Retail,Silver,2022-03-13,2024-04-24,5214.69,3,1738.23,Online,Asia Pacific,Canada
+C1400,Enterprise_Customer_1400,Enterprise,Bronze,2022-12-17,2024-04-19,851.38,3,283.79,Retail Store,North America,Canada
+C1401,Retail_Customer_1401,Retail,Bronze,2022-12-15,2024-06-16,2527.35,5,505.47,Online,Europe,Spain
+C1402,Retail_Customer_1402,Retail,Silver,2022-08-22,2024-08-05,5042.47,4,1260.62,Online,Asia Pacific,China
+C1403,Retail_Customer_1403,Retail,Bronze,2022-07-21,2024-09-08,2893.51,5,578.7,Online,Europe,France
+C1404,Retail_Customer_1404,Retail,Silver,2022-12-19,2024-02-22,7642.22,3,2547.41,Online,Asia Pacific,Mexico
+C1405,Retail_Customer_1405,Retail,Bronze,2022-05-25,2024-03-17,3462.54,3,1154.18,Corporate,North America,Mexico
+C1406,SMB_Customer_1406,SMB,Bronze,2022-10-11,2023-04-25,532.47,3,177.49,Corporate,North America,Canada
+C1407,SMB_Customer_1407,SMB,Bronze,2022-04-04,2023-02-24,1050.19,5,210.04,Online,North America,Canada
+C1408,Enterprise_Customer_1408,Enterprise,Bronze,2023-03-06,2024-11-02,2079.85,3,693.28,Retail Store,North America,USA
+C1409,Retail_Customer_1409,Retail,Silver,2022-02-15,2024-02-08,11181.15,4,2795.29,Online,Asia Pacific,Singapore
+C1410,Retail_Customer_1410,Retail,Bronze,2024-01-06,2024-10-13,609.54,3,203.18,Online,Europe,Germany
+C1411,Enterprise_Customer_1411,Enterprise,Bronze,2022-05-16,2023-12-04,1651.03,2,825.52,Corporate,Europe,France
+C1412,Retail_Customer_1412,Retail,Bronze,2022-08-09,2024-04-29,3167.23,5,633.45,Online,North America,Canada
+C1413,Retail_Customer_1413,Retail,Bronze,2022-09-20,2022-11-27,1047.24,2,523.62,Online,North America,Mexico
+C1414,SMB_Customer_1414,SMB,Bronze,2022-10-30,2022-10-30,211.66,1,211.66,Online,North America,Mexico
+C1415,Retail_Customer_1415,Retail,Bronze,2022-01-02,2024-08-06,4869.79,5,973.96,Distributor,Europe,Canada
+C1416,Retail_Customer_1416,Retail,Bronze,2022-08-17,2023-09-23,891.41,4,222.85,Online,North America,Italy
+C1417,Retail_Customer_1417,Retail,Bronze,2022-06-25,2023-08-21,3829.76,3,1276.59,Online,Asia Pacific,China
+C1418,Retail_Customer_1418,Retail,Bronze,2022-08-14,2023-12-21,3426.74,3,1142.25,Corporate,Europe,Canada
+C1419,Retail_Customer_1419,Retail,Silver,2022-05-16,2024-11-26,9041.67,4,2260.42,Online,Asia Pacific,Canada
+C1420,Retail_Customer_1420,Retail,Bronze,2022-12-16,2024-09-06,3781.33,4,945.33,Distributor,North America,Canada
+C1421,Retail_Customer_1421,Retail,Silver,2022-05-22,2024-05-04,5834.01,4,1458.5,Retail Store,Europe,Mexico
+C1422,Enterprise_Customer_1422,Enterprise,Bronze,2022-04-27,2024-08-01,2030.87,5,406.17,Online,North America,USA
+C1423,SMB_Customer_1423,SMB,Bronze,2022-01-08,2024-01-10,3270.71,3,1090.24,Distributor,Asia Pacific,Canada
+C1424,Retail_Customer_1424,Retail,Bronze,2022-04-16,2024-04-05,2179.95,5,435.99,Retail Store,Europe,Canada
+C1425,Retail_Customer_1425,Retail,Bronze,2024-04-23,2024-08-19,3953.68,2,1976.84,Corporate,North America,USA
+C1426,Retail_Customer_1426,Retail,Bronze,2022-12-07,2024-12-12,3612.47,5,722.49,Corporate,Asia Pacific,Australia
+C1427,Enterprise_Customer_1427,Enterprise,Silver,2022-03-07,2024-10-29,6585.07,8,823.13,Online,North America,USA
+C1428,Enterprise_Customer_1428,Enterprise,Bronze,2022-05-31,2024-06-02,1155.88,5,231.18,Retail Store,North America,Mexico
+C1429,Retail_Customer_1429,Retail,Bronze,2023-06-03,2024-08-26,3335.82,3,1111.94,Corporate,Asia Pacific,Singapore
+C1430,SMB_Customer_1430,SMB,Bronze,2022-02-07,2023-12-28,1001.63,4,250.41,Online,Europe,Germany
+C1431,Retail_Customer_1431,Retail,Bronze,2022-01-29,2023-12-28,1395.54,5,279.11,Online,North America,USA
+C1432,Retail_Customer_1432,Retail,Bronze,2022-09-16,2024-10-12,1017.47,2,508.74,Online,Asia Pacific,China
+C1433,Retail_Customer_1433,Retail,Silver,2022-01-27,2024-10-11,8229.99,7,1175.71,Online,Europe,UK
+C1434,Retail_Customer_1434,Retail,Bronze,2022-07-28,2023-10-04,422.25,3,140.75,Corporate,Europe,Germany
+C1435,Enterprise_Customer_1435,Enterprise,Bronze,2024-04-08,2024-04-08,38.28,1,38.28,Online,Asia Pacific,Singapore
+C1436,Retail_Customer_1436,Retail,Silver,2022-02-04,2023-05-24,8409.25,5,1681.85,Retail Store,North America,USA
+C1437,Retail_Customer_1437,Retail,Silver,2022-02-19,2024-10-23,5120.15,4,1280.04,Online,Europe,Italy
+C1438,Retail_Customer_1438,Retail,Bronze,2022-03-22,2024-07-30,1819.4,7,259.91,Corporate,North America,USA
+C1439,Government_Customer_1439,Government,Bronze,2022-05-14,2024-04-24,1069.19,6,178.2,Online,Europe,Germany
+C1440,Retail_Customer_1440,Retail,Silver,2022-03-17,2024-07-14,7189.89,5,1437.98,Online,North America,Canada
+C1441,Retail_Customer_1441,Retail,Bronze,2022-05-15,2022-05-15,303.46,1,303.46,Online,Asia Pacific,Japan
+C1442,Enterprise_Customer_1442,Enterprise,Bronze,2022-02-11,2024-10-24,1066.31,3,355.44,Online,Europe,Italy
+C1443,SMB_Customer_1443,SMB,Bronze,2022-10-28,2023-05-19,2964.3,3,988.1,Online,North America,USA
+C1444,Retail_Customer_1444,Retail,Bronze,2023-01-08,2023-11-21,2524.24,4,631.06,Online,North America,Mexico
+C1445,Retail_Customer_1445,Retail,Bronze,2022-08-25,2024-11-23,313.34,2,156.67,Distributor,Asia Pacific,China
+C1446,Retail_Customer_1446,Retail,Bronze,2024-06-07,2024-06-07,384.36,1,384.36,Online,Asia Pacific,Japan
+C1447,Retail_Customer_1447,Retail,Bronze,2022-02-26,2023-01-20,1599.04,2,799.52,Online,North America,Canada
+C1448,Retail_Customer_1448,Retail,Bronze,2022-11-04,2023-11-28,1829.83,4,457.46,Retail Store,Asia Pacific,France
+C1449,SMB_Customer_1449,SMB,Bronze,2022-02-18,2024-12-11,827.88,3,275.96,Online,North America,Canada
+C1450,Retail_Customer_1450,Retail,Bronze,2022-04-26,2024-05-16,1587.01,2,793.5,Corporate,North America,Mexico
+C1451,SMB_Customer_1451,SMB,Bronze,2023-04-24,2024-01-24,513.44,2,256.72,Distributor,Asia Pacific,Japan
+C1452,Retail_Customer_1452,Retail,Silver,2022-01-23,2024-07-27,12074.95,7,1724.99,Online,Asia Pacific,Australia
+C1453,SMB_Customer_1453,SMB,Bronze,2023-04-28,2024-04-24,903.05,3,301.02,Online,North America,USA
+C1454,Retail_Customer_1454,Retail,Bronze,2022-05-05,2024-10-03,3596.05,6,599.34,Online,North America,Canada
+C1455,SMB_Customer_1455,SMB,Bronze,2022-01-07,2023-08-01,1478.1,2,739.05,Online,Europe,Germany
+C1456,SMB_Customer_1456,SMB,Bronze,2022-02-28,2024-04-20,1044.32,4,261.08,Distributor,Europe,France
+C1457,Enterprise_Customer_1457,Enterprise,Bronze,2022-09-13,2024-09-22,2245.5,6,374.25,Online,North America,Canada
+C1458,Retail_Customer_1458,Retail,Bronze,2022-12-15,2023-06-10,163.16,2,81.58,Distributor,Asia Pacific,Canada
+C1459,Retail_Customer_1459,Retail,Bronze,2023-03-18,2024-01-15,1245.72,3,415.24,Online,Asia Pacific,China
+C1460,SMB_Customer_1460,SMB,Bronze,2022-01-27,2024-01-28,4508.07,2,2254.04,Online,Asia Pacific,China
+C1461,Retail_Customer_1461,Retail,Bronze,2022-04-01,2022-07-08,4704.73,4,1176.18,Online,North America,Mexico
+C1462,Enterprise_Customer_1462,Enterprise,Silver,2022-10-23,2024-10-28,7111.66,4,1777.91,Online,North America,Canada
+C1463,SMB_Customer_1463,SMB,Bronze,2023-11-09,2024-11-24,591.71,4,147.93,Online,North America,Germany
+C1464,Government_Customer_1464,Government,Bronze,2022-01-22,2024-06-20,1089.41,3,363.14,Online,Europe,Italy
+C1465,Retail_Customer_1465,Retail,Bronze,2022-06-02,2023-03-03,759.2,3,253.07,Corporate,Asia Pacific,Canada
+C1466,Enterprise_Customer_1466,Enterprise,Bronze,2022-01-09,2024-05-18,3896.48,5,779.3,Corporate,North America,Mexico
+C1467,SMB_Customer_1467,SMB,Bronze,2023-07-06,2023-09-13,589.77,2,294.88,Distributor,Europe,Germany
+C1468,Retail_Customer_1468,Retail,Bronze,2022-09-22,2022-12-26,1028.4,2,514.2,Online,North America,Mexico
+C1469,Enterprise_Customer_1469,Enterprise,Bronze,2023-09-04,2024-12-31,2172.36,2,1086.18,Online,Europe,Italy
+C1470,Enterprise_Customer_1470,Enterprise,Bronze,2022-06-13,2024-03-05,3511.76,3,1170.59,Distributor,North America,Mexico
+C1471,Enterprise_Customer_1471,Enterprise,Bronze,2022-11-01,2023-05-26,606.3,2,303.15,Online,Asia Pacific,Mexico
+C1472,Retail_Customer_1472,Retail,Bronze,2022-05-13,2024-02-14,1159.53,4,289.88,Online,Europe,Australia
+C1473,Enterprise_Customer_1473,Enterprise,Bronze,2023-06-27,2023-06-27,631.28,1,631.28,Retail Store,North America,USA
+C1474,Retail_Customer_1474,Retail,Silver,2022-08-16,2024-12-30,10417.38,3,3472.46,Distributor,North America,Canada
+C1475,Enterprise_Customer_1475,Enterprise,Bronze,2022-09-14,2024-07-13,1026.65,3,342.22,Retail Store,North America,Canada
+C1476,Government_Customer_1476,Government,Bronze,2022-08-28,2023-09-05,1833.23,4,458.31,Online,North America,Canada
+C1477,Retail_Customer_1477,Retail,Bronze,2022-03-25,2024-05-01,3325.6,2,1662.8,Retail Store,Asia Pacific,Canada
+C1478,Retail_Customer_1478,Retail,Bronze,2024-04-08,2024-11-29,2041.79,3,680.6,Online,North America,USA
+C1479,SMB_Customer_1479,SMB,Bronze,2023-03-26,2024-09-01,1669.9,4,417.48,Distributor,North America,USA
+C1480,Enterprise_Customer_1480,Enterprise,Bronze,2024-01-08,2024-09-04,1747.9,3,582.63,Online,Europe,France
+C1481,Retail_Customer_1481,Retail,Bronze,2022-05-02,2024-06-11,4507.21,4,1126.8,Online,North America,Canada
+C1482,Enterprise_Customer_1482,Enterprise,Bronze,2023-09-28,2023-11-28,902.6,2,451.3,Corporate,Asia Pacific,Japan
+C1483,SMB_Customer_1483,SMB,Bronze,2022-06-21,2024-10-11,3218.46,4,804.62,Distributor,North America,USA
+C1484,Retail_Customer_1484,Retail,Silver,2022-02-23,2024-10-17,5964.11,5,1192.82,Online,North America,Mexico
+C1485,Government_Customer_1485,Government,Bronze,2022-01-17,2024-01-22,2561.86,5,512.37,Online,Europe,Spain
+C1486,Retail_Customer_1486,Retail,Bronze,2023-10-09,2024-09-16,3220.86,4,805.22,Retail Store,North America,Canada
+C1487,SMB_Customer_1487,SMB,Bronze,2022-04-29,2024-03-23,782.5,4,195.62,Retail Store,Europe,France
+C1488,Retail_Customer_1488,Retail,Bronze,2023-12-06,2023-12-06,325.41,1,325.41,Online,North America,Canada
+C1489,Enterprise_Customer_1489,Enterprise,Bronze,2022-01-18,2024-10-01,4079.65,6,679.94,Online,Asia Pacific,Spain
+C1490,Retail_Customer_1490,Retail,Bronze,2022-01-23,2023-11-04,3309.74,5,661.95,Corporate,Asia Pacific,Japan
+C1491,Retail_Customer_1491,Retail,Bronze,2023-04-30,2024-12-28,4353.95,2,2176.98,Corporate,Asia Pacific,Australia
+C1492,Enterprise_Customer_1492,Enterprise,Bronze,2023-03-29,2024-04-22,4025.01,3,1341.67,Online,North America,Canada
+C1493,Enterprise_Customer_1493,Enterprise,Bronze,2022-11-30,2024-04-17,1120.33,3,373.44,Distributor,North America,Mexico
+C1494,Retail_Customer_1494,Retail,Bronze,2022-07-26,2024-11-01,2182.04,5,436.41,Online,North America,Mexico
+C1495,SMB_Customer_1495,SMB,Bronze,2022-04-30,2024-04-20,2920.53,5,584.11,Online,Europe,UK
+C1496,Retail_Customer_1496,Retail,Bronze,2022-04-22,2023-03-18,3063.14,2,1531.57,Online,Europe,Mexico
+C1497,Retail_Customer_1497,Retail,Bronze,2022-11-02,2024-04-02,1250.45,3,416.82,Online,Asia Pacific,Australia
+C1498,Enterprise_Customer_1498,Enterprise,Bronze,2023-03-08,2024-10-26,573.28,3,191.09,Corporate,North America,Canada
+C1499,Retail_Customer_1499,Retail,Bronze,2023-02-25,2024-12-25,1552.04,3,517.35,Retail Store,Asia Pacific,Italy
+C1500,Retail_Customer_1500,Retail,Bronze,2023-08-26,2024-12-28,1947.46,4,486.86,Online,Europe,China
+C1501,Retail_Customer_1501,Retail,Bronze,2022-02-10,2023-01-15,4100.35,3,1366.78,Distributor,Asia Pacific,Australia
+C1502,SMB_Customer_1502,SMB,Bronze,2022-08-01,2024-06-14,2903.62,5,580.72,Retail Store,North America,Mexico
+C1503,Government_Customer_1503,Government,Bronze,2022-07-27,2024-01-31,2396.14,3,798.71,Retail Store,Asia Pacific,China
+C1504,Retail_Customer_1504,Retail,Bronze,2022-12-11,2024-10-29,1091.67,5,218.33,Online,Asia Pacific,Canada
+C1505,Retail_Customer_1505,Retail,Bronze,2023-07-31,2023-07-31,2618.65,1,2618.65,Online,North America,Mexico
+C1506,Retail_Customer_1506,Retail,Bronze,2024-10-23,2024-10-30,297.85,2,148.93,Distributor,Asia Pacific,Italy
+C1507,Enterprise_Customer_1507,Enterprise,Bronze,2022-01-21,2023-09-27,1460.82,3,486.94,Retail Store,North America,Canada
+C1508,Enterprise_Customer_1508,Enterprise,Bronze,2022-01-14,2024-06-30,1284.31,2,642.16,Corporate,Europe,France
+C1509,Retail_Customer_1509,Retail,Bronze,2022-05-06,2024-07-09,4484.39,6,747.4,Online,Europe,China
+C1510,Retail_Customer_1510,Retail,Bronze,2022-12-11,2024-12-07,1046.84,3,348.95,Online,North America,Canada
+C1511,SMB_Customer_1511,SMB,Silver,2022-02-17,2024-07-21,10310.53,4,2577.63,Online,Asia Pacific,China
+C1512,Enterprise_Customer_1512,Enterprise,Bronze,2022-04-03,2023-10-24,869.77,3,289.92,Corporate,Europe,Canada
+C1513,Enterprise_Customer_1513,Enterprise,Bronze,2022-02-03,2024-05-25,788.62,4,197.16,Corporate,North America,Mexico
+C1514,SMB_Customer_1514,SMB,Bronze,2022-02-19,2024-12-21,1753.55,4,438.39,Online,North America,Canada
+C1515,Retail_Customer_1515,Retail,Bronze,2022-03-10,2024-08-16,182.85,2,91.43,Corporate,Asia Pacific,Mexico
+C1516,Retail_Customer_1516,Retail,Bronze,2022-07-28,2024-07-09,1671.04,3,557.01,Online,North America,Mexico
+C1517,Retail_Customer_1517,Retail,Bronze,2022-02-23,2023-01-30,276.65,2,138.32,Corporate,Asia Pacific,China
+C1518,Retail_Customer_1518,Retail,Bronze,2022-12-26,2023-12-29,3044.0,2,1522.0,Corporate,North America,Canada
+C1519,Enterprise_Customer_1519,Enterprise,Bronze,2023-09-24,2024-11-04,1931.6,2,965.8,Corporate,Asia Pacific,Japan
+C1520,Enterprise_Customer_1520,Enterprise,Bronze,2022-06-14,2024-12-23,2856.6,8,357.08,Online,Asia Pacific,Canada
+C1521,Retail_Customer_1521,Retail,Bronze,2022-01-09,2024-11-20,4775.7,8,596.96,Corporate,Europe,Canada
+C1522,Retail_Customer_1522,Retail,Bronze,2022-02-15,2024-01-08,1894.66,5,378.93,Online,North America,Canada
+C1523,Government_Customer_1523,Government,Bronze,2022-01-16,2024-05-29,2737.0,4,684.25,Online,Asia Pacific,Australia
+C1524,Retail_Customer_1524,Retail,Bronze,2023-07-03,2024-06-07,570.23,2,285.12,Corporate,Asia Pacific,Japan
+C1525,Retail_Customer_1525,Retail,Bronze,2022-04-20,2022-12-29,632.34,2,316.17,Corporate,Europe,France
+C1526,Retail_Customer_1526,Retail,Bronze,2022-05-13,2024-06-22,1324.02,5,264.8,Online,Asia Pacific,Canada
+C1527,Retail_Customer_1527,Retail,Bronze,2022-06-27,2023-09-19,285.56,3,95.19,Online,Europe,Canada
+C1528,Retail_Customer_1528,Retail,Bronze,2022-05-12,2024-09-10,2898.47,5,579.69,Online,North America,Canada
+C1529,Retail_Customer_1529,Retail,Silver,2022-06-16,2024-12-07,12501.73,8,1562.72,Retail Store,Europe,UK
+C1530,Enterprise_Customer_1530,Enterprise,Bronze,2022-03-04,2023-07-17,2188.86,3,729.62,Corporate,Europe,Germany
+C1531,Retail_Customer_1531,Retail,Silver,2022-06-10,2024-03-25,5320.58,3,1773.53,Corporate,North America,Mexico
+C1532,Retail_Customer_1532,Retail,Bronze,2022-06-25,2024-08-13,1733.95,3,577.98,Online,North America,USA
+C1533,Retail_Customer_1533,Retail,Bronze,2023-06-15,2024-03-07,617.18,3,205.73,Online,North America,Canada
+C1534,Government_Customer_1534,Government,Bronze,2023-05-08,2024-03-11,2237.11,5,447.42,Online,North America,Mexico
+C1535,Retail_Customer_1535,Retail,Silver,2022-05-21,2023-12-09,7928.73,5,1585.75,Retail Store,Asia Pacific,Australia
+C1536,Enterprise_Customer_1536,Enterprise,Bronze,2022-01-23,2022-09-20,531.54,3,177.18,Distributor,North America,Canada
+C1537,Retail_Customer_1537,Retail,Bronze,2022-04-27,2024-06-18,4803.68,5,960.74,Retail Store,Europe,Italy
+C1538,SMB_Customer_1538,SMB,Bronze,2024-01-08,2024-10-02,3222.92,4,805.73,Corporate,North America,Mexico
+C1539,Enterprise_Customer_1539,Enterprise,Bronze,2022-07-15,2024-07-09,414.95,2,207.48,Corporate,Europe,France
+C1540,Retail_Customer_1540,Retail,Bronze,2023-03-21,2023-03-21,1525.74,1,1525.74,Online,Asia Pacific,China
+C1541,Enterprise_Customer_1541,Enterprise,Bronze,2022-02-05,2023-02-03,949.26,3,316.42,Online,North America,Mexico
+C1542,Enterprise_Customer_1542,Enterprise,Bronze,2022-06-01,2024-05-05,334.49,3,111.5,Online,Europe,Canada
+C1543,Retail_Customer_1543,Retail,Bronze,2022-04-08,2023-07-30,3042.75,8,380.34,Online,North America,Canada
+C1544,Retail_Customer_1544,Retail,Bronze,2022-01-29,2024-10-17,4426.83,6,737.8,Online,Asia Pacific,Canada
+C1545,Retail_Customer_1545,Retail,Bronze,2023-02-25,2024-07-21,2137.77,4,534.44,Online,Asia Pacific,Mexico
+C1546,Government_Customer_1546,Government,Silver,2022-05-16,2024-03-16,5783.16,3,1927.72,Corporate,Asia Pacific,China
+C1547,Retail_Customer_1547,Retail,Silver,2022-01-14,2024-05-25,5120.49,5,1024.1,Online,Asia Pacific,China
+C1548,Retail_Customer_1548,Retail,Bronze,2022-06-01,2023-10-15,3366.81,4,841.7,Online,Europe,France
+C1549,Enterprise_Customer_1549,Enterprise,Bronze,2023-11-05,2024-07-24,1760.86,5,352.17,Online,Europe,Canada
+C1550,Retail_Customer_1550,Retail,Silver,2022-01-22,2024-12-11,7100.78,4,1775.2,Corporate,North America,Canada
+C1551,Retail_Customer_1551,Retail,Silver,2022-03-28,2023-07-03,5793.58,3,1931.19,Corporate,Asia Pacific,Australia
+C1552,Retail_Customer_1552,Retail,Bronze,2022-04-02,2024-08-14,4736.24,4,1184.06,Online,Asia Pacific,Australia
+C1553,Enterprise_Customer_1553,Enterprise,Bronze,2022-12-29,2024-09-14,1320.99,3,440.33,Online,Asia Pacific,Australia
+C1554,Enterprise_Customer_1554,Enterprise,Bronze,2022-12-26,2024-03-05,381.76,2,190.88,Retail Store,Europe,Canada
+C1555,Enterprise_Customer_1555,Enterprise,Bronze,2022-07-17,2024-03-19,2363.38,5,472.68,Online,Asia Pacific,Singapore
+C1556,Retail_Customer_1556,Retail,Silver,2022-06-24,2022-10-04,5528.45,4,1382.11,Online,North America,USA
+C1557,Enterprise_Customer_1557,Enterprise,Bronze,2022-03-10,2024-11-22,1828.39,4,457.1,Corporate,North America,Mexico
+C1558,Enterprise_Customer_1558,Enterprise,Bronze,2022-02-14,2024-11-12,1411.87,5,282.37,Online,Europe,Italy
+C1559,Enterprise_Customer_1559,Enterprise,Bronze,2022-06-03,2023-12-07,2931.17,4,732.79,Online,Asia Pacific,Australia
+C1560,Enterprise_Customer_1560,Enterprise,Bronze,2022-09-29,2024-05-05,4042.56,2,2021.28,Online,Europe,France
+C1561,Retail_Customer_1561,Retail,Bronze,2022-04-15,2024-06-21,1477.57,4,369.39,Online,North America,Mexico
+C1562,Enterprise_Customer_1562,Enterprise,Bronze,2022-08-15,2024-09-05,2898.48,5,579.7,Online,North America,Canada
+C1563,SMB_Customer_1563,SMB,Silver,2022-01-16,2024-06-19,5489.59,6,914.93,Distributor,North America,Mexico
+C1564,Retail_Customer_1564,Retail,Bronze,2024-04-02,2024-04-02,245.07,1,245.07,Online,Europe,Germany
+C1565,SMB_Customer_1565,SMB,Bronze,2022-03-25,2024-05-06,3414.72,5,682.94,Corporate,Europe,Australia
+C1566,SMB_Customer_1566,SMB,Bronze,2024-09-02,2024-09-02,2090.13,1,2090.13,Online,Asia Pacific,Japan
+C1567,Enterprise_Customer_1567,Enterprise,Silver,2022-08-04,2024-11-05,5981.79,6,996.96,Online,Europe,Spain
+C1568,Enterprise_Customer_1568,Enterprise,Bronze,2022-03-01,2022-03-01,77.44,1,77.44,Online,North America,Canada
+C1569,SMB_Customer_1569,SMB,Silver,2022-10-10,2024-12-16,5490.19,6,915.03,Online,North America,Mexico
+C1570,SMB_Customer_1570,SMB,Bronze,2022-08-26,2022-11-15,196.7,2,98.35,Online,Asia Pacific,Germany
+C1571,SMB_Customer_1571,SMB,Bronze,2023-08-31,2024-08-05,3418.1,3,1139.37,Retail Store,Asia Pacific,Canada
+C1572,Retail_Customer_1572,Retail,Silver,2022-03-12,2023-03-20,5001.67,3,1667.22,Online,Asia Pacific,Australia
+C1573,Enterprise_Customer_1573,Enterprise,Bronze,2022-04-18,2023-02-18,471.65,3,157.22,Corporate,Europe,Australia
+C1574,Retail_Customer_1574,Retail,Silver,2024-03-14,2024-08-22,5987.25,2,2993.62,Online,North America,Mexico
+C1575,Retail_Customer_1575,Retail,Silver,2022-09-26,2024-03-31,7597.26,7,1085.32,Corporate,Europe,Canada
+C1576,Government_Customer_1576,Government,Bronze,2022-07-28,2024-03-17,2542.58,3,847.53,Corporate,Asia Pacific,Germany
+C1577,Retail_Customer_1577,Retail,Bronze,2022-01-31,2023-07-08,1667.39,4,416.85,Online,North America,Canada
+C1578,Retail_Customer_1578,Retail,Bronze,2022-01-20,2024-12-18,4388.35,4,1097.09,Online,North America,Australia
+C1579,Enterprise_Customer_1579,Enterprise,Bronze,2022-05-29,2023-09-04,3516.25,2,1758.12,Corporate,Europe,UK
+C1580,SMB_Customer_1580,SMB,Bronze,2023-05-05,2024-12-21,1142.89,5,228.58,Online,North America,Mexico
+C1581,Retail_Customer_1581,Retail,Bronze,2022-09-13,2023-09-12,959.13,2,479.57,Corporate,Europe,Canada
+C1582,Retail_Customer_1582,Retail,Bronze,2023-07-16,2024-12-29,229.42,2,114.71,Distributor,North America,Mexico
+C1583,Retail_Customer_1583,Retail,Bronze,2022-01-21,2024-05-05,4527.4,5,905.48,Online,Asia Pacific,Australia
+C1584,Retail_Customer_1584,Retail,Bronze,2022-12-01,2023-07-06,755.46,2,377.73,Online,Asia Pacific,China
+C1585,Retail_Customer_1585,Retail,Bronze,2023-05-22,2023-12-24,933.16,2,466.58,Online,North America,Canada
+C1586,Enterprise_Customer_1586,Enterprise,Bronze,2022-05-21,2024-08-05,912.24,4,228.06,Online,North America,Canada
+C1587,Retail_Customer_1587,Retail,Silver,2022-04-06,2023-11-21,5627.12,4,1406.78,Online,Asia Pacific,Australia
+C1588,SMB_Customer_1588,SMB,Silver,2022-06-14,2024-04-04,5796.95,3,1932.32,Online,North America,Italy
+C1589,Retail_Customer_1589,Retail,Silver,2022-08-17,2024-12-31,6899.61,7,985.66,Online,North America,Germany
+C1590,Enterprise_Customer_1590,Enterprise,Bronze,2023-05-07,2023-05-07,1001.43,1,1001.43,Distributor,Asia Pacific,Australia
+C1591,Retail_Customer_1591,Retail,Bronze,2024-03-23,2024-04-10,4104.41,2,2052.2,Retail Store,North America,Mexico
+C1592,Enterprise_Customer_1592,Enterprise,Bronze,2023-05-24,2024-12-17,384.15,3,128.05,Corporate,North America,USA
+C1593,SMB_Customer_1593,SMB,Silver,2022-05-06,2024-02-23,5105.56,8,638.19,Online,Europe,Italy
+C1594,Retail_Customer_1594,Retail,Silver,2022-11-11,2024-11-21,7228.1,5,1445.62,Online,Asia Pacific,Canada
+C1595,Retail_Customer_1595,Retail,Bronze,2022-11-11,2024-11-13,1946.46,3,648.82,Online,North America,Canada
+C1596,Enterprise_Customer_1596,Enterprise,Bronze,2022-06-01,2024-10-21,2867.52,5,573.5,Online,Europe,Canada
+C1597,SMB_Customer_1597,SMB,Bronze,2023-05-23,2024-11-20,1800.87,4,450.22,Online,Europe,Germany
+C1598,SMB_Customer_1598,SMB,Bronze,2022-01-12,2023-11-18,1008.66,4,252.17,Online,Europe,Canada
+C1599,Enterprise_Customer_1599,Enterprise,Bronze,2023-07-30,2023-07-30,254.16,1,254.16,Retail Store,Europe,France
+C1600,Enterprise_Customer_1600,Enterprise,Bronze,2022-02-03,2024-10-25,583.26,2,291.63,Online,Europe,Germany
+C1601,SMB_Customer_1601,SMB,Bronze,2022-07-24,2023-11-20,1504.07,3,501.36,Online,North America,USA
+C1602,Retail_Customer_1602,Retail,Bronze,2022-04-08,2022-04-08,170.56,1,170.56,Online,North America,USA
+C1603,Enterprise_Customer_1603,Enterprise,Bronze,2022-05-08,2024-01-09,2220.18,3,740.06,Retail Store,Asia Pacific,China
+C1604,Retail_Customer_1604,Retail,Bronze,2022-04-02,2022-09-04,1358.39,3,452.8,Corporate,Europe,France
+C1605,Enterprise_Customer_1605,Enterprise,Bronze,2023-12-13,2024-08-27,571.55,3,190.52,Online,Europe,China
+C1606,Retail_Customer_1606,Retail,Bronze,2022-03-31,2024-12-08,2568.59,8,321.07,Online,North America,Mexico
+C1607,Retail_Customer_1607,Retail,Bronze,2022-01-08,2024-02-11,363.6,3,121.2,Corporate,Europe,France
+C1608,Enterprise_Customer_1608,Enterprise,Bronze,2023-09-14,2024-08-03,903.43,4,225.86,Online,North America,Canada
+C1609,Government_Customer_1609,Government,Bronze,2022-01-07,2023-09-03,2341.21,4,585.3,Online,North America,Mexico
+C1610,SMB_Customer_1610,SMB,Bronze,2022-11-29,2024-01-17,3193.7,4,798.42,Corporate,North America,USA
+C1611,SMB_Customer_1611,SMB,Bronze,2022-02-24,2023-04-20,2732.18,4,683.04,Online,Europe,Australia
+C1612,Retail_Customer_1612,Retail,Bronze,2022-11-21,2022-12-27,1257.93,2,628.96,Online,North America,Canada
+C1613,SMB_Customer_1613,SMB,Bronze,2022-03-13,2024-05-06,3199.97,5,639.99,Corporate,Asia Pacific,China
+C1614,SMB_Customer_1614,SMB,Bronze,2022-07-07,2023-11-13,4117.45,3,1372.48,Corporate,North America,Mexico
+C1615,Retail_Customer_1615,Retail,Bronze,2022-09-10,2023-01-29,956.27,2,478.14,Corporate,Europe,Italy
+C1616,SMB_Customer_1616,SMB,Bronze,2023-04-10,2023-04-10,243.42,1,243.42,Corporate,North America,USA
+C1617,SMB_Customer_1617,SMB,Bronze,2022-01-08,2024-12-22,2163.14,7,309.02,Online,Europe,Spain
+C1618,Enterprise_Customer_1618,Enterprise,Bronze,2022-08-01,2022-08-01,66.7,1,66.7,Retail Store,North America,Canada
+C1619,Retail_Customer_1619,Retail,Silver,2022-03-18,2024-05-25,5555.92,8,694.49,Online,Europe,USA
+C1620,Retail_Customer_1620,Retail,Bronze,2022-08-09,2024-04-27,784.98,2,392.49,Distributor,Europe,France
+C1621,Retail_Customer_1621,Retail,Bronze,2022-01-06,2022-07-22,774.93,2,387.46,Distributor,North America,USA
+C1622,SMB_Customer_1622,SMB,Bronze,2022-06-01,2024-06-13,1916.21,4,479.05,Distributor,North America,USA
+C1623,SMB_Customer_1623,SMB,Bronze,2022-02-15,2024-10-01,3233.56,7,461.94,Online,Europe,USA
+C1624,Retail_Customer_1624,Retail,Bronze,2022-06-04,2024-11-18,2243.34,6,373.89,Online,North America,USA
+C1625,Government_Customer_1625,Government,Bronze,2024-02-03,2024-07-19,1639.81,3,546.6,Online,Europe,France
+C1626,Enterprise_Customer_1626,Enterprise,Bronze,2022-04-20,2023-03-10,1906.23,2,953.12,Corporate,Europe,Spain
+C1627,Retail_Customer_1627,Retail,Bronze,2022-08-02,2024-09-11,3847.12,5,769.42,Online,North America,Singapore
+C1628,Government_Customer_1628,Government,Bronze,2022-01-11,2024-07-06,2611.37,8,326.42,Online,North America,Canada
+C1629,SMB_Customer_1629,SMB,Silver,2023-02-13,2024-10-02,5074.97,7,725.0,Online,Europe,UK
+C1630,SMB_Customer_1630,SMB,Bronze,2022-02-18,2024-11-06,4190.59,6,698.43,Distributor,North America,Canada
+C1631,SMB_Customer_1631,SMB,Bronze,2022-09-05,2024-06-21,4248.13,5,849.63,Online,Europe,USA
+C1632,Enterprise_Customer_1632,Enterprise,Bronze,2023-10-21,2024-03-04,514.62,3,171.54,Distributor,North America,Canada
+C1633,SMB_Customer_1633,SMB,Bronze,2022-01-06,2024-09-14,921.26,4,230.32,Online,Asia Pacific,Australia
+C1634,Retail_Customer_1634,Retail,Bronze,2023-08-06,2024-06-24,723.69,4,180.92,Corporate,North America,Canada
+C1635,Enterprise_Customer_1635,Enterprise,Bronze,2022-04-27,2023-12-13,4491.42,2,2245.71,Online,Europe,France
+C1636,Enterprise_Customer_1636,Enterprise,Bronze,2022-09-06,2024-08-04,918.93,5,183.79,Corporate,North America,Mexico
+C1637,Enterprise_Customer_1637,Enterprise,Bronze,2022-01-20,2022-08-23,770.62,3,256.87,Retail Store,North America,Canada
+C1638,Retail_Customer_1638,Retail,Bronze,2022-12-23,2024-02-18,462.92,3,154.31,Corporate,North America,Canada
+C1639,SMB_Customer_1639,SMB,Bronze,2023-03-15,2024-08-21,2230.92,5,446.18,Distributor,Europe,France
+C1640,Retail_Customer_1640,Retail,Bronze,2022-04-30,2024-12-28,2781.26,5,556.25,Online,Europe,UK
+C1641,SMB_Customer_1641,SMB,Bronze,2022-01-30,2024-11-26,622.59,3,207.53,Corporate,North America,Canada
+C1642,Retail_Customer_1642,Retail,Silver,2024-06-14,2024-08-30,5169.17,3,1723.06,Corporate,Asia Pacific,Australia
+C1643,SMB_Customer_1643,SMB,Bronze,2022-09-13,2024-10-26,1192.48,2,596.24,Online,Europe,Italy
+C1644,Retail_Customer_1644,Retail,Bronze,2022-08-21,2024-07-15,3994.97,4,998.74,Online,Asia Pacific,China
+C1645,Retail_Customer_1645,Retail,Bronze,2022-04-21,2023-05-30,1233.39,5,246.68,Online,Europe,France
+C1646,SMB_Customer_1646,SMB,Bronze,2022-01-07,2024-07-20,1641.56,3,547.19,Online,Europe,Canada
+C1647,Retail_Customer_1647,Retail,Silver,2022-01-12,2023-07-01,5185.88,4,1296.47,Online,Europe,Canada
+C1648,SMB_Customer_1648,SMB,Bronze,2022-09-06,2024-06-04,629.41,3,209.8,Online,North America,Canada
+C1649,Retail_Customer_1649,Retail,Bronze,2024-03-13,2024-10-15,419.43,2,209.72,Online,Asia Pacific,Singapore
+C1650,Retail_Customer_1650,Retail,Silver,2022-03-06,2024-01-12,12274.57,4,3068.64,Retail Store,Europe,Italy
+C1651,Retail_Customer_1651,Retail,Bronze,2022-03-22,2024-05-14,2383.63,5,476.73,Corporate,Europe,Spain
+C1652,Retail_Customer_1652,Retail,Bronze,2022-07-14,2024-06-15,883.32,3,294.44,Corporate,North America,Canada
+C1653,Enterprise_Customer_1653,Enterprise,Bronze,2023-12-04,2024-11-09,4923.76,2,2461.88,Distributor,Asia Pacific,China
+C1654,SMB_Customer_1654,SMB,Bronze,2022-02-17,2024-05-18,587.77,3,195.92,Online,Asia Pacific,Canada
+C1655,SMB_Customer_1655,SMB,Bronze,2023-01-12,2023-12-23,888.96,3,296.32,Distributor,Europe,Germany
+C1656,Retail_Customer_1656,Retail,Bronze,2022-03-16,2023-10-01,1585.84,4,396.46,Online,North America,USA
+C1657,Retail_Customer_1657,Retail,Bronze,2023-08-25,2023-08-25,563.34,1,563.34,Corporate,Europe,Spain
+C1658,Retail_Customer_1658,Retail,Bronze,2022-07-13,2024-11-22,1665.15,7,237.88,Online,North America,USA
+C1659,Retail_Customer_1659,Retail,Bronze,2023-03-12,2024-12-26,695.05,3,231.68,Online,Europe,Italy
+C1660,Government_Customer_1660,Government,Bronze,2022-10-19,2024-07-16,1483.13,3,494.38,Online,Asia Pacific,Canada
+C1661,Retail_Customer_1661,Retail,Bronze,2023-01-25,2024-11-09,1659.81,5,331.96,Retail Store,Europe,France
+C1662,Enterprise_Customer_1662,Enterprise,Bronze,2023-12-19,2024-03-20,891.65,3,297.22,Retail Store,Asia Pacific,Canada
+C1663,Retail_Customer_1663,Retail,Silver,2022-01-11,2024-09-25,11395.6,6,1899.27,Retail Store,Asia Pacific,Japan
+C1664,SMB_Customer_1664,SMB,Bronze,2023-07-07,2024-03-23,2020.85,4,505.21,Online,North America,Australia
+C1665,Retail_Customer_1665,Retail,Bronze,2023-04-08,2024-09-08,1376.32,4,344.08,Online,North America,Canada
+C1666,Retail_Customer_1666,Retail,Bronze,2024-10-09,2024-10-09,400.97,1,400.97,Online,North America,USA
+C1667,Retail_Customer_1667,Retail,Silver,2023-02-18,2024-11-17,7200.73,3,2400.24,Retail Store,Asia Pacific,Canada
+C1668,Retail_Customer_1668,Retail,Bronze,2022-06-09,2022-11-05,385.28,3,128.43,Retail Store,North America,Italy
+C1669,Retail_Customer_1669,Retail,Bronze,2022-08-09,2024-06-22,2066.28,2,1033.14,Corporate,Asia Pacific,Australia
+C1670,Retail_Customer_1670,Retail,Bronze,2022-01-22,2024-10-07,1392.11,3,464.04,Retail Store,Europe,Mexico
+C1671,SMB_Customer_1671,SMB,Bronze,2022-02-01,2024-10-11,3772.3,9,419.14,Online,North America,USA
+C1672,Enterprise_Customer_1672,Enterprise,Silver,2022-05-28,2024-05-13,7463.7,4,1865.93,Online,Asia Pacific,Australia
+C1673,SMB_Customer_1673,SMB,Silver,2023-05-22,2023-11-21,9786.68,3,3262.23,Online,North America,Canada
+C1674,Retail_Customer_1674,Retail,Bronze,2022-07-24,2023-12-21,2383.9,4,595.97,Online,Europe,Mexico
+C1675,Enterprise_Customer_1675,Enterprise,Bronze,2022-01-11,2024-09-18,1808.37,4,452.09,Online,Asia Pacific,Australia
+C1676,SMB_Customer_1676,SMB,Bronze,2022-05-12,2024-08-13,4156.54,4,1039.14,Online,Europe,France
+C1677,Retail_Customer_1677,Retail,Bronze,2022-03-26,2022-03-26,161.25,1,161.25,Distributor,Europe,France
+C1678,Retail_Customer_1678,Retail,Bronze,2022-01-18,2022-01-18,188.16,1,188.16,Online,Europe,Germany
+C1679,Government_Customer_1679,Government,Bronze,2022-04-13,2022-04-13,90.2,1,90.2,Distributor,North America,Canada
+C1680,Retail_Customer_1680,Retail,Bronze,2022-04-30,2023-07-09,3274.81,5,654.96,Online,Europe,China
+C1681,Enterprise_Customer_1681,Enterprise,Bronze,2022-07-06,2023-07-23,3097.69,3,1032.56,Online,North America,Canada
+C1682,Retail_Customer_1682,Retail,Bronze,2023-07-04,2024-06-13,763.47,2,381.74,Corporate,Europe,France
+C1683,SMB_Customer_1683,SMB,Bronze,2023-09-12,2023-09-12,271.16,1,271.16,Retail Store,Europe,Spain
+C1684,Enterprise_Customer_1684,Enterprise,Silver,2022-09-25,2024-03-15,8420.85,5,1684.17,Retail Store,North America,Mexico
+C1685,Enterprise_Customer_1685,Enterprise,Bronze,2022-09-06,2024-03-11,582.3,2,291.15,Online,Europe,Spain
+C1686,SMB_Customer_1686,SMB,Bronze,2022-09-01,2023-08-01,3914.65,4,978.66,Online,North America,Canada
+C1687,Enterprise_Customer_1687,Enterprise,Bronze,2023-01-25,2023-12-02,3220.69,4,805.17,Online,Asia Pacific,Australia
+C1688,Retail_Customer_1688,Retail,Bronze,2023-02-15,2023-09-07,806.88,3,268.96,Retail Store,North America,USA
+C1689,SMB_Customer_1689,SMB,Bronze,2022-03-11,2022-03-11,2435.24,1,2435.24,Distributor,Europe,Spain
+C1690,Retail_Customer_1690,Retail,Bronze,2022-04-14,2023-07-22,684.92,3,228.31,Online,Europe,Germany
+C1691,Retail_Customer_1691,Retail,Bronze,2022-02-11,2024-09-17,658.93,3,219.64,Distributor,North America,Canada
+C1692,Retail_Customer_1692,Retail,Bronze,2022-04-12,2024-12-10,4001.47,6,666.91,Retail Store,North America,Mexico
+C1693,Retail_Customer_1693,Retail,Bronze,2022-04-17,2024-11-17,3268.1,6,544.68,Retail Store,Europe,Italy
+C1694,Enterprise_Customer_1694,Enterprise,Bronze,2022-03-02,2024-11-26,3065.69,6,510.95,Online,Asia Pacific,China
+C1695,SMB_Customer_1695,SMB,Bronze,2022-02-19,2024-04-15,3680.6,3,1226.87,Online,Asia Pacific,Australia
+C1696,SMB_Customer_1696,SMB,Bronze,2022-01-23,2024-12-20,2632.16,10,263.22,Retail Store,Asia Pacific,Japan
+C1697,Retail_Customer_1697,Retail,Bronze,2022-03-17,2024-04-29,665.11,4,166.28,Retail Store,North America,Mexico
+C1698,Government_Customer_1698,Government,Bronze,2023-11-01,2024-11-26,1909.91,3,636.64,Retail Store,Asia Pacific,China
+C1699,Enterprise_Customer_1699,Enterprise,Bronze,2022-05-08,2022-05-08,164.64,1,164.64,Retail Store,North America,USA
+C1700,Retail_Customer_1700,Retail,Bronze,2022-05-25,2024-10-10,785.98,5,157.2,Corporate,Asia Pacific,Japan
+C1701,Retail_Customer_1701,Retail,Bronze,2022-02-07,2024-05-22,488.06,3,162.69,Online,Asia Pacific,Japan
+C1702,SMB_Customer_1702,SMB,Bronze,2024-01-24,2024-01-24,66.26,1,66.26,Online,North America,Canada
+C1703,Retail_Customer_1703,Retail,Bronze,2022-06-10,2024-02-29,1455.1,3,485.03,Online,North America,Australia
+C1704,Retail_Customer_1704,Retail,Bronze,2022-12-16,2024-03-31,1893.83,3,631.28,Online,Asia Pacific,Australia
+C1705,Retail_Customer_1705,Retail,Bronze,2022-06-10,2024-10-02,2040.15,5,408.03,Retail Store,North America,Canada
+C1706,SMB_Customer_1706,SMB,Bronze,2022-10-18,2024-04-30,3340.86,4,835.22,Retail Store,North America,USA
+C1707,SMB_Customer_1707,SMB,Bronze,2022-03-26,2024-07-17,1226.47,5,245.29,Online,Europe,Canada
+C1708,Retail_Customer_1708,Retail,Bronze,2022-02-23,2024-12-04,3893.49,5,778.7,Corporate,North America,USA
+C1709,Enterprise_Customer_1709,Enterprise,Bronze,2022-04-27,2024-09-28,4529.64,7,647.09,Retail Store,Europe,Spain
+C1710,Retail_Customer_1710,Retail,Silver,2022-02-01,2024-07-28,6002.8,4,1500.7,Online,North America,Australia
+C1711,Retail_Customer_1711,Retail,Bronze,2022-02-16,2023-10-20,1130.59,3,376.86,Retail Store,Asia Pacific,Australia
+C1712,SMB_Customer_1712,SMB,Bronze,2022-11-18,2023-03-23,1622.24,2,811.12,Online,North America,Canada
+C1713,SMB_Customer_1713,SMB,Silver,2022-04-10,2024-08-28,7237.05,5,1447.41,Online,Europe,Italy
+C1714,Retail_Customer_1714,Retail,Silver,2022-03-19,2024-09-23,7068.86,4,1767.22,Retail Store,North America,Canada
+C1715,Enterprise_Customer_1715,Enterprise,Bronze,2022-09-18,2024-03-04,2318.47,3,772.82,Online,Asia Pacific,Canada
+C1716,Enterprise_Customer_1716,Enterprise,Bronze,2022-01-31,2023-12-08,2089.4,5,417.88,Online,North America,USA
+C1717,SMB_Customer_1717,SMB,Bronze,2022-04-16,2024-12-10,3145.38,3,1048.46,Corporate,North America,Canada
+C1718,Enterprise_Customer_1718,Enterprise,Bronze,2022-06-30,2024-01-12,1081.31,4,270.33,Retail Store,North America,Australia
+C1719,Retail_Customer_1719,Retail,Bronze,2022-08-07,2024-08-30,4202.47,5,840.49,Online,Europe,Spain
+C1720,SMB_Customer_1720,SMB,Bronze,2024-10-09,2024-11-30,141.96,2,70.98,Online,Europe,Germany
+C1721,Government_Customer_1721,Government,Bronze,2022-03-05,2024-10-24,1445.78,6,240.96,Corporate,Europe,Germany
+C1722,SMB_Customer_1722,SMB,Bronze,2022-04-03,2022-04-03,120.03,1,120.03,Retail Store,North America,Canada
+C1723,Enterprise_Customer_1723,Enterprise,Bronze,2022-12-27,2024-02-16,864.64,5,172.93,Corporate,North America,Mexico
+C1724,SMB_Customer_1724,SMB,Bronze,2022-05-05,2024-11-26,2117.43,4,529.36,Online,North America,USA
+C1725,Retail_Customer_1725,Retail,Bronze,2022-06-10,2022-12-13,286.9,2,143.45,Online,North America,Canada
+C1726,Enterprise_Customer_1726,Enterprise,Bronze,2022-04-16,2024-11-07,1725.99,2,863.0,Corporate,Europe,Canada
+C1727,Enterprise_Customer_1727,Enterprise,Bronze,2022-01-19,2023-08-29,2912.27,5,582.45,Retail Store,Europe,Canada
+C1728,SMB_Customer_1728,SMB,Bronze,2022-05-20,2024-10-10,1987.96,4,496.99,Online,Europe,Germany
+C1729,Retail_Customer_1729,Retail,Bronze,2022-03-14,2023-10-12,1576.46,3,525.49,Distributor,Asia Pacific,France
+C1730,SMB_Customer_1730,SMB,Bronze,2022-03-22,2024-07-17,1798.66,5,359.73,Online,North America,Mexico
+C1731,Retail_Customer_1731,Retail,Silver,2023-10-26,2023-12-16,7874.64,2,3937.32,Online,Europe,Germany
+C1732,Retail_Customer_1732,Retail,Bronze,2022-02-17,2024-12-13,3512.39,5,702.48,Online,Europe,France
+C1733,SMB_Customer_1733,SMB,Bronze,2022-06-29,2024-09-28,4559.17,4,1139.79,Online,North America,Canada
+C1734,Retail_Customer_1734,Retail,Silver,2022-05-30,2024-02-12,5014.29,3,1671.43,Corporate,Europe,Canada
+C1735,SMB_Customer_1735,SMB,Bronze,2022-09-22,2024-12-07,3185.74,3,1061.91,Corporate,Asia Pacific,Mexico
+C1736,Retail_Customer_1736,Retail,Silver,2022-05-10,2024-08-16,5089.94,5,1017.99,Online,Europe,Italy
+C1737,SMB_Customer_1737,SMB,Bronze,2024-09-20,2024-11-06,1847.52,2,923.76,Corporate,Europe,Canada
+C1738,SMB_Customer_1738,SMB,Bronze,2024-02-13,2024-04-05,1260.25,2,630.12,Retail Store,Europe,Canada
+C1739,Retail_Customer_1739,Retail,Bronze,2022-02-17,2024-07-13,3110.08,4,777.52,Online,North America,Canada
+C1740,Government_Customer_1740,Government,Bronze,2022-01-14,2024-08-04,4649.71,7,664.24,Retail Store,Asia Pacific,Mexico
+C1741,Enterprise_Customer_1741,Enterprise,Bronze,2022-02-14,2024-01-23,3436.84,3,1145.61,Corporate,North America,China
+C1742,Enterprise_Customer_1742,Enterprise,Bronze,2022-04-10,2024-08-27,2925.03,5,585.01,Online,Europe,USA
+C1743,Enterprise_Customer_1743,Enterprise,Bronze,2022-01-18,2024-04-02,612.56,3,204.19,Distributor,North America,Mexico
+C1744,SMB_Customer_1744,SMB,Bronze,2022-06-08,2024-12-13,4360.36,3,1453.45,Corporate,North America,Germany
+C1745,Retail_Customer_1745,Retail,Silver,2022-12-30,2024-10-21,5461.9,5,1092.38,Online,Europe,France
+C1746,Enterprise_Customer_1746,Enterprise,Bronze,2022-07-23,2024-09-14,2317.94,3,772.65,Retail Store,North America,Canada
+C1747,Retail_Customer_1747,Retail,Silver,2022-03-06,2024-09-03,5170.14,5,1034.03,Retail Store,North America,Mexico
+C1748,Retail_Customer_1748,Retail,Bronze,2022-10-23,2024-01-23,701.01,3,233.67,Corporate,Europe,France
+C1749,Enterprise_Customer_1749,Enterprise,Bronze,2024-08-27,2024-08-27,2066.05,1,2066.05,Distributor,North America,USA
+C1750,Retail_Customer_1750,Retail,Silver,2022-11-10,2024-08-31,7383.25,4,1845.81,Corporate,North America,Canada
+C1751,Retail_Customer_1751,Retail,Bronze,2022-06-05,2024-09-23,408.79,3,136.26,Retail Store,Asia Pacific,Australia
+C1752,Retail_Customer_1752,Retail,Bronze,2023-11-18,2024-09-30,988.3,2,494.15,Online,Asia Pacific,Australia
+C1753,Enterprise_Customer_1753,Enterprise,Bronze,2024-01-10,2024-04-20,513.03,2,256.52,Distributor,Europe,UK
+C1754,Enterprise_Customer_1754,Enterprise,Silver,2023-04-18,2024-07-19,5419.21,4,1354.8,Online,North America,Australia
+C1755,Enterprise_Customer_1755,Enterprise,Bronze,2023-11-26,2024-04-16,643.34,3,214.45,Corporate,North America,Mexico
+C1756,Retail_Customer_1756,Retail,Silver,2022-05-05,2024-06-27,5631.28,5,1126.26,Distributor,Europe,France
+C1757,Enterprise_Customer_1757,Enterprise,Bronze,2024-10-23,2024-11-23,829.41,2,414.7,Online,Europe,Mexico
+C1758,Enterprise_Customer_1758,Enterprise,Bronze,2022-12-20,2022-12-20,935.64,1,935.64,Online,North America,Canada
+C1759,Retail_Customer_1759,Retail,Bronze,2022-08-23,2023-03-31,1229.9,4,307.47,Corporate,North America,USA
+C1760,SMB_Customer_1760,SMB,Silver,2022-06-16,2024-09-06,5353.97,6,892.33,Online,Asia Pacific,Australia
+C1761,SMB_Customer_1761,SMB,Silver,2022-07-17,2024-11-29,6149.82,7,878.55,Online,Europe,Canada
+C1762,Retail_Customer_1762,Retail,Bronze,2022-05-06,2024-10-21,1830.9,3,610.3,Online,North America,Japan
+C1763,Retail_Customer_1763,Retail,Bronze,2023-01-17,2024-09-23,807.34,4,201.83,Retail Store,North America,Canada
+C1764,SMB_Customer_1764,SMB,Silver,2022-08-03,2024-12-14,7751.86,8,968.98,Online,Europe,Mexico
+C1765,Government_Customer_1765,Government,Bronze,2023-11-26,2024-06-09,2421.92,3,807.31,Online,Europe,Italy
+C1766,SMB_Customer_1766,SMB,Bronze,2023-03-09,2024-11-04,1650.12,4,412.53,Online,North America,Mexico
+C1767,Enterprise_Customer_1767,Enterprise,Bronze,2022-06-29,2023-09-16,1095.62,5,219.12,Online,North America,USA
+C1768,Enterprise_Customer_1768,Enterprise,Bronze,2022-02-21,2023-12-16,1968.8,9,218.76,Online,Europe,France
+C1769,Enterprise_Customer_1769,Enterprise,Bronze,2022-07-26,2024-03-29,2060.16,3,686.72,Retail Store,Europe,France
+C1770,SMB_Customer_1770,SMB,Bronze,2022-03-06,2024-08-19,2054.13,5,410.83,Retail Store,Europe,Mexico
+C1771,Retail_Customer_1771,Retail,Bronze,2022-08-26,2024-09-11,2610.02,3,870.01,Online,North America,Canada
+C1772,Enterprise_Customer_1772,Enterprise,Bronze,2022-03-08,2024-08-22,1694.4,7,242.06,Online,Europe,Italy
+C1773,Enterprise_Customer_1773,Enterprise,Bronze,2023-02-06,2024-08-27,4699.82,5,939.96,Retail Store,Europe,Germany
+C1774,Enterprise_Customer_1774,Enterprise,Bronze,2023-04-12,2024-12-28,537.04,4,134.26,Online,North America,Canada
+C1775,Enterprise_Customer_1775,Enterprise,Bronze,2022-03-14,2023-06-08,574.0,3,191.33,Retail Store,North America,France
+C1776,Retail_Customer_1776,Retail,Bronze,2022-01-21,2023-07-17,2971.07,4,742.77,Retail Store,North America,Canada
+C1777,Retail_Customer_1777,Retail,Bronze,2022-06-11,2022-12-08,2797.3,2,1398.65,Distributor,North America,Mexico
+C1778,Retail_Customer_1778,Retail,Bronze,2022-06-12,2024-07-25,4402.6,3,1467.53,Retail Store,North America,Canada
+C1779,Retail_Customer_1779,Retail,Bronze,2022-07-16,2023-08-30,459.02,3,153.01,Retail Store,North America,Canada
+C1780,Retail_Customer_1780,Retail,Bronze,2022-02-08,2024-08-10,783.93,2,391.96,Distributor,Europe,Germany
+C1781,Retail_Customer_1781,Retail,Bronze,2023-01-17,2024-10-23,1141.51,4,285.38,Online,Europe,Canada
+C1782,Retail_Customer_1782,Retail,Bronze,2023-12-01,2024-12-26,1943.25,3,647.75,Online,Europe,Germany
+C1783,Government_Customer_1783,Government,Silver,2022-09-05,2023-07-13,7110.75,3,2370.25,Retail Store,Europe,Canada
+C1784,Retail_Customer_1784,Retail,Bronze,2024-02-08,2024-12-28,648.72,3,216.24,Online,Asia Pacific,Australia
+C1785,Enterprise_Customer_1785,Enterprise,Silver,2022-05-21,2023-11-03,9299.41,4,2324.85,Corporate,North America,Canada
+C1786,Enterprise_Customer_1786,Enterprise,Silver,2022-01-14,2024-08-15,7891.16,4,1972.79,Retail Store,Europe,USA
+C1787,Enterprise_Customer_1787,Enterprise,Bronze,2024-02-21,2024-04-17,693.21,2,346.6,Online,Asia Pacific,Canada
+C1788,Enterprise_Customer_1788,Enterprise,Bronze,2022-03-05,2024-08-22,539.02,3,179.67,Online,Europe,Germany
+C1789,Retail_Customer_1789,Retail,Bronze,2022-08-16,2023-05-26,975.25,2,487.62,Online,Asia Pacific,France
+C1790,Retail_Customer_1790,Retail,Bronze,2022-08-26,2024-11-05,299.34,3,99.78,Retail Store,Asia Pacific,Japan
+C1791,SMB_Customer_1791,SMB,Bronze,2022-08-23,2024-01-15,1245.86,3,415.29,Online,North America,Italy
+C1792,Retail_Customer_1792,Retail,Bronze,2022-12-13,2023-05-04,1503.18,3,501.06,Retail Store,North America,France
+C1793,Retail_Customer_1793,Retail,Bronze,2023-06-13,2024-08-04,406.43,3,135.48,Online,Europe,Canada
+C1794,Retail_Customer_1794,Retail,Bronze,2022-08-28,2024-01-24,962.57,3,320.86,Online,North America,Canada
+C1795,SMB_Customer_1795,SMB,Bronze,2022-01-24,2024-01-15,1003.46,3,334.49,Distributor,Europe,Australia
+C1796,Retail_Customer_1796,Retail,Silver,2022-05-27,2024-10-16,5219.37,6,869.9,Online,North America,Canada
+C1797,Retail_Customer_1797,Retail,Bronze,2023-04-13,2023-04-13,1098.12,1,1098.12,Online,Europe,France
+C1798,Retail_Customer_1798,Retail,Bronze,2022-06-12,2024-09-21,1354.0,6,225.67,Corporate,North America,Mexico
+C1799,SMB_Customer_1799,SMB,Bronze,2022-05-05,2024-06-26,810.3,3,270.1,Online,North America,USA
+C1800,Retail_Customer_1800,Retail,Bronze,2024-02-01,2024-12-09,2850.16,3,950.05,Corporate,North America,China
+C1801,SMB_Customer_1801,SMB,Bronze,2023-07-09,2024-02-06,351.69,2,175.84,Distributor,Europe,Germany
+C1802,SMB_Customer_1802,SMB,Bronze,2022-11-11,2023-05-25,2925.34,4,731.34,Retail Store,North America,USA
+C1803,Retail_Customer_1803,Retail,Bronze,2023-01-10,2024-11-16,975.29,3,325.1,Online,North America,Canada
+C1804,Enterprise_Customer_1804,Enterprise,Bronze,2022-05-20,2023-03-07,362.6,2,181.3,Corporate,Europe,Germany
+C1805,Enterprise_Customer_1805,Enterprise,Bronze,2022-10-24,2024-05-23,2227.83,3,742.61,Online,North America,Mexico
+C1806,SMB_Customer_1806,SMB,Silver,2022-04-24,2022-12-05,5759.66,3,1919.89,Online,Asia Pacific,Singapore
+C1807,SMB_Customer_1807,SMB,Bronze,2022-02-01,2023-05-13,111.52,2,55.76,Corporate,North America,Mexico
+C1808,Retail_Customer_1808,Retail,Bronze,2022-07-10,2024-03-09,922.37,3,307.46,Online,Europe,France
+C1809,Retail_Customer_1809,Retail,Bronze,2022-06-24,2024-10-03,2319.21,7,331.32,Online,Asia Pacific,Mexico
+C1810,Retail_Customer_1810,Retail,Bronze,2022-05-22,2023-08-20,2233.12,4,558.28,Online,Europe,Germany
+C1811,Government_Customer_1811,Government,Bronze,2022-02-17,2024-10-16,2095.69,4,523.92,Corporate,Asia Pacific,Australia
+C1812,Retail_Customer_1812,Retail,Bronze,2022-09-23,2024-02-04,294.33,2,147.16,Online,North America,Canada
+C1813,Retail_Customer_1813,Retail,Bronze,2022-04-10,2024-02-02,1388.12,3,462.71,Distributor,Asia Pacific,Italy
+C1814,Retail_Customer_1814,Retail,Silver,2022-08-26,2023-11-07,6499.92,4,1624.98,Corporate,Europe,UK
+C1815,Enterprise_Customer_1815,Enterprise,Bronze,2023-08-08,2024-07-26,1072.49,6,178.75,Corporate,Europe,France
+C1816,Government_Customer_1816,Government,Bronze,2022-09-11,2024-04-29,2501.09,4,625.27,Online,North America,USA
+C1817,Retail_Customer_1817,Retail,Bronze,2023-02-09,2023-12-29,1123.6,3,374.53,Online,North America,Canada
+C1818,Enterprise_Customer_1818,Enterprise,Bronze,2022-06-22,2024-07-20,2680.93,3,893.64,Online,Asia Pacific,Canada
+C1819,Retail_Customer_1819,Retail,Bronze,2022-05-02,2024-07-24,3568.52,3,1189.51,Online,Asia Pacific,Canada
+C1820,SMB_Customer_1820,SMB,Silver,2022-05-26,2023-09-08,6400.07,2,3200.04,Corporate,Asia Pacific,China
+C1821,Enterprise_Customer_1821,Enterprise,Bronze,2023-02-21,2024-12-23,2572.24,4,643.06,Online,Asia Pacific,Singapore
+C1822,Retail_Customer_1822,Retail,Bronze,2023-01-07,2023-07-20,224.86,2,112.43,Corporate,Europe,Spain
+C1823,SMB_Customer_1823,SMB,Silver,2022-11-20,2022-11-20,6827.7,1,6827.7,Online,North America,Canada
+C1824,Government_Customer_1824,Government,Bronze,2022-10-03,2024-09-17,503.21,2,251.6,Corporate,Asia Pacific,Japan
+C1825,SMB_Customer_1825,SMB,Bronze,2022-07-14,2024-01-29,1352.93,4,338.23,Distributor,Europe,Canada
+C1826,SMB_Customer_1826,SMB,Silver,2022-07-31,2024-08-04,6885.01,5,1377.0,Online,Asia Pacific,France
+C1827,Retail_Customer_1827,Retail,Bronze,2022-10-31,2024-09-11,1640.92,4,410.23,Retail Store,North America,Canada
+C1828,Retail_Customer_1828,Retail,Bronze,2022-07-20,2023-06-23,431.76,2,215.88,Online,Europe,Italy
+C1829,Retail_Customer_1829,Retail,Bronze,2022-03-25,2022-07-13,1025.81,3,341.94,Online,North America,USA
+C1830,Retail_Customer_1830,Retail,Bronze,2023-04-16,2024-10-30,810.44,3,270.15,Corporate,North America,Canada
+C1831,SMB_Customer_1831,SMB,Bronze,2022-12-06,2023-12-03,1242.36,3,414.12,Online,Asia Pacific,China
+C1832,Retail_Customer_1832,Retail,Bronze,2024-03-31,2024-03-31,142.52,1,142.52,Online,North America,Mexico
+C1833,SMB_Customer_1833,SMB,Bronze,2022-03-31,2023-09-08,3970.46,6,661.74,Online,North America,USA
+C1834,Retail_Customer_1834,Retail,Bronze,2023-06-13,2024-12-22,1665.62,4,416.4,Online,Asia Pacific,China
+C1835,Enterprise_Customer_1835,Enterprise,Bronze,2022-03-20,2024-01-11,1850.14,4,462.54,Online,Europe,Germany
+C1836,Retail_Customer_1836,Retail,Silver,2022-02-01,2024-09-24,6123.83,4,1530.96,Online,Europe,Germany
+C1837,Retail_Customer_1837,Retail,Silver,2023-09-05,2024-11-15,6864.39,5,1372.88,Online,North America,Canada
+C1838,Retail_Customer_1838,Retail,Bronze,2022-02-20,2024-06-02,2687.27,5,537.45,Online,North America,Canada
+C1839,Retail_Customer_1839,Retail,Bronze,2022-01-01,2022-06-13,1805.81,3,601.94,Distributor,North America,Canada
+C1840,SMB_Customer_1840,SMB,Bronze,2024-06-03,2024-06-03,308.56,1,308.56,Distributor,Europe,UK
+C1841,Retail_Customer_1841,Retail,Bronze,2022-04-08,2023-09-12,523.79,2,261.9,Online,North America,Mexico
+C1842,SMB_Customer_1842,SMB,Bronze,2024-03-15,2024-04-01,549.25,2,274.62,Retail Store,Europe,Germany
+C1843,Enterprise_Customer_1843,Enterprise,Bronze,2022-07-31,2023-09-22,1582.6,4,395.65,Corporate,North America,Canada
+C1844,SMB_Customer_1844,SMB,Bronze,2022-09-19,2024-02-09,3533.13,5,706.63,Online,Asia Pacific,China
+C1845,Retail_Customer_1845,Retail,Bronze,2022-06-18,2024-01-04,665.31,3,221.77,Online,North America,Japan
+C1846,Retail_Customer_1846,Retail,Bronze,2023-03-25,2024-05-11,1200.46,3,400.15,Corporate,North America,Mexico
+C1847,Retail_Customer_1847,Retail,Bronze,2022-03-31,2023-10-15,2217.36,5,443.47,Online,Asia Pacific,China
+C1848,Government_Customer_1848,Government,Bronze,2022-06-07,2024-09-13,4612.66,3,1537.55,Online,Asia Pacific,Australia
+C1849,Government_Customer_1849,Government,Silver,2023-04-03,2024-07-06,5872.39,6,978.73,Online,North America,Canada
+C1850,Retail_Customer_1850,Retail,Bronze,2022-02-15,2024-08-18,560.06,3,186.69,Online,North America,USA
+C1851,Enterprise_Customer_1851,Enterprise,Silver,2022-04-13,2023-09-16,6102.4,5,1220.48,Retail Store,Europe,Italy
+C1852,Enterprise_Customer_1852,Enterprise,Bronze,2022-01-20,2023-06-21,2545.57,3,848.52,Online,North America,Canada
+C1853,Retail_Customer_1853,Retail,Bronze,2022-12-20,2024-04-14,1039.25,3,346.42,Online,North America,Canada
+C1854,Enterprise_Customer_1854,Enterprise,Silver,2022-06-08,2023-12-12,8749.72,5,1749.94,Corporate,Europe,Italy
+C1855,Enterprise_Customer_1855,Enterprise,Silver,2022-06-19,2024-02-07,6817.6,4,1704.4,Online,Asia Pacific,Australia
+C1856,SMB_Customer_1856,SMB,Bronze,2022-11-13,2024-08-03,410.43,3,136.81,Corporate,Europe,Germany
+C1857,Retail_Customer_1857,Retail,Bronze,2022-07-24,2024-07-10,2568.25,2,1284.12,Distributor,Europe,Mexico
+C1858,Retail_Customer_1858,Retail,Bronze,2022-11-18,2024-09-16,1588.42,6,264.74,Online,Asia Pacific,Canada
+C1859,Retail_Customer_1859,Retail,Bronze,2022-01-07,2024-12-04,4260.01,4,1065.0,Online,North America,Mexico
+C1860,Government_Customer_1860,Government,Bronze,2022-03-18,2024-10-07,4377.52,7,625.36,Retail Store,North America,USA
+C1861,SMB_Customer_1861,SMB,Silver,2022-12-08,2023-10-05,5058.54,2,2529.27,Corporate,Europe,France
+C1862,SMB_Customer_1862,SMB,Bronze,2022-01-23,2024-11-09,1427.52,4,356.88,Corporate,Europe,Canada
+C1863,Government_Customer_1863,Government,Silver,2022-02-14,2024-08-09,9455.88,7,1350.84,Retail Store,Europe,Germany
+C1864,SMB_Customer_1864,SMB,Bronze,2023-04-13,2023-04-13,512.73,1,512.73,Retail Store,North America,Canada
+C1865,Enterprise_Customer_1865,Enterprise,Bronze,2023-01-13,2024-09-26,483.63,2,241.82,Corporate,North America,Mexico
+C1866,Retail_Customer_1866,Retail,Bronze,2022-08-23,2024-09-02,832.08,2,416.04,Distributor,Europe,Canada
+C1867,Retail_Customer_1867,Retail,Bronze,2022-06-27,2022-06-27,566.72,1,566.72,Retail Store,Europe,Italy
+C1868,Enterprise_Customer_1868,Enterprise,Silver,2022-05-09,2024-03-05,6681.0,5,1336.2,Online,Asia Pacific,Italy
+C1869,SMB_Customer_1869,SMB,Bronze,2022-04-26,2023-09-16,3702.22,4,925.56,Retail Store,Europe,UK
+C1870,Enterprise_Customer_1870,Enterprise,Bronze,2022-02-21,2023-11-09,1135.95,4,283.99,Online,North America,Canada
+C1871,SMB_Customer_1871,SMB,Bronze,2022-04-30,2024-09-13,574.83,2,287.42,Online,Asia Pacific,Canada
+C1872,Retail_Customer_1872,Retail,Silver,2022-12-22,2024-09-02,8053.76,3,2684.59,Distributor,North America,China
+C1873,Retail_Customer_1873,Retail,Bronze,2022-10-23,2024-12-22,3373.52,8,421.69,Online,North America,Canada
+C1874,Retail_Customer_1874,Retail,Bronze,2022-03-29,2024-10-28,1533.15,5,306.63,Corporate,North America,Canada
+C1875,SMB_Customer_1875,SMB,Silver,2022-01-14,2024-02-07,9847.73,5,1969.55,Corporate,North America,USA
+C1876,SMB_Customer_1876,SMB,Bronze,2022-01-21,2024-12-13,3650.03,7,521.43,Online,North America,Mexico
+C1877,Retail_Customer_1877,Retail,Bronze,2022-11-25,2024-11-21,1728.19,4,432.05,Online,North America,USA
+C1878,SMB_Customer_1878,SMB,Bronze,2022-06-22,2024-11-23,4358.86,4,1089.72,Retail Store,North America,Canada
+C1879,SMB_Customer_1879,SMB,Bronze,2022-06-14,2024-12-28,3027.71,3,1009.24,Retail Store,North America,USA
+C1880,Enterprise_Customer_1880,Enterprise,Silver,2022-01-29,2024-09-07,8809.07,10,880.91,Online,North America,Mexico
+C1881,SMB_Customer_1881,SMB,Bronze,2022-04-03,2023-05-26,4410.76,3,1470.25,Corporate,Europe,Germany
+C1882,SMB_Customer_1882,SMB,Bronze,2023-01-09,2024-04-10,4877.76,4,1219.44,Retail Store,Asia Pacific,Australia
+C1883,Enterprise_Customer_1883,Enterprise,Bronze,2022-02-25,2023-02-27,783.44,3,261.15,Online,Asia Pacific,Australia
+C1884,Retail_Customer_1884,Retail,Bronze,2022-05-25,2024-12-14,1974.73,4,493.68,Retail Store,Asia Pacific,USA
+C1885,Enterprise_Customer_1885,Enterprise,Bronze,2022-06-14,2023-10-15,1761.03,3,587.01,Corporate,North America,USA
+C1886,Retail_Customer_1886,Retail,Bronze,2024-03-06,2024-03-06,154.6,1,154.6,Corporate,North America,Mexico
+C1887,Enterprise_Customer_1887,Enterprise,Bronze,2023-06-13,2023-10-23,1133.2,3,377.73,Retail Store,North America,Canada
+C1888,Retail_Customer_1888,Retail,Bronze,2022-03-27,2023-04-13,4653.34,4,1163.34,Online,North America,Canada
+C1889,SMB_Customer_1889,SMB,Silver,2022-03-31,2023-12-05,6940.62,7,991.52,Online,North America,Canada
+C1890,Enterprise_Customer_1890,Enterprise,Bronze,2022-04-07,2024-10-11,2500.74,4,625.18,Corporate,North America,Canada
+C1891,Retail_Customer_1891,Retail,Bronze,2022-03-19,2024-07-15,1260.64,4,315.16,Online,North America,Canada
+C1892,Enterprise_Customer_1892,Enterprise,Bronze,2022-03-18,2024-07-01,1613.41,4,403.35,Online,Europe,Canada
+C1893,Retail_Customer_1893,Retail,Bronze,2022-07-14,2024-08-16,2889.39,5,577.88,Online,Europe,Spain
+C1894,SMB_Customer_1894,SMB,Bronze,2023-08-10,2024-09-28,3375.27,3,1125.09,Corporate,Europe,France
+C1895,Retail_Customer_1895,Retail,Bronze,2022-09-12,2024-10-07,2202.02,5,440.4,Corporate,Asia Pacific,Australia
+C1896,SMB_Customer_1896,SMB,Bronze,2022-01-22,2023-01-12,1253.11,2,626.56,Online,Europe,UK
+C1897,Retail_Customer_1897,Retail,Bronze,2022-05-03,2023-01-23,1141.26,2,570.63,Retail Store,Asia Pacific,China
+C1898,Retail_Customer_1898,Retail,Bronze,2023-10-30,2024-10-09,3871.09,2,1935.54,Online,Asia Pacific,China
+C1899,Retail_Customer_1899,Retail,Bronze,2023-05-20,2024-10-20,415.98,2,207.99,Corporate,Europe,Canada
+C1900,Retail_Customer_1900,Retail,Silver,2023-01-29,2024-04-20,7327.56,4,1831.89,Retail Store,North America,USA
+C1901,SMB_Customer_1901,SMB,Bronze,2022-12-17,2024-11-12,1208.27,4,302.07,Online,North America,China
+C1902,Retail_Customer_1902,Retail,Bronze,2022-09-07,2024-10-04,3778.44,4,944.61,Online,Europe,Canada
+C1903,Retail_Customer_1903,Retail,Bronze,2023-02-14,2023-02-14,493.98,1,493.98,Corporate,Asia Pacific,Australia
+C1904,Enterprise_Customer_1904,Enterprise,Bronze,2022-04-16,2024-02-10,1020.74,2,510.37,Online,Asia Pacific,China
+C1905,Enterprise_Customer_1905,Enterprise,Bronze,2022-09-13,2024-07-17,2962.38,6,493.73,Online,Asia Pacific,Australia
+C1906,Retail_Customer_1906,Retail,Bronze,2023-07-29,2024-03-04,4122.36,4,1030.59,Distributor,Europe,Australia
+C1907,Retail_Customer_1907,Retail,Bronze,2024-01-08,2024-01-08,1736.7,1,1736.7,Retail Store,Asia Pacific,Singapore
+C1908,Retail_Customer_1908,Retail,Silver,2022-04-30,2024-03-21,5984.8,5,1196.96,Distributor,Europe,Germany
+C1909,Retail_Customer_1909,Retail,Silver,2022-11-08,2024-10-22,6643.33,6,1107.22,Online,North America,Canada
+C1910,Retail_Customer_1910,Retail,Bronze,2022-05-20,2023-06-04,2770.57,4,692.64,Online,North America,Mexico
+C1911,Retail_Customer_1911,Retail,Bronze,2022-10-13,2024-11-12,1369.29,4,342.32,Retail Store,Europe,France
+C1912,SMB_Customer_1912,SMB,Bronze,2022-07-10,2024-11-14,525.86,2,262.93,Distributor,Europe,France
+C1913,Retail_Customer_1913,Retail,Bronze,2022-10-28,2024-06-22,4278.64,4,1069.66,Online,North America,Canada
+C1914,SMB_Customer_1914,SMB,Bronze,2023-11-02,2023-11-02,334.14,1,334.14,Retail Store,North America,Canada
+C1915,SMB_Customer_1915,SMB,Bronze,2024-06-30,2024-08-28,1158.72,2,579.36,Corporate,North America,Mexico
+C1916,SMB_Customer_1916,SMB,Silver,2024-02-03,2024-12-10,5470.57,5,1094.11,Corporate,North America,Canada
+C1917,Enterprise_Customer_1917,Enterprise,Bronze,2022-07-07,2023-07-14,4633.86,3,1544.62,Online,Asia Pacific,Japan
+C1918,SMB_Customer_1918,SMB,Bronze,2022-12-10,2024-08-11,513.4,3,171.13,Distributor,Asia Pacific,China
+C1919,SMB_Customer_1919,SMB,Bronze,2022-10-22,2024-06-10,150.95,2,75.47,Online,Europe,Italy
+C1920,Government_Customer_1920,Government,Bronze,2024-02-04,2024-02-04,62.53,1,62.53,Online,Europe,France
+C1921,Enterprise_Customer_1921,Enterprise,Bronze,2023-04-07,2024-03-20,545.59,4,136.4,Retail Store,North America,Canada
+C1922,Retail_Customer_1922,Retail,Bronze,2023-08-25,2024-02-29,788.56,3,262.85,Online,Asia Pacific,Germany
+C1923,Retail_Customer_1923,Retail,Bronze,2023-04-10,2024-02-22,884.75,3,294.92,Corporate,Asia Pacific,China
+C1924,Retail_Customer_1924,Retail,Bronze,2023-03-29,2024-03-15,3406.29,2,1703.14,Online,Asia Pacific,Canada
+C1925,Enterprise_Customer_1925,Enterprise,Bronze,2023-08-20,2023-09-13,2959.62,2,1479.81,Online,Asia Pacific,Italy
+C1926,Retail_Customer_1926,Retail,Silver,2022-09-01,2024-05-02,5425.84,2,2712.92,Distributor,Europe,Canada
+C1927,Government_Customer_1927,Government,Bronze,2022-02-15,2023-12-20,2737.95,6,456.32,Distributor,Europe,USA
+C1928,Retail_Customer_1928,Retail,Bronze,2022-06-27,2022-06-27,2760.54,1,2760.54,Retail Store,Europe,Spain
+C1929,Enterprise_Customer_1929,Enterprise,Bronze,2023-10-18,2024-04-20,518.14,2,259.07,Corporate,Europe,France
+C1930,Retail_Customer_1930,Retail,Bronze,2022-05-28,2024-03-05,1432.74,2,716.37,Corporate,Asia Pacific,France
+C1931,SMB_Customer_1931,SMB,Bronze,2022-06-12,2024-09-22,1880.94,4,470.24,Online,Asia Pacific,Canada
+C1932,Enterprise_Customer_1932,Enterprise,Bronze,2024-01-10,2024-12-17,1062.46,5,212.49,Retail Store,Europe,Canada
+C1933,Retail_Customer_1933,Retail,Silver,2022-01-31,2024-05-07,7206.32,5,1441.26,Online,North America,Canada
+C1934,Retail_Customer_1934,Retail,Bronze,2022-08-12,2024-05-20,3564.14,5,712.83,Corporate,Asia Pacific,Australia
+C1935,SMB_Customer_1935,SMB,Bronze,2022-01-23,2024-10-07,589.95,2,294.98,Online,Asia Pacific,China
+C1936,Retail_Customer_1936,Retail,Bronze,2022-04-04,2024-03-02,2935.39,5,587.08,Retail Store,North America,Canada
+C1937,Retail_Customer_1937,Retail,Bronze,2022-08-16,2024-09-05,1491.29,2,745.64,Corporate,Asia Pacific,China
+C1938,Retail_Customer_1938,Retail,Bronze,2022-05-03,2023-01-03,4044.78,2,2022.39,Corporate,Asia Pacific,Australia
+C1939,SMB_Customer_1939,SMB,Bronze,2023-02-02,2023-05-10,411.92,2,205.96,Online,Europe,France
+C1940,Retail_Customer_1940,Retail,Bronze,2022-03-23,2024-12-20,749.67,3,249.89,Distributor,North America,Canada
+C1941,Retail_Customer_1941,Retail,Bronze,2022-10-09,2023-04-12,122.78,2,61.39,Online,Europe,UK
+C1942,Enterprise_Customer_1942,Enterprise,Bronze,2023-04-05,2024-01-09,1710.64,3,570.21,Online,Asia Pacific,Australia
+C1943,Enterprise_Customer_1943,Enterprise,Bronze,2022-07-06,2023-08-28,319.91,2,159.96,Online,North America,Mexico
+C1944,Retail_Customer_1944,Retail,Bronze,2023-08-20,2024-04-23,279.24,2,139.62,Online,Europe,Germany
+C1945,Retail_Customer_1945,Retail,Bronze,2022-12-26,2024-06-08,763.33,4,190.83,Retail Store,North America,Canada
+C1946,Retail_Customer_1946,Retail,Bronze,2023-02-12,2024-05-26,2474.95,2,1237.47,Corporate,North America,Canada
+C1947,SMB_Customer_1947,SMB,Silver,2022-05-03,2024-01-16,6271.23,3,2090.41,Retail Store,North America,Mexico
+C1948,Retail_Customer_1948,Retail,Silver,2022-09-15,2024-11-27,6348.09,7,906.87,Online,Asia Pacific,Japan
+C1949,Retail_Customer_1949,Retail,Silver,2022-11-24,2024-10-18,9678.34,5,1935.67,Online,Europe,Canada
+C1950,SMB_Customer_1950,SMB,Bronze,2022-06-17,2023-12-30,2022.32,4,505.58,Online,North America,Canada
+C1951,Retail_Customer_1951,Retail,Bronze,2022-09-29,2024-07-23,2285.99,4,571.5,Online,North America,Australia
+C1952,Retail_Customer_1952,Retail,Bronze,2023-03-31,2024-09-09,1336.84,5,267.37,Online,North America,USA
+C1953,SMB_Customer_1953,SMB,Silver,2024-01-17,2024-10-17,8562.78,3,2854.26,Corporate,North America,Canada
+C1954,Enterprise_Customer_1954,Enterprise,Bronze,2022-07-27,2024-11-25,1179.57,4,294.89,Corporate,North America,Canada
+C1955,Government_Customer_1955,Government,Bronze,2023-11-18,2024-04-18,3981.01,3,1327.0,Corporate,North America,Canada
+C1956,Enterprise_Customer_1956,Enterprise,Bronze,2022-12-27,2023-11-27,920.01,4,230.0,Corporate,North America,Canada
+C1957,Retail_Customer_1957,Retail,Bronze,2022-01-01,2023-12-12,2231.06,5,446.21,Retail Store,North America,USA
+C1958,SMB_Customer_1958,SMB,Bronze,2022-04-27,2023-04-18,493.14,3,164.38,Online,Europe,Spain
+C1959,Retail_Customer_1959,Retail,Bronze,2022-02-08,2024-09-15,3918.11,6,653.02,Online,North America,Canada
+C1960,Government_Customer_1960,Government,Bronze,2023-09-23,2024-06-12,2679.02,4,669.76,Online,North America,Mexico
+C1961,Retail_Customer_1961,Retail,Bronze,2022-05-21,2023-05-11,1064.77,5,212.95,Online,North America,USA
+C1962,SMB_Customer_1962,SMB,Bronze,2024-08-13,2024-10-02,291.03,2,145.51,Online,Europe,Canada
+C1963,Retail_Customer_1963,Retail,Bronze,2024-09-08,2024-09-08,1763.34,1,1763.34,Online,North America,Canada
+C1964,Retail_Customer_1964,Retail,Bronze,2023-02-08,2024-12-03,3926.89,5,785.38,Corporate,North America,USA
+C1965,Enterprise_Customer_1965,Enterprise,Bronze,2022-04-15,2024-11-02,3165.84,4,791.46,Online,Europe,France
+C1966,Enterprise_Customer_1966,Enterprise,Bronze,2022-07-10,2024-09-17,2178.11,4,544.53,Online,Europe,France
+C1967,Enterprise_Customer_1967,Enterprise,Bronze,2023-03-06,2024-11-08,2247.8,3,749.27,Corporate,Europe,Italy
+C1968,SMB_Customer_1968,SMB,Bronze,2023-01-11,2024-07-30,191.04,2,95.52,Online,Asia Pacific,Singapore
+C1969,Retail_Customer_1969,Retail,Silver,2022-06-15,2024-11-08,5151.09,3,1717.03,Corporate,North America,Mexico
+C1970,Retail_Customer_1970,Retail,Bronze,2022-05-31,2023-03-25,157.1,2,78.55,Online,Asia Pacific,Australia
+C1971,Retail_Customer_1971,Retail,Silver,2023-01-15,2024-06-13,8368.07,4,2092.02,Distributor,North America,USA
+C1972,Enterprise_Customer_1972,Enterprise,Bronze,2022-08-24,2024-09-23,696.18,3,232.06,Online,Asia Pacific,China
+C1973,Retail_Customer_1973,Retail,Silver,2022-02-25,2024-07-06,10000.88,9,1111.21,Online,North America,Mexico
+C1974,Enterprise_Customer_1974,Enterprise,Bronze,2022-09-25,2024-01-02,525.61,2,262.8,Online,Europe,Mexico
+C1975,Retail_Customer_1975,Retail,Bronze,2022-09-21,2023-08-06,657.8,3,219.27,Corporate,North America,USA
+C1976,SMB_Customer_1976,SMB,Bronze,2022-01-23,2023-10-27,2241.36,5,448.27,Online,North America,Spain
+C1977,SMB_Customer_1977,SMB,Bronze,2022-01-20,2024-04-17,4564.87,5,912.97,Retail Store,Europe,Canada
+C1978,Enterprise_Customer_1978,Enterprise,Bronze,2022-10-12,2024-08-06,1587.59,3,529.2,Retail Store,North America,Mexico
+C1979,SMB_Customer_1979,SMB,Bronze,2022-06-08,2024-10-19,2258.4,5,451.68,Corporate,North America,Canada
+C1980,Retail_Customer_1980,Retail,Bronze,2022-12-03,2022-12-03,158.46,1,158.46,Online,Asia Pacific,China
+C1981,SMB_Customer_1981,SMB,Bronze,2023-11-22,2023-11-22,2538.54,1,2538.54,Retail Store,North America,Canada
+C1982,Retail_Customer_1982,Retail,Silver,2022-05-12,2024-11-04,8919.92,6,1486.65,Corporate,Asia Pacific,Japan
+C1983,SMB_Customer_1983,SMB,Bronze,2022-01-29,2024-08-07,1426.13,4,356.53,Online,Asia Pacific,Australia
+C1984,Enterprise_Customer_1984,Enterprise,Silver,2023-06-05,2024-03-06,5479.22,5,1095.84,Online,North America,USA
+C1985,Enterprise_Customer_1985,Enterprise,Bronze,2023-09-20,2023-09-20,2360.34,1,2360.34,Retail Store,Europe,UK
+C1986,Retail_Customer_1986,Retail,Silver,2023-04-26,2024-12-20,6075.63,2,3037.82,Online,Asia Pacific,Canada
+C1987,Enterprise_Customer_1987,Enterprise,Silver,2022-01-12,2024-11-08,6475.98,4,1619.0,Retail Store,Europe,France
+C1988,SMB_Customer_1988,SMB,Silver,2022-05-29,2022-09-06,11646.52,3,3882.17,Corporate,Asia Pacific,Japan
+C1989,SMB_Customer_1989,SMB,Silver,2022-07-08,2024-11-11,6510.1,5,1302.02,Online,North America,Australia
+C1990,Retail_Customer_1990,Retail,Bronze,2022-01-10,2023-06-24,1170.42,4,292.6,Online,Europe,Canada
+C1991,Enterprise_Customer_1991,Enterprise,Bronze,2022-05-18,2024-09-05,1437.37,6,239.56,Online,North America,Mexico
+C1992,Enterprise_Customer_1992,Enterprise,Bronze,2022-01-24,2023-12-29,4635.72,3,1545.24,Online,North America,Mexico
+C1993,SMB_Customer_1993,SMB,Bronze,2022-02-24,2023-11-29,430.86,2,215.43,Online,Europe,Italy
+C1994,Government_Customer_1994,Government,Bronze,2023-09-07,2024-06-05,4476.78,3,1492.26,Online,Europe,China
+C1995,Enterprise_Customer_1995,Enterprise,Bronze,2022-07-25,2022-07-25,106.23,1,106.23,Online,North America,USA
+C1996,Retail_Customer_1996,Retail,Bronze,2023-09-30,2024-09-16,622.63,2,311.32,Online,Asia Pacific,Australia
+C1997,SMB_Customer_1997,SMB,Bronze,2023-01-05,2024-09-03,1568.91,4,392.23,Online,North America,Canada
+C1998,SMB_Customer_1998,SMB,Bronze,2022-03-13,2024-12-05,892.72,4,223.18,Online,Asia Pacific,Singapore
+C1999,Enterprise_Customer_1999,Enterprise,Silver,2022-01-05,2024-06-28,5968.07,3,1989.36,Retail Store,North America,Canada
