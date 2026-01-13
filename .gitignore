@@ -1,0 +1,26 @@
+# Minimal .gitignore for Sales Dashboard
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+
+# Data files (generated)
+sales_dashboard_data/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# OS files
+Thumbs.db
