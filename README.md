@@ -1,7 +1,5 @@
 # 📊 Multi-Region Sales Performance Dashboard
 
-![Dashboard Preview](assets/01%20Sales%20Overview.png)
-
 ## 🌟 Overview
 
 A professional, enterprise-grade sales performance dashboard built with **Streamlit** for multi-region retail organizations. This interactive dashboard provides real-time insights across **North America, Europe, and Asia Pacific** markets with **150,000+ simulated transactions** spanning 2022-2024.
@@ -284,7 +282,7 @@ Contributions are welcome! Here's how you can help:
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ```
-Copyright 2024 Anesu Manjengwa
+Copyright 2026 Anesu Manjengwa
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
