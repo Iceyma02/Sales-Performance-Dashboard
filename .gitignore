@@ -1,32 +1,25 @@
-# Minimal .gitignore for Sales Dashboard
-
-# Python
+# .gitignore
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-# Ignore only large files
-sales_transactions.csv
-!sales_dashboard_data/products.csv  # Keep small files
-!sales_dashboard_data/customers.csv
-!sales_dashboard_data/regions.csv
-!sales_dashboard_data/dates.csv
-!sales_dashboard_data/DATASET_SUMMARY.md
-# Virtual Environment
-venv/
+.Python
 env/
-
-# Data files (generated)
-sales_dashboard_data/
-
-# IDE
-.vscode/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+*.egg
 .idea/
+.vscode/
+*.swp
+*.swo
+*~
 .DS_Store
-
-# Secrets
-.env
-.streamlit/secrets.toml
-
-# OS files
 Thumbs.db
+sales_dashboard_data/
+*.csv
+*.xlsx
+.streamlit/secrets.toml
