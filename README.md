@@ -304,7 +304,6 @@ limitations under the License.
 - 📧 Email: manjengwap10@gmail.com
 - 🔗 LinkedIn: [linkedin.com/in/anesu-manjengwa-684766247](https://www.linkedin.com/in/anesu-manjengwa-684766247/)
 - 🐙 GitHub: [github.com/Iceyma02](https://github.com/Iceyma02)
-- 🎓 Portfolio: [Your Portfolio Link]
 
 ## 🙏 **Acknowledgments**
 
