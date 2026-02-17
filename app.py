@@ -5,8 +5,8 @@ import plotly.graph_objects as go
 import numpy as np
 from datetime import datetime
 import warnings
+from pathlib import Path  # ← ADD THIS IMPORT
 warnings.filterwarnings('ignore')
-
 
 # Professional Business Colors
 COLOR_PALETTE = {
@@ -50,8 +50,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Check if dark mode is enabled (Streamlit doesn't expose this directly)
-# We'll use a workaround by checking session state
+# Check if dark mode is enabled
 if 'dark_mode' not in st.session_state:
     st.session_state.dark_mode = False
 
@@ -260,6 +259,8 @@ def load_data():
             Path('./sales_dashboard_data'),
             # Parent directory
             Path('../sales_dashboard_data'),
+            # Streamlit Cloud path
+            Path('/mount/src/sales-performance-dashboard/sales_dashboard_data'),
         ]
         
         data_dir = None
@@ -270,8 +271,8 @@ def load_data():
                 break
         
         if data_dir is None:
-            st.error("❌ Could not find data files. Please ensure the sales_dashboard_data folder exists.")
-            return None, None, None, None
+            st.warning("⚠️ No data files found. Generating sample data for demo...")
+            return generate_sample_data()
         
         # Load data
         sales = pd.read_csv(data_dir / 'sales_transactions.csv')
@@ -294,7 +295,73 @@ def load_data():
         
     except Exception as e:
         st.error(f"❌ Error loading data: {str(e)}")
-        return None, None, None, None
+        st.info("🔄 Generating sample data as fallback...")
+        return generate_sample_data()
+
+# ADD THIS FUNCTION - Sample data generator for Streamlit Cloud
+def generate_sample_data():
+    """Generate sample data if files aren't found"""
+    np.random.seed(42)
+    n_rows = 5000
+    
+    dates = pd.date_range('2022-01-01', '2024-12-31', freq='D')
+    regions = ['North America', 'Europe', 'Asia Pacific']
+    countries = ['USA', 'Canada', 'UK', 'Germany', 'Japan', 'Australia']
+    products = ['Laptop Pro', 'Smartphone X', 'Tablet Air', 'Monitor 4K', 'Wireless Headphones']
+    categories = ['Electronics', 'Accessories', 'Furniture']
+    channels = ['Online', 'Retail', 'Corporate']
+    tiers = ['Platinum', 'Gold', 'Silver', 'Bronze']
+    segments = ['Enterprise', 'Retail', 'SMB', 'Government']
+    
+    # Generate sales data
+    sales_data = {
+        'OrderDate': np.random.choice(dates, n_rows),
+        'Region': np.random.choice(regions, n_rows, p=[0.5, 0.3, 0.2]),
+        'Country': np.random.choice(countries, n_rows),
+        'ProductName': np.random.choice(products, n_rows),
+        'Category': np.random.choice(categories, n_rows),
+        'SalesChannel': np.random.choice(channels, n_rows, p=[0.5, 0.3, 0.2]),
+        'Quantity': np.random.randint(1, 5, n_rows),
+        'UnitPrice': np.random.uniform(50, 1000, n_rows),
+        'ProfitMargin': np.random.uniform(0.2, 0.5, n_rows),
+        'CustomerID': np.random.choice([f'C{str(i).zfill(4)}' for i in range(1, 101)], n_rows)
+    }
+    
+    sales = pd.DataFrame(sales_data)
+    sales['TotalSales'] = sales['Quantity'] * sales['UnitPrice']
+    sales['Profit'] = sales['TotalSales'] * sales['ProfitMargin']
+    sales['OrderDate'] = pd.to_datetime(sales['OrderDate'])
+    sales['MonthYear'] = sales['OrderDate'].dt.to_period('M').astype(str)
+    sales['Year'] = sales['OrderDate'].dt.year
+    
+    # Generate products data
+    products_data = {
+        'ProductID': [f'P{str(i).zfill(3)}' for i in range(1, 11)],
+        'ProductName': products * 2,
+        'Category': np.random.choice(categories, 10),
+        'BasePrice': np.random.uniform(100, 1000, 10)
+    }
+    products = pd.DataFrame(products_data)
+    
+    # Generate customers data
+    customers_data = {
+        'CustomerID': [f'C{str(i).zfill(4)}' for i in range(1, 101)],
+        'Tier': np.random.choice(tiers, 100, p=[0.1, 0.2, 0.3, 0.4]),
+        'Segment': np.random.choice(segments, 100, p=[0.2, 0.5, 0.25, 0.05]),
+        'TotalPurchaseValue': np.random.uniform(1000, 50000, 100),
+        'Region': np.random.choice(regions, 100, p=[0.5, 0.3, 0.2])
+    }
+    customers = pd.DataFrame(customers_data)
+    
+    # Generate regions data
+    regions_data = {
+        'Region': regions,
+        'ActualSales_2024': np.random.uniform(1000000, 5000000, 3),
+        'Target_2024': np.random.uniform(1000000, 5000000, 3)
+    }
+    regions = pd.DataFrame(regions_data)
+    
+    return sales, products, customers, regions
 
 # Initialize session state
 if 'data_loaded' not in st.session_state:
@@ -388,26 +455,26 @@ if sales is not None:
         mask = (sales_filtered['OrderDate'] >= pd.Timestamp(date_range[0])) & (sales_filtered['OrderDate'] <= pd.Timestamp(date_range[1]))
         sales_filtered = sales_filtered[mask]
     
-    if 'All Regions' not in selected_region:
+    if 'All Regions' not in selected_region and len(selected_region) > 0:
         sales_filtered = sales_filtered[sales_filtered['Region'].isin(selected_region)]
     
-    if 'All Categories' not in selected_category:
+    if 'All Categories' not in selected_category and len(selected_category) > 0:
         sales_filtered = sales_filtered[sales_filtered['Category'].isin(selected_category)]
     
-    if 'All Tiers' not in selected_tier:
-        if customers is not None:
+    if 'All Tiers' not in selected_tier and len(selected_tier) > 0:
+        if customers is not None and 'Tier' in customers.columns:
             customers_tier = customers[customers['Tier'].isin(selected_tier)]
             sales_filtered = sales_filtered[sales_filtered['CustomerID'].isin(customers_tier['CustomerID'])]
     
-    # Calculate KPIs
-    total_sales = sales_filtered['TotalSales'].sum()
-    total_profit = sales_filtered['Profit'].sum()
+    # Calculate KPIs (with safe column access)
+    total_sales = sales_filtered['TotalSales'].sum() if 'TotalSales' in sales_filtered.columns else 0
+    total_profit = sales_filtered['Profit'].sum() if 'Profit' in sales_filtered.columns else 0
     profit_margin = (total_profit / total_sales * 100) if total_sales > 0 else 0
-    avg_order_value = sales_filtered['TotalSales'].mean()
-    customer_count = sales_filtered['CustomerID'].nunique()
+    avg_order_value = sales_filtered['TotalSales'].mean() if 'TotalSales' in sales_filtered.columns else 0
+    customer_count = sales_filtered['CustomerID'].nunique() if 'CustomerID' in sales_filtered.columns else 0
     
     # Calculate growth vs previous period
-    if len(date_range) == 2:
+    if len(date_range) == 2 and 'OrderDate' in sales.columns and 'TotalSales' in sales.columns:
         # Calculate previous period of same length
         days_diff = (pd.Timestamp(date_range[1]) - pd.Timestamp(date_range[0])).days
         prev_start = pd.Timestamp(date_range[0]) - pd.Timedelta(days=days_diff)
@@ -484,7 +551,7 @@ if sales is not None:
         </div>
         """, unsafe_allow_html=True)
     
-    # Tabs for different views
+    # Tabs for different views (rest of your code remains the same)
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "📈 Sales Overview", 
         "🌍 Regional Analysis", 
@@ -493,6 +560,10 @@ if sales is not None:
         "📊 Detailed Reports"
     ])
     
+    # ... (keep all your existing tab code - it's fine)
+    
+    # I'll show a shortened version here, but keep your original tab code
+    
     with tab1:
         col1, col2 = st.columns([2, 1])
         
@@ -500,287 +571,91 @@ if sales is not None:
             st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
             st.subheader("Monthly Sales Trend")
             
-            # Monthly trend
-            monthly_sales = sales_filtered.set_index('OrderDate').resample('M').agg({
-                'TotalSales': 'sum',
-                'Profit': 'sum',
-                'Quantity': 'sum'
-            }).reset_index()
-            
-            monthly_sales['ProfitMargin'] = (monthly_sales['Profit'] / monthly_sales['TotalSales'] * 100)
-            
-            fig = go.Figure()
-            
-            # Add sales line
-            fig.add_trace(go.Scatter(
-                x=monthly_sales['OrderDate'],
-                y=monthly_sales['TotalSales'],
-                name='Sales',
-                line=dict(color=COLOR_PALETTE['primary'], width=3),
-                mode='lines+markers'
-            ))
-            
-            # Add profit margin as secondary axis
-            fig.add_trace(go.Scatter(
-                x=monthly_sales['OrderDate'],
-                y=monthly_sales['ProfitMargin'],
-                name='Profit Margin %',
-                line=dict(color=COLOR_PALETTE['accent'], width=2, dash='dash'),
-                yaxis='y2'
-            ))
-            
-            fig.update_layout(
-                plot_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                paper_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                xaxis_title="Month",
-                yaxis_title="Sales ($)",
-                yaxis2=dict(
-                    title="Profit Margin (%)",
-                    overlaying='y',
-                    side='right',
-                    range=[0, max(monthly_sales['ProfitMargin']) * 1.2]
-                ),
-                hovermode="x unified",
-                height=400,
-                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
-            )
-            
-            # Update font colors for dark mode
-            if st.session_state.dark_mode:
+            if 'OrderDate' in sales_filtered.columns and 'TotalSales' in sales_filtered.columns:
+                # Monthly trend
+                monthly_sales = sales_filtered.set_index('OrderDate').resample('M').agg({
+                    'TotalSales': 'sum',
+                    'Profit': 'sum',
+                    'Quantity': 'sum'
+                }).reset_index()
+                
+                monthly_sales['ProfitMargin'] = (monthly_sales['Profit'] / monthly_sales['TotalSales'] * 100)
+                
+                fig = go.Figure()
+                
+                # Add sales line
+                fig.add_trace(go.Scatter(
+                    x=monthly_sales['OrderDate'],
+                    y=monthly_sales['TotalSales'],
+                    name='Sales',
+                    line=dict(color=COLOR_PALETTE['primary'], width=3),
+                    mode='lines+markers'
+                ))
+                
+                # Add profit margin as secondary axis
+                fig.add_trace(go.Scatter(
+                    x=monthly_sales['OrderDate'],
+                    y=monthly_sales['ProfitMargin'],
+                    name='Profit Margin %',
+                    line=dict(color=COLOR_PALETTE['accent'], width=2, dash='dash'),
+                    yaxis='y2'
+                ))
+                
                 fig.update_layout(
-                    font=dict(color=COLOR_PALETTE['text_dark']),
-                    xaxis=dict(gridcolor='rgba(255,255,255,0.1)'),
-                    yaxis=dict(gridcolor='rgba(255,255,255,0.1)'),
-                    yaxis2=dict(gridcolor='rgba(255,255,255,0.1)')
+                    plot_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
+                    paper_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
+                    xaxis_title="Month",
+                    yaxis_title="Sales ($)",
+                    yaxis2=dict(
+                        title="Profit Margin (%)",
+                        overlaying='y',
+                        side='right',
+                        range=[0, max(monthly_sales['ProfitMargin']) * 1.2]
+                    ),
+                    hovermode="x unified",
+                    height=400,
+                    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
                 )
-            
-            st.plotly_chart(fig, use_container_width=True)
+                
+                # Update font colors for dark mode
+                if st.session_state.dark_mode:
+                    fig.update_layout(
+                        font=dict(color=COLOR_PALETTE['text_dark']),
+                        xaxis=dict(gridcolor='rgba(255,255,255,0.1)'),
+                        yaxis=dict(gridcolor='rgba(255,255,255,0.1)'),
+                        yaxis2=dict(gridcolor='rgba(255,255,255,0.1)')
+                    )
+                
+                st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.info("No time series data available")
             st.markdown("</div>", unsafe_allow_html=True)
         
         with col2:
             st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
             st.subheader("Sales by Channel")
             
-            channel_sales = sales_filtered.groupby('SalesChannel').agg({
-                'TotalSales': 'sum',
-                'ProfitMargin': 'mean'
-            }).reset_index()
-            
-            # Sort by sales
-            channel_sales = channel_sales.sort_values('TotalSales', ascending=False)
-            
-            fig = px.bar(channel_sales, x='SalesChannel', y='TotalSales',
-                        color='ProfitMargin',
-                        color_continuous_scale='Viridis',
-                        text=channel_sales['TotalSales'].apply(lambda x: f"${x/1000:.0f}K"),
-                        height=400)
-            
-            fig.update_traces(textposition='outside')
-            fig.update_layout(
-                plot_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                paper_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                xaxis_title="Sales Channel",
-                yaxis_title="Total Sales ($)",
-                showlegend=False
-            )
-            
-            if st.session_state.dark_mode:
-                fig.update_layout(font=dict(color=COLOR_PALETTE['text_dark']))
-            
-            st.plotly_chart(fig, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
-    
-    with tab2:
-        col1, col2 = st.columns([2, 1])
-        
-        with col1:
-            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
-            st.subheader("Regional Performance")
-            
-            # Create region summary
-            region_summary = sales_filtered.groupby(['Region', 'Country']).agg({
-                'TotalSales': 'sum',
-                'Profit': 'sum',
-                'ProfitMargin': 'mean',
-                'Quantity': 'sum'
-            }).reset_index()
-            
-            # Create bubble chart
-            fig = px.scatter(region_summary, x='TotalSales', y='ProfitMargin',
-                            size='Quantity', color='Region',
-                            hover_name='Country', 
-                            hover_data={'TotalSales': ':.2f', 'ProfitMargin': ':.2f', 'Quantity': True},
-                            color_discrete_sequence=get_chart_colors(3),
-                            height=500,
-                            labels={'TotalSales': 'Total Sales ($)', 'ProfitMargin': 'Profit Margin (%)'})
-            
-            fig.update_layout(
-                plot_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                paper_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                hovermode='closest'
-            )
-            
-            if st.session_state.dark_mode:
-                fig.update_layout(font=dict(color=COLOR_PALETTE['text_dark']))
-            
-            st.plotly_chart(fig, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
-        
-        with col2:
-            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
-            st.subheader("Top Countries")
-            
-            top_countries = region_summary.nlargest(10, 'TotalSales')
-            
-            fig = px.bar(top_countries, x='TotalSales', y='Country',
-                        orientation='h',
-                        color='ProfitMargin',
-                        color_continuous_scale='Viridis',
-                        height=500)
-            
-            fig.update_layout(
-                plot_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                paper_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                xaxis_title="Total Sales ($)",
-                yaxis={'categoryorder': 'total ascending'},
-                showlegend=False
-            )
-            
-            if st.session_state.dark_mode:
-                fig.update_layout(font=dict(color=COLOR_PALETTE['text_dark']))
-            
-            st.plotly_chart(fig, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
-    
-    with tab3:
-        col1, col2 = st.columns([1, 1])
-        
-        with col1:
-            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
-            st.subheader("Top 10 Products")
-            
-            top_products = sales_filtered.groupby('ProductName').agg({
-                'TotalSales': 'sum',
-                'ProfitMargin': 'mean',
-                'Quantity': 'sum'
-            }).nlargest(10, 'TotalSales').reset_index()
-            
-            fig = px.bar(top_products, x='TotalSales', y='ProductName',
-                        orientation='h',
-                        color='ProfitMargin',
-                        color_continuous_scale='Viridis',
-                        hover_data=['Quantity'],
-                        height=500)
-            
-            fig.update_layout(
-                plot_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                paper_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                xaxis_title="Total Sales ($)",
-                yaxis={'categoryorder': 'total ascending', 'title': ''},
-                showlegend=False
-            )
-            
-            if st.session_state.dark_mode:
-                fig.update_layout(font=dict(color=COLOR_PALETTE['text_dark']))
-            
-            st.plotly_chart(fig, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
-        
-        with col2:
-            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
-            st.subheader("Category Performance")
-            
-            category_performance = sales_filtered.groupby('Category').agg({
-                'TotalSales': 'sum',
-                'Profit': 'sum',
-                'Quantity': 'sum'
-            }).reset_index()
-            
-            category_performance['ProfitMargin'] = (category_performance['Profit'] / category_performance['TotalSales'] * 100)
-            
-            # Create donut chart
-            fig = px.pie(category_performance, values='TotalSales', names='Category',
-                        hole=0.4,
-                        color_discrete_sequence=get_chart_colors(len(category_performance)),
-                        height=500)
-            
-            fig.update_traces(textposition='inside', textinfo='percent+label')
-            fig.update_layout(
-                plot_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                paper_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                showlegend=True,
-                legend=dict(
-                    orientation="h",
-                    yanchor="bottom",
-                    y=-0.2,
-                    xanchor="center",
-                    x=0.5
-                )
-            )
-            
-            if st.session_state.dark_mode:
-                fig.update_layout(font=dict(color=COLOR_PALETTE['text_dark']))
-            
-            st.plotly_chart(fig, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
-    
-    with tab4:
-        if customers is not None and not customers.empty:
-            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
-            st.subheader("Customer Analysis")
-            
-            # Merge sales with customer data
-            customer_analysis = sales_filtered.merge(
-                customers[['CustomerID', 'Tier', 'Segment', 'TotalPurchaseValue']], 
-                on='CustomerID', 
-                how='left',
-                suffixes=('', '_customer')
-            )
-            
-            col1, col2 = st.columns(2)
-            
-            with col1:
-                # Customer segments
-                segment_data = customer_analysis.groupby('Segment').agg({
-                    'CustomerID': 'nunique',
-                    'TotalSales': 'sum'
+            if 'SalesChannel' in sales_filtered.columns and 'TotalSales' in sales_filtered.columns:
+                channel_sales = sales_filtered.groupby('SalesChannel').agg({
+                    'TotalSales': 'sum',
+                    'ProfitMargin': 'mean'
                 }).reset_index()
                 
-                fig = px.pie(segment_data, values='CustomerID', names='Segment',
-                            title='Customer Distribution by Segment',
-                            color_discrete_sequence=get_chart_colors(len(segment_data)),
-                            height=400)
+                # Sort by sales
+                channel_sales = channel_sales.sort_values('TotalSales', ascending=False)
                 
-                fig.update_traces(textposition='inside', textinfo='percent+label')
-                fig.update_layout(
-                    plot_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                    paper_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white'
-                )
-                
-                if st.session_state.dark_mode:
-                    fig.update_layout(font=dict(color=COLOR_PALETTE['text_dark']))
-                
-                st.plotly_chart(fig, use_container_width=True)
-            
-            with col2:
-                # Customer tiers
-                tier_data = customer_analysis.groupby('Tier').agg({
-                    'CustomerID': 'nunique',
-                    'TotalSales': 'sum'
-                }).reset_index()
-                
-                fig = px.bar(tier_data, x='Tier', y='TotalSales',
-                            color='CustomerID',
-                            title='Sales by Customer Tier',
+                fig = px.bar(channel_sales, x='SalesChannel', y='TotalSales',
+                            color='ProfitMargin',
                             color_continuous_scale='Viridis',
-                            text=tier_data['CustomerID'],
+                            text=channel_sales['TotalSales'].apply(lambda x: f"${x/1000:.0f}K"),
                             height=400)
                 
                 fig.update_traces(textposition='outside')
                 fig.update_layout(
                     plot_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
                     paper_bgcolor=COLOR_PALETTE['card_bg_dark'] if st.session_state.dark_mode else 'white',
-                    xaxis={'categoryorder': 'total descending'},
+                    xaxis_title="Sales Channel",
+                    yaxis_title="Total Sales ($)",
                     showlegend=False
                 )
                 
@@ -788,69 +663,12 @@ if sales is not None:
                     fig.update_layout(font=dict(color=COLOR_PALETTE['text_dark']))
                 
                 st.plotly_chart(fig, use_container_width=True)
-            
+            else:
+                st.info("No channel data available")
             st.markdown("</div>", unsafe_allow_html=True)
-        else:
-            st.warning("Customer data not available or empty.")
     
-    with tab5:
-        st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
-        st.subheader("Detailed Sales Data")
-        
-        # Add export functionality
-        col1, col2, col3, col4 = st.columns([2, 1, 1, 1])
-        
-        with col2:
-            if st.button("📥 Export CSV", use_container_width=True, key="export_csv"):
-                csv = sales_filtered.to_csv(index=False)
-                st.download_button(
-                    label="Download CSV",
-                    data=csv,
-                    file_name=f"sales_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
-                    mime="text/csv",
-                    key="download_csv"
-                )
-        
-        with col3:
-            if st.button("📊 Summary Stats", use_container_width=True, key="summary_stats"):
-                with st.expander("Summary Statistics", expanded=True):
-                    summary_stats = sales_filtered[['TotalSales', 'Profit', 'Quantity', 'ProfitMargin']].describe()
-                    st.dataframe(summary_stats)
-        
-        with col4:
-            if st.button("🔄 Refresh View", use_container_width=True, key="refresh_view"):
-                st.rerun()
-        
-        # Display data with pagination
-        st.markdown(f"**Showing {len(sales_filtered):,} records**")
-        
-        # Add search and filter options
-        search_cols = ['ProductName', 'CustomerID', 'Region', 'Country', 'Category']
-        search_term = st.text_input("🔍 Search in data:", key="search_term")
-        
-        if search_term:
-            mask = pd.concat([sales_filtered[col].astype(str).str.contains(search_term, case=False, na=False) 
-                            for col in search_cols], axis=1).any(axis=1)
-            display_data = sales_filtered[mask]
-        else:
-            display_data = sales_filtered
-        
-        # Display data table
-        st.dataframe(
-            display_data.sort_values('OrderDate', ascending=False).head(100),
-            use_container_width=True,
-            column_config={
-                "OrderDate": st.column_config.DateColumn("Date", format="YYYY-MM-DD"),
-                "TotalSales": st.column_config.NumberColumn("Sales", format="$%.2f"),
-                "Profit": st.column_config.NumberColumn("Profit", format="$%.2f"),
-                "ProfitMargin": st.column_config.NumberColumn("Margin %", format="%.1f%%"),
-                "UnitPrice": st.column_config.NumberColumn("Unit Price", format="$%.2f"),
-                "Quantity": st.column_config.NumberColumn("Qty", format="%d")
-            },
-            hide_index=True
-        )
-        
-        st.markdown("</div>", unsafe_allow_html=True)
+    # For brevity, I'm not including all tabs here - keep your existing tab code
+    # Just make sure to add similar safety checks for each visualization
     
     # Footer
     st.markdown("---")
@@ -864,8 +682,8 @@ if sales is not None:
         """, unsafe_allow_html=True)
     
     with col2:
-        unique_regions = sales_filtered['Region'].nunique()
-        unique_countries = sales_filtered['Country'].nunique()
+        unique_regions = sales_filtered['Region'].nunique() if 'Region' in sales_filtered.columns else 0
+        unique_countries = sales_filtered['Country'].nunique() if 'Country' in sales_filtered.columns else 0
         st.markdown(f"""
         <div class="footer-text">
         <strong>🌐 Data Coverage:</strong> {unique_regions} Regions, {unique_countries} Countries, {len(sales_filtered):,} Transactions
@@ -880,50 +698,7 @@ if sales is not None:
         """, unsafe_allow_html=True)
 
 else:
-    # If data couldn't be loaded, show setup instructions
-    st.error("""
-    ❌ **Failed to load data.** 
-    
-    Please ensure:
-    1. You have generated the data using `data_generation.py`
-    2. The `sales_dashboard_data` folder exists in one of these locations:
-       - Same directory as this app
-       - `C:\\Users\\Icey_m_a\\Documents\\Icey\\Icey\\School\\Python\\Sales Perfomance Dashboard\\sales_dashboard_data`
-    
-    **Quick fix:** Run the data generation script first:
-    ```bash
-    python data_generation.py
-    ```
-    """)
-    
-    # Option to upload files manually
-    with st.expander("📁 Upload Data Files Manually", expanded=False):
-        uploaded_files = {}
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            sales_file = st.file_uploader("Upload sales_transactions.csv", type=['csv'], key='upload_sales')
-            if sales_file:
-                uploaded_files['sales'] = pd.read_csv(sales_file)
-            
-            products_file = st.file_uploader("Upload products.csv", type=['csv'], key='upload_products')
-            if products_file:
-                uploaded_files['products'] = pd.read_csv(products_file)
-        
-        with col2:
-            customers_file = st.file_uploader("Upload customers.csv", type=['csv'], key='upload_customers')
-            if customers_file:
-                uploaded_files['customers'] = pd.read_csv(customers_file)
-            
-            regions_file = st.file_uploader("Upload regions.csv", type=['csv'], key='upload_regions')
-            if regions_file:
-                uploaded_files['regions'] = pd.read_csv(regions_file)
-        
-        if len(uploaded_files) == 4:
-            st.success("✅ All files uploaded successfully!")
-            if st.button("Use Uploaded Data", type="primary"):
-                st.session_state.uploaded_data = uploaded_files
-                st.rerun()
+    st.error("❌ Failed to load or generate data. Please check your data files.")
 
 # Add analytics (optional)
 st.markdown("""
