@@ -4,7 +4,7 @@
 
 A professional, enterprise-grade sales performance dashboard built with **Streamlit** for multi-region retail organizations. This interactive dashboard provides real-time insights across **North America, Europe, and Asia Pacific** markets with **150,000+ simulated transactions** spanning 2022-2024.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)(https://sales-performance-dashboard-6tncpbij7armwaqhzdbzdr.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.32.0-red)
 ![License](https://img.shields.io/badge/License-Apache%202.0-green)
