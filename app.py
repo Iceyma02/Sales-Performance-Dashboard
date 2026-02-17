@@ -9,70 +9,46 @@ from pathlib import Path
 warnings.filterwarnings('ignore')
 
 # ============================================================================
-# PREMIUM COLOR PALETTE - Financial/Banking Grade
+# ORIGINAL PROFESSIONAL COLOR PALETTE (from your screenshots)
 # ============================================================================
 COLOR_PALETTE = {
-    'primary': '#0A1E3C',
-    'primary_light': '#1E3A5F',
-    'primary_dark': '#051024',
-    'accent_1': '#00A67E',
-    'accent_2': '#3182CE',
-    'accent_3': '#805AD5',
-    'accent_4': '#DD6B20',
-    'accent_5': '#E53E3E',
-    'gray_50': '#F7FAFC',
-    'gray_100': '#EDF2F7',
-    'gray_200': '#E2E8F0',
-    'gray_300': '#CBD5E0',
-    'gray_400': '#A0AEC0',
-    'gray_500': '#718096',
-    'gray_600': '#4A5568',
-    'gray_700': '#2D3748',
-    'gray_800': '#1A202C',
-    'gray_900': '#171923',
-    'success': '#00A67E',
-    'warning': '#DD6B20',
-    'danger': '#E53E3E',
-    'info': '#3182CE',
-    'text_primary': '#1A202C',
-    'text_secondary': '#4A5568',
-    'text_tertiary': '#718096',
-    'text_inverse': '#FFFFFF',
-    'bg_primary': '#FFFFFF',
-    'bg_secondary': '#F7FAFC',
-    'bg_tertiary': '#EDF2F7',
-    'bg_inverse': '#0A1E3C',
-    'bg_inverse_secondary': '#1E3A5F',
-    'bg_card': '#FFFFFF',
-    'bg_card_inverse': '#1A202C',
-    'border_light': '#E2E8F0',
-    'border_dark': '#2D3748',
-    'chart_1': '#0A1E3C',
-    'chart_2': '#00A67E',
-    'chart_3': '#3182CE',
-    'chart_4': '#805AD5',
-    'chart_5': '#DD6B20',
-    'chart_6': '#E53E3E',
-    'chart_7': '#38B2AC',
-    'chart_8': '#D53F8C',
+    'primary': '#1E3A8A',        # Navy Blue - Professional & Trustworthy
+    'secondary': '#0EA5E9',      # Sky Blue - Modern & Energetic
+    'accent': '#10B981',         # Emerald Green - Growth & Success
+    'warning': '#F59E0B',        # Amber - Attention/Caution
+    'danger': '#EF4444',         # Red - Decline/Alert
+    'dark': '#111827',           # Dark Gray - Text (Light mode)
+    'light': '#F8FAFC',          # Light Gray - Background
+    'success': '#059669',        # Success Green
+    'info': '#3B82F6',           # Info Blue
+    'purple': '#8B5CF6',         # Royal Purple - Premium
+    'pink': '#EC4899',           # Pink - Highlight
+    'text_light': '#111827',     # Text for light mode
+    'text_dark': '#FFFFFF',      # Text for dark mode
+    'card_bg_light': '#FFFFFF',  # Card background light
+    'card_bg_dark': '#1F2937',   # Card background dark
+    'sidebar_bg': '#1E3A8A'      # Sidebar background
 }
 
+# Chart Color Sequences
 CHART_COLORS = [
-    COLOR_PALETTE['chart_1'],
-    COLOR_PALETTE['chart_2'],
-    COLOR_PALETTE['chart_3'],
-    COLOR_PALETTE['chart_4'],
-    COLOR_PALETTE['chart_5'],
-    COLOR_PALETTE['chart_6'],
-    COLOR_PALETTE['chart_7'],
-    COLOR_PALETTE['chart_8'],
+    '#1E3A8A',  # Navy
+    '#0EA5E9',  # Sky Blue
+    '#10B981',  # Emerald
+    '#8B5CF6',  # Purple
+    '#F59E0B',  # Amber
+    '#EF4444',  # Red
+    '#EC4899',  # Pink
+    '#059669',  # Green
+    '#3B82F6',  # Blue
+    '#6366F1'   # Indigo
 ]
 
 # ============================================================================
 # PAGE CONFIGURATION
 # ============================================================================
 st.set_page_config(
-    page_title="Multi-Region Sales Intelligence",
+    page_title="Multi-Region Sales Performance Dashboard",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -87,117 +63,184 @@ if 'data_loaded' not in st.session_state:
     st.session_state.data_loaded = False
 
 # ============================================================================
-# PREMIUM CSS (CLEAN & ENTERPRISE)
+# CUSTOM CSS (ORIGINAL PROFESSIONAL STYLE)
 # ============================================================================
-def load_premium_css():
+def load_original_css():
+    # Determine dynamic colors based on mode
     if st.session_state.dark_mode:
-        bg_main = "#0E1117"
-        bg_card = "#161B22"
-        text_primary = "#FFFFFF"
-        text_secondary = "#B0B3B8"
-        border = "#30363D"
+        text_color = COLOR_PALETTE['text_dark']
+        bg_color = '#0F172A'  # dark background
+        card_bg = COLOR_PALETTE['card_bg_dark']
+        border_color = '#374151'
     else:
-        bg_main = "#F5F7FA"
-        bg_card = "#FFFFFF"
-        text_primary = "#111827"
-        text_secondary = "#6B7280"
-        border = "#E5E7EB"
+        text_color = COLOR_PALETTE['text_light']
+        bg_color = COLOR_PALETTE['light']
+        card_bg = COLOR_PALETTE['card_bg_light']
+        border_color = '#E5E7EB'
+
+    sidebar_bg = COLOR_PALETTE['sidebar_bg']  # always navy
 
     st.markdown(f"""
     <style>
-        .stApp {{
-            background-color: {bg_main};
-        }}
-        h1, h2, h3, h4, h5, h6, p, span, div, label {{
-            color: {text_primary} !important;
-        }}
-        .kpi-card {{
-            background: {bg_card};
-            padding: 1.5rem;
-            border-radius: 14px;
-            border: 1px solid {border};
-            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-            transition: 0.3s ease;
-        }}
-        .kpi-card:hover {{
-            transform: translateY(-3px);
-        }}
-        .kpi-label {{
-            font-size: 0.8rem;
-            color: {text_secondary};
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }}
-        .kpi-value {{
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-top: 6px;
-        }}
-        .chart-card {{
-            background: {bg_card};
-            padding: 1.5rem;
-            border-radius: 14px;
-            border: 1px solid {border};
-            margin-bottom: 1.5rem;
-        }}
-        .chart-title {{
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }}
-        [data-testid="stSidebar"] {{
-            background-color: {bg_card};
-        }}
-        .stTabs [data-baseweb="tab-list"] {{
-            gap: 0.5rem;
-            border-bottom: 1px solid {border};
-        }}
-        .stTabs [data-baseweb="tab"] {{
-            border-radius: 8px 8px 0 0;
-            padding: 0.5rem 1rem;
-            color: {text_secondary};
-        }}
-        .stTabs [aria-selected="true"] {{
-            background: {bg_card};
-            border-bottom: 2px solid #00A67E;
-            color: {text_primary};
-        }}
-        .stButton button {{
-            background: {bg_card};
-            color: {text_primary};
-            border: 1px solid {border};
-            border-radius: 8px;
-        }}
+    /* Main styling */
+    .main {{
+        background-color: {bg_color};
+    }}
+    
+    /* Dark/light mode text */
+    .stApp {{
+        color: {text_color};
+    }}
+    
+    /* Custom metric cards */
+    .metric-card {{
+        background: {card_bg};
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-left: 4px solid {COLOR_PALETTE['primary']};
+        color: {text_color};
+        margin-bottom: 1rem;
+    }}
+    
+    .metric-card h3 {{
+        color: {'#9CA3AF' if st.session_state.dark_mode else '#6B7280'};
+        font-size: 14px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }}
+    
+    .metric-card .value {{
+        color: {text_color};
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }}
+    
+    .metric-card .change {{
+        font-size: 14px;
+        font-weight: 500;
+    }}
+    
+    .change.positive {{
+        color: {COLOR_PALETTE['success']};
+    }}
+    
+    .change.negative {{
+        color: {COLOR_PALETTE['danger']};
+    }}
+    
+    .change.warning {{
+        color: {COLOR_PALETTE['warning']};
+    }}
+    
+    /* Header styling */
+    .dashboard-title {{
+        color: {COLOR_PALETTE['primary']};
+        font-size: 36px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }}
+    
+    .dashboard-subtitle {{
+        color: {'#D1D5DB' if st.session_state.dark_mode else '#6B7280'};
+        font-size: 16px;
+        margin-bottom: 30px;
+    }}
+    
+    /* Chart containers */
+    .chart-container {{
+        background: {card_bg};
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        color: {text_color};
+    }}
+    
+    .chart-container h3 {{
+        color: {text_color};
+    }}
+    
+    /* Tab styling */
+    .stTabs [data-baseweb="tab-list"] {{
+        gap: 2px;
+    }}
+    
+    .stTabs [data-baseweb="tab"] {{
+        background-color: {'#374151' if st.session_state.dark_mode else '#E5E7EB'};
+        color: {text_color};
+        border-radius: 4px 4px 0px 0px;
+        padding: 10px 16px;
+    }}
+    
+    .stTabs [aria-selected="true"] {{
+        background-color: {COLOR_PALETTE['primary']} !important;
+        color: white !important;
+    }}
+    
+    /* Sidebar styling */
+    [data-testid="stSidebar"] {{
+        background-color: {sidebar_bg};
+    }}
+    
+    [data-testid="stSidebar"] h1, 
+    [data-testid="stSidebar"] h2, 
+    [data-testid="stSidebar"] h3,
+    [data-testid="stSidebar"] .stMarkdown,
+    [data-testid="stSidebar"] label {{
+        color: white !important;
+    }}
+    
+    [data-testid="stSidebar"] .stSelectbox,
+    [data-testid="stSidebar"] .stMultiselect,
+    [data-testid="stSidebar"] .stDateInput {{
+        background-color: white;
+        border-radius: 6px;
+    }}
+    
+    /* Button styling */
+    .stButton button {{
+        background-color: {COLOR_PALETTE['primary']};
+        color: white;
+        border-radius: 6px;
+        font-weight: 600;
+        border: none;
+        padding: 8px 16px;
+    }}
+    
+    .stButton button:hover {{
+        background-color: #1D4ED8;
+        color: white;
+    }}
+    
+    /* Dataframe styling */
+    .dataframe {{
+        background-color: {card_bg};
+        color: {text_color};
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }}
+    
+    /* Footer styling */
+    .footer-text {{
+        color: {'#9CA3AF' if st.session_state.dark_mode else '#6B7280'};
+        font-size: 14px;
+    }}
+    
+    /* Plotly chart background */
+    .js-plotly-plot .plotly .modebar {{
+        background: transparent !important;
+    }}
     </style>
     """, unsafe_allow_html=True)
-
-# ============================================================================
-# PLOTLY THEME HELPER
-# ============================================================================
-def get_plotly_theme():
-    if st.session_state.dark_mode:
-        return {
-            "template": "plotly_dark",
-            "paper_bgcolor": "#161B22",
-            "plot_bgcolor": "#161B22",
-            "font_color": "#FFFFFF",
-            "gridcolor": "#30363D"
-        }
-    else:
-        return {
-            "template": "plotly_white",
-            "paper_bgcolor": "#FFFFFF",
-            "plot_bgcolor": "#FFFFFF",
-            "font_color": "#111827",
-            "gridcolor": "#E5E7EB"
-        }
 
 # ============================================================================
 # HELPER FUNCTIONS
 # ============================================================================
 def format_currency(value):
-    if value >= 1_000_000_000:
-        return f"${value/1_000_000_000:.2f}B"
-    elif value >= 1_000_000:
+    if value >= 1_000_000:
         return f"${value/1_000_000:.2f}M"
     elif value >= 1_000:
         return f"${value/1_000:.1f}K"
@@ -207,99 +250,95 @@ def format_currency(value):
 def get_chart_colors(n_colors):
     return CHART_COLORS[:min(n_colors, len(CHART_COLORS))]
 
+def get_plotly_layout():
+    """Return common layout settings for Plotly figures based on current mode"""
+    if st.session_state.dark_mode:
+        return dict(
+            paper_bgcolor=COLOR_PALETTE['card_bg_dark'],
+            plot_bgcolor=COLOR_PALETTE['card_bg_dark'],
+            font=dict(color=COLOR_PALETTE['text_dark']),
+            xaxis=dict(gridcolor='#374151'),
+            yaxis=dict(gridcolor='#374151')
+        )
+    else:
+        return dict(
+            paper_bgcolor='white',
+            plot_bgcolor='white',
+            font=dict(color=COLOR_PALETTE['text_light']),
+            xaxis=dict(gridcolor='#E5E7EB'),
+            yaxis=dict(gridcolor='#E5E7EB')
+        )
+
 # ============================================================================
 # SAMPLE DATA GENERATOR
 # ============================================================================
 def generate_sample_data():
     np.random.seed(42)
-    n_rows = 10000
+    n_rows = 5000
     
     dates = pd.date_range('2022-01-01', '2024-12-31', freq='D')
     regions = ['North America', 'Europe', 'Asia Pacific']
-    countries = {
-        'North America': ['USA', 'Canada', 'Mexico'],
-        'Europe': ['UK', 'Germany', 'France', 'Italy', 'Spain'],
-        'Asia Pacific': ['Japan', 'Australia', 'Singapore', 'China', 'South Korea']
+    countries = ['USA', 'Canada', 'UK', 'Germany', 'Japan', 'Australia']
+    products = ['Laptop Pro', 'Smartphone X', 'Tablet Air', 'Monitor 4K', 'Wireless Headphones']
+    categories = ['Electronics', 'Accessories', 'Furniture']
+    channels = ['Online', 'Retail Store', 'Corporate']
+    tiers = ['Platinum', 'Gold', 'Silver', 'Bronze']
+    segments = ['Enterprise', 'Retail', 'SMB', 'Government']
+    
+    sales_data = {
+        'OrderDate': np.random.choice(dates, n_rows),
+        'Region': np.random.choice(regions, n_rows, p=[0.5, 0.3, 0.2]),
+        'Country': np.random.choice(countries, n_rows),
+        'ProductName': np.random.choice(products, n_rows),
+        'Category': np.random.choice(categories, n_rows),
+        'SalesChannel': np.random.choice(channels, n_rows, p=[0.5, 0.3, 0.2]),
+        'Quantity': np.random.randint(1, 5, n_rows),
+        'UnitPrice': np.random.uniform(50, 1000, n_rows),
+        'ProfitMargin': np.random.uniform(0.2, 0.5, n_rows),
+        'CustomerID': np.random.choice([f'C{str(i).zfill(4)}' for i in range(1, 101)], n_rows)
     }
-    products = {
-        'Electronics': ['MacBook Pro', 'iPhone 15', 'iPad Air', 'AirPods Max', 'Apple Watch'],
-        'Accessories': ['Magic Keyboard', 'Magic Mouse', 'USB-C Cable', 'Adapter', 'Case'],
-        'Furniture': ['Standing Desk', 'Ergo Chair', 'Monitor Stand', 'Desk Lamp', 'Bookshelf']
-    }
-    channels = ['Online Store', 'Retail Store', 'Corporate Sales', 'Partner Network']
     
-    all_products = []
-    for cat, prods in products.items():
-        all_products.extend(prods)
-    
-    data = []
-    for _ in range(n_rows):
-        region = np.random.choice(regions, p=[0.45, 0.30, 0.25])
-        country = np.random.choice(countries[region])
-        category = np.random.choice(list(products.keys()), p=[0.5, 0.3, 0.2])
-        product = np.random.choice(products[category])
-        channel = np.random.choice(channels, p=[0.4, 0.3, 0.2, 0.1])
-        date = np.random.choice(dates)
-        
-        if category == 'Electronics':
-            unit_price = np.random.uniform(299, 1999)
-            margin = np.random.uniform(0.25, 0.45)
-        elif category == 'Accessories':
-            unit_price = np.random.uniform(29, 199)
-            margin = np.random.uniform(0.35, 0.55)
-        else:
-            unit_price = np.random.uniform(199, 899)
-            margin = np.random.uniform(0.30, 0.50)
-        
-        quantity = np.random.poisson(2) + 1
-        quantity = min(quantity, 10)
-        total_sales = quantity * unit_price
-        profit = total_sales * margin
-        
-        data.append({
-            'OrderDate': date,
-            'Region': region,
-            'Country': country,
-            'ProductName': product,
-            'Category': category,
-            'SalesChannel': channel,
-            'Quantity': quantity,
-            'UnitPrice': round(unit_price, 2),
-            'TotalSales': round(total_sales, 2),
-            'Profit': round(profit, 2),
-            'ProfitMargin': round(margin * 100, 1),
-            'CustomerID': f'C{np.random.randint(1000, 9999)}'
-        })
-    
-    sales = pd.DataFrame(data)
+    sales = pd.DataFrame(sales_data)
+    sales['TotalSales'] = sales['Quantity'] * sales['UnitPrice']
+    sales['Profit'] = sales['TotalSales'] * sales['ProfitMargin']
+    sales['OrderDate'] = pd.to_datetime(sales['OrderDate'])
     sales['MonthYear'] = sales['OrderDate'].dt.to_period('M').astype(str)
     sales['Year'] = sales['OrderDate'].dt.year
-    sales['Quarter'] = 'Q' + sales['OrderDate'].dt.quarter.astype(str)
     
-    unique_customers = sales['CustomerID'].unique()
-    customers = pd.DataFrame({
-        'CustomerID': unique_customers,
-        'Tier': np.random.choice(['Platinum', 'Gold', 'Silver', 'Bronze'], len(unique_customers), p=[0.1, 0.2, 0.3, 0.4]),
-        'Segment': np.random.choice(['Enterprise', 'Mid-Market', 'SMB', 'Consumer'], len(unique_customers), p=[0.15, 0.25, 0.35, 0.25]),
-        'AcquisitionDate': np.random.choice(dates, len(unique_customers))
-    })
+    products_data = {
+        'ProductID': [f'P{str(i).zfill(3)}' for i in range(1, 11)],
+        'ProductName': products * 2,
+        'Category': np.random.choice(categories, 10),
+        'BasePrice': np.random.uniform(100, 1000, 10)
+    }
+    products = pd.DataFrame(products_data)
     
-    products_df = pd.DataFrame({
-        'ProductName': all_products,
-        'Category': [cat for cat, prods in products.items() for _ in prods],
-        'BasePrice': [np.random.uniform(29, 1999) for _ in all_products]
-    })
+    customers_data = {
+        'CustomerID': [f'C{str(i).zfill(4)}' for i in range(1, 101)],
+        'Tier': np.random.choice(tiers, 100, p=[0.1, 0.2, 0.3, 0.4]),
+        'Segment': np.random.choice(segments, 100, p=[0.2, 0.5, 0.25, 0.05]),
+        'TotalPurchaseValue': np.random.uniform(1000, 50000, 100),
+        'Region': np.random.choice(regions, 100, p=[0.5, 0.3, 0.2])
+    }
+    customers = pd.DataFrame(customers_data)
     
-    return sales, products_df, customers, None
+    regions_data = {
+        'Region': regions,
+        'ActualSales_2024': np.random.uniform(1000000, 5000000, 3),
+        'Target_2024': np.random.uniform(1000000, 5000000, 3)
+    }
+    regions = pd.DataFrame(regions_data)
+    
+    return sales, products, customers, regions
 
 # ============================================================================
-# LOAD DATA (FIXED PATHS)
+# LOAD DATA (with corrected paths)
 # ============================================================================
 @st.cache_data
 def load_data():
     try:
         possible_paths = [
-            Path('/mount/src/Sales-Performance-Dashboard/sales_dashboard_data'),  # exact repo name
+            Path('/mount/src/Sales-Performance-Dashboard/sales_dashboard_data'),
             Path('sales_dashboard_data'),
             Path('./sales_dashboard_data'),
             Path('../sales_dashboard_data'),
@@ -314,7 +353,7 @@ def load_data():
                 break
         
         if data_dir is None:
-            st.info("✨ Using premium sample data for demonstration")
+            st.info("✨ Using sample data for demonstration")
             return generate_sample_data()
         
         sales = pd.read_csv(data_dir / 'sales_transactions.csv')
@@ -332,71 +371,88 @@ def load_data():
         return generate_sample_data()
 
 # ============================================================================
+# TOGGLE DARK MODE
+# ============================================================================
+def toggle_dark_mode():
+    st.session_state.dark_mode = not st.session_state.dark_mode
+
+# ============================================================================
 # MAIN DASHBOARD
 # ============================================================================
-load_premium_css()
+load_original_css()
 
-# Premium Header
-st.markdown("""
-<div style='margin-bottom: 2rem;'>
-    <h1 style='font-size: 2.5rem; font-weight: 800;'>🌐 Multi-Region Sales Intelligence</h1>
-    <p style='font-size: 1rem; opacity: 0.8;'>Enterprise Analytics Dashboard | Real-time Performance Metrics</p>
-</div>
-""", unsafe_allow_html=True)
+# Header
+st.markdown("<div class='dashboard-title'>🌐 Multi-Region Sales Performance Dashboard</div>", unsafe_allow_html=True)
+st.markdown("<div class='dashboard-subtitle'>Real-time insights across North America, Europe, and Asia Pacific markets</div>", unsafe_allow_html=True)
 
 # Sidebar
 with st.sidebar:
-    st.markdown("### ⚙️ CONTROL PANEL")
+    st.markdown("<h1 style='color: white; font-size: 24px;'>📊 Dashboard Controls</h1>", unsafe_allow_html=True)
     
     # Dark mode toggle
     col1, col2 = st.columns([3, 1])
-    with col1:
-        st.markdown("#### Display")
     with col2:
-        mode_icon = "🌙" if not st.session_state.dark_mode else "☀️"
-        if st.button(mode_icon, key="mode_toggle", help="Toggle dark/light mode"):
-            st.session_state.dark_mode = not st.session_state.dark_mode
+        mode_label = "🌙 Dark" if not st.session_state.dark_mode else "☀️ Light"
+        if st.button(mode_label, key="mode_toggle"):
+            toggle_dark_mode()
             st.rerun()
     
     st.markdown("---")
-    st.markdown("#### 📅 Time Period")
+    
+    # Date Range
+    st.markdown("### 📅 Date Range")
+    min_date = pd.Timestamp('2022-01-01')
+    max_date = pd.Timestamp('2024-12-31')
     date_range = st.date_input(
-        "",
-        value=(pd.Timestamp('2022-01-01').date(), pd.Timestamp('2024-12-31').date()),
+        "Select Date Range",
+        value=(min_date.date(), max_date.date()),
+        min_value=min_date.date(),
+        max_value=max_date.date(),
         key="date_range"
     )
     
-    st.markdown("#### 🌍 Regions")
-    selected_region = st.multiselect(
-        "",
-        ['North America', 'Europe', 'Asia Pacific'],
-        default=['North America', 'Europe', 'Asia Pacific'],
-        key="region_filter"
-    )
+    # Region Filter
+    st.markdown("### 🌍 Regions")
+    region_options = ['All Regions', 'North America', 'Europe', 'Asia Pacific']
+    selected_region = st.multiselect("Select Region(s)", region_options[1:], default=region_options[1:], key="region_filter")
+    if not selected_region:
+        selected_region = region_options[1:]
     
-    st.markdown("#### 📦 Categories")
-    selected_category = st.multiselect(
-        "",
-        ['Electronics', 'Accessories', 'Furniture'],
-        default=['Electronics', 'Accessories', 'Furniture'],
-        key="category_filter"
-    )
+    # Category Filter
+    st.markdown("### 📦 Categories")
+    category_options = ['All Categories', 'Electronics', 'Furniture', 'Home Appliances', 'Accessories']
+    selected_category = st.multiselect("Select Category(s)", category_options[1:], default=category_options[1:], key="category_filter")
+    if not selected_category:
+        selected_category = category_options[1:]
     
-    st.markdown("#### ⚡ Quick Actions")
+    # Customer Tier Filter
+    st.markdown("### 👥 Customer Tier")
+    tier_options = ['All Tiers', 'Platinum', 'Gold', 'Silver', 'Bronze']
+    selected_tier = st.multiselect("Select Tier(s)", tier_options[1:], default=tier_options[1:], key="tier_filter")
+    if not selected_tier:
+        selected_tier = tier_options[1:]
+    
+    st.markdown("---")
+    
+    # Settings
+    st.markdown("### ⚙️ Settings")
+    margin_threshold = st.slider("Profit Margin Alert (%)", 0, 50, 20, key="margin_threshold")
+    sales_target = st.number_input("Sales Target ($M)", min_value=1.0, max_value=100.0, value=10.0, step=0.5, key="sales_target")
+    
+    st.markdown("---")
+    
+    # Refresh & Reset
     col1, col2 = st.columns(2)
     with col1:
         if st.button("🔄 Refresh", use_container_width=True):
             st.cache_data.clear()
             st.rerun()
     with col2:
-        if st.button("🔄 Reset", use_container_width=True):
-            for key in ['region_filter', 'category_filter', 'date_range']:
+        if st.button("📊 Reset", use_container_width=True):
+            for key in ["region_filter", "category_filter", "tier_filter", "date_range"]:
                 if key in st.session_state:
                     del st.session_state[key]
             st.rerun()
-    
-    st.markdown("---")
-    st.caption("© 2025 Sales Intelligence v3.0")
 
 # Load Data
 sales, products, customers, regions = load_data()
@@ -407,342 +463,285 @@ if sales is not None:
     if len(date_range) == 2:
         mask = (sales_filtered['OrderDate'] >= pd.Timestamp(date_range[0])) & (sales_filtered['OrderDate'] <= pd.Timestamp(date_range[1]))
         sales_filtered = sales_filtered[mask]
-    if selected_region:
+    
+    if 'All Regions' not in selected_region and len(selected_region) > 0:
         sales_filtered = sales_filtered[sales_filtered['Region'].isin(selected_region)]
-    if selected_category:
+    
+    if 'All Categories' not in selected_category and len(selected_category) > 0:
         sales_filtered = sales_filtered[sales_filtered['Category'].isin(selected_category)]
     
-    # KPIs
+    if 'All Tiers' not in selected_tier and len(selected_tier) > 0:
+        if customers is not None and 'Tier' in customers.columns:
+            customers_tier = customers[customers['Tier'].isin(selected_tier)]
+            sales_filtered = sales_filtered[sales_filtered['CustomerID'].isin(customers_tier['CustomerID'])]
+    
+    # Calculate KPIs
     total_sales = sales_filtered['TotalSales'].sum()
     total_profit = sales_filtered['Profit'].sum()
     profit_margin = (total_profit / total_sales * 100) if total_sales > 0 else 0
-    avg_order = sales_filtered['TotalSales'].mean()
-    total_customers = sales_filtered['CustomerID'].nunique()
-    total_orders = len(sales_filtered)
+    avg_order_value = sales_filtered['TotalSales'].mean()
+    customer_count = sales_filtered['CustomerID'].nunique()
     
-    # Growth calculation
+    # Calculate growth
     if len(date_range) == 2:
         days_diff = (pd.Timestamp(date_range[1]) - pd.Timestamp(date_range[0])).days
         prev_start = pd.Timestamp(date_range[0]) - pd.Timedelta(days=days_diff)
         prev_end = pd.Timestamp(date_range[0]) - pd.Timedelta(days=1)
         prev_sales = sales[(sales['OrderDate'] >= prev_start) & (sales['OrderDate'] <= prev_end)]['TotalSales'].sum()
-        growth = ((total_sales - prev_sales) / prev_sales * 100) if prev_sales > 0 else 0
+        sales_growth = ((total_sales - prev_sales) / prev_sales * 100) if prev_sales > 0 else 0
     else:
-        growth = 0
+        sales_growth = 0
     
-    # KPI Cards (simplified)
+    # KPI Row
     col1, col2, col3, col4 = st.columns(4)
     with col1:
+        growth_icon = "📈" if sales_growth > 0 else "📉" if sales_growth < 0 else "➡️"
+        growth_class = "positive" if sales_growth > 0 else "negative" if sales_growth < 0 else ""
         st.markdown(f"""
-        <div class='kpi-card'>
-            <div class='kpi-label'>Total Revenue</div>
-            <div class='kpi-value'>{format_currency(total_sales)}</div>
+        <div class="metric-card">
+            <h3>Total Sales</h3>
+            <div class="value">{format_currency(total_sales)}</div>
+            <div class="change {growth_class}">
+                {growth_icon} {abs(sales_growth):.1f}% vs previous
+            </div>
         </div>
         """, unsafe_allow_html=True)
+    
     with col2:
+        margin_status = "positive" if profit_margin >= margin_threshold else "warning"
         st.markdown(f"""
-        <div class='kpi-card'>
-            <div class='kpi-label'>Gross Profit</div>
-            <div class='kpi-value'>{format_currency(total_profit)}</div>
+        <div class="metric-card">
+            <h3>Total Profit</h3>
+            <div class="value">{format_currency(total_profit)}</div>
+            <div class="change {margin_status}">
+                {profit_margin:.1f}% Margin
+            </div>
         </div>
         """, unsafe_allow_html=True)
+    
     with col3:
         st.markdown(f"""
-        <div class='kpi-card'>
-            <div class='kpi-label'>Average Order</div>
-            <div class='kpi-value'>{format_currency(avg_order)}</div>
+        <div class="metric-card">
+            <h3>Avg Order Value</h3>
+            <div class="value">{format_currency(avg_order_value)}</div>
+            <div class="change">
+                👥 {customer_count:,} Customers
+            </div>
         </div>
         """, unsafe_allow_html=True)
+    
     with col4:
-        achievement = (total_sales / 10_000_000) * 100  # example target
+        if regions is not None and 'ActualSales_2024' in regions.columns and 'Target_2024' in regions.columns:
+            total_actual = regions['ActualSales_2024'].sum()
+            total_target = regions['Target_2024'].sum()
+            target_achievement = (total_actual / total_target * 100) if total_target > 0 else 0
+        else:
+            target_achievement = (total_sales / (sales_target * 1_000_000)) * 100
+        
+        achievement_class = "positive" if target_achievement >= 100 else "warning"
+        achievement_icon = "🎯" if target_achievement >= 100 else "📉"
         st.markdown(f"""
-        <div class='kpi-card'>
-            <div class='kpi-label'>Target Achievement</div>
-            <div class='kpi-value'>{achievement:.1f}%</div>
+        <div class="metric-card">
+            <h3>Target Achievement</h3>
+            <div class="value">{target_achievement:.1f}%</div>
+            <div class="change {achievement_class}">
+                {achievement_icon} {'Target Met' if target_achievement >= 100 else 'Below Target'}
+            </div>
         </div>
         """, unsafe_allow_html=True)
     
     # Tabs
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "📈 Revenue Analytics",
-        "🌍 Regional Performance",
-        "📦 Product Analysis",
+        "📈 Sales Overview",
+        "🌍 Regional Analysis",
+        "📦 Product Performance",
         "👥 Customer Insights",
-        "📊 Data Explorer"
+        "📊 Detailed Reports"
     ])
     
     with tab1:
         col1, col2 = st.columns([2, 1])
-        
         with col1:
-            st.markdown("<div class='chart-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='chart-title'>📈 Revenue & Profit Trends</div>", unsafe_allow_html=True)
-            
+            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+            st.subheader("Monthly Sales Trend")
             monthly = sales_filtered.set_index('OrderDate').resample('M').agg({
                 'TotalSales': 'sum',
                 'Profit': 'sum'
             }).reset_index()
+            monthly['ProfitMargin'] = (monthly['Profit'] / monthly['TotalSales'] * 100)
             
             fig = go.Figure()
             fig.add_trace(go.Scatter(
                 x=monthly['OrderDate'], y=monthly['TotalSales'],
-                name='Revenue', line=dict(color=COLOR_PALETTE['chart_1'], width=3),
-                fill='tozeroy', fillcolor=f'rgba{tuple(int(COLOR_PALETTE["chart_1"][i:i+2], 16) for i in (1,3,5)) + (0.1,)}'
+                name='Sales', line=dict(color=COLOR_PALETTE['primary'], width=3),
+                mode='lines+markers'
             ))
             fig.add_trace(go.Scatter(
-                x=monthly['OrderDate'], y=monthly['Profit'],
-                name='Profit', line=dict(color=COLOR_PALETTE['chart_2'], width=3)
+                x=monthly['OrderDate'], y=monthly['ProfitMargin'],
+                name='Profit Margin %', line=dict(color=COLOR_PALETTE['accent'], width=2, dash='dash'),
+                yaxis='y2'
             ))
-            
-            theme = get_plotly_theme()
+            layout = get_plotly_layout()
             fig.update_layout(
-                template=theme["template"],
-                paper_bgcolor=theme["paper_bgcolor"],
-                plot_bgcolor=theme["plot_bgcolor"],
-                font=dict(color=theme["font_color"]),
-                xaxis=dict(gridcolor=theme["gridcolor"]),
-                yaxis=dict(gridcolor=theme["gridcolor"], title="Amount ($)"),
-                hovermode='x unified',
+                xaxis_title="Month",
+                yaxis_title="Sales ($)",
+                yaxis2=dict(title="Profit Margin (%)", overlaying='y', side='right'),
+                hovermode="x unified",
                 height=400,
-                legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1)
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+                **layout
             )
-            
             st.plotly_chart(fig, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
         
         with col2:
-            st.markdown("<div class='chart-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='chart-title'>📊 Channel Distribution</div>", unsafe_allow_html=True)
-            
+            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+            st.subheader("Sales by Channel")
             channel_data = sales_filtered.groupby('SalesChannel')['TotalSales'].sum().reset_index()
-            fig = px.pie(channel_data, values='TotalSales', names='SalesChannel',
-                        color_discrete_sequence=get_chart_colors(len(channel_data)),
-                        hole=0.6)
-            fig.update_traces(textposition='inside', textinfo='percent+label',
-                            marker=dict(line=dict(color='white', width=2)))
-            
-            theme = get_plotly_theme()
-            fig.update_layout(
-                template=theme["template"],
-                paper_bgcolor=theme["paper_bgcolor"],
-                plot_bgcolor=theme["plot_bgcolor"],
-                font=dict(color=theme["font_color"]),
-                height=400,
-                showlegend=False
-            )
-            
+            fig = px.bar(channel_data, x='SalesChannel', y='TotalSales',
+                        color='SalesChannel', text=channel_data['TotalSales'].apply(lambda x: f"${x/1000:.0f}K"),
+                        color_discrete_sequence=get_chart_colors(len(channel_data)))
+            fig.update_traces(textposition='outside')
+            layout = get_plotly_layout()
+            fig.update_layout(showlegend=False, height=400, **layout)
             st.plotly_chart(fig, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
     
     with tab2:
         col1, col2 = st.columns(2)
-        
         with col1:
-            st.markdown("<div class='chart-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='chart-title'>🌍 Regional Performance</div>", unsafe_allow_html=True)
-            
-            region_data = sales_filtered.groupby('Region').agg({
-                'TotalSales': 'sum',
-                'Profit': 'sum'
+            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+            st.subheader("Regional Performance")
+            region_summary = sales_filtered.groupby('Region').agg({
+                'TotalSales': 'sum', 'Profit': 'sum', 'Quantity': 'sum'
             }).reset_index()
-            
-            fig = px.bar(region_data, x='Region', y='TotalSales',
-                        color='Region', text=region_data['TotalSales'].apply(lambda x: f'${x/1e6:.1f}M'),
-                        color_discrete_sequence=get_chart_colors(len(region_data)))
-            fig.update_traces(textposition='outside')
-            
-            theme = get_plotly_theme()
-            fig.update_layout(
-                template=theme["template"],
-                paper_bgcolor=theme["paper_bgcolor"],
-                plot_bgcolor=theme["plot_bgcolor"],
-                font=dict(color=theme["font_color"]),
-                yaxis=dict(gridcolor=theme["gridcolor"], title="Revenue ($)"),
-                height=400,
-                showlegend=False
-            )
-            
+            fig = px.scatter(region_summary, x='TotalSales', y='Profit',
+                            size='Quantity', color='Region',
+                            hover_name='Region',
+                            color_discrete_sequence=get_chart_colors(3),
+                            height=400)
+            layout = get_plotly_layout()
+            fig.update_layout(**layout)
             st.plotly_chart(fig, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
         
         with col2:
-            st.markdown("<div class='chart-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='chart-title'>🏆 Top Countries</div>", unsafe_allow_html=True)
-            
+            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+            st.subheader("Top Countries")
             country_data = sales_filtered.groupby('Country')['TotalSales'].sum().nlargest(10).reset_index()
             fig = px.bar(country_data, x='TotalSales', y='Country',
                         orientation='h', color='TotalSales',
-                        color_continuous_scale=['#0A1E3C', '#00A67E', '#3182CE'],
-                        text=country_data['TotalSales'].apply(lambda x: f'${x/1e6:.1f}M'))
+                        color_continuous_scale='Viridis',
+                        text=country_data['TotalSales'].apply(lambda x: f"${x/1000:.0f}K"))
             fig.update_traces(textposition='outside')
-            
-            theme = get_plotly_theme()
-            fig.update_layout(
-                template=theme["template"],
-                paper_bgcolor=theme["paper_bgcolor"],
-                plot_bgcolor=theme["plot_bgcolor"],
-                font=dict(color=theme["font_color"]),
-                xaxis=dict(gridcolor=theme["gridcolor"], title="Revenue ($)"),
-                yaxis=dict(gridcolor=theme["gridcolor"]),
-                height=400
-            )
-            
+            layout = get_plotly_layout()
+            fig.update_layout(height=400, **layout)
             st.plotly_chart(fig, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
     
     with tab3:
         col1, col2 = st.columns(2)
-        
         with col1:
-            st.markdown("<div class='chart-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='chart-title'>🏅 Top Products</div>", unsafe_allow_html=True)
-            
-            product_data = sales_filtered.groupby('ProductName').agg({
-                'TotalSales': 'sum',
-                'ProfitMargin': 'mean'
-            }).nlargest(10, 'TotalSales').reset_index()
-            
+            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+            st.subheader("Top 10 Products")
+            product_data = sales_filtered.groupby('ProductName')['TotalSales'].sum().nlargest(10).reset_index()
             fig = px.bar(product_data, x='TotalSales', y='ProductName',
-                        orientation='h', color='ProfitMargin',
+                        orientation='h', color='TotalSales',
                         color_continuous_scale='Viridis',
-                        text=product_data['TotalSales'].apply(lambda x: f'${x/1e3:.0f}K'))
+                        text=product_data['TotalSales'].apply(lambda x: f"${x/1000:.0f}K"))
             fig.update_traces(textposition='outside')
-            
-            theme = get_plotly_theme()
-            fig.update_layout(
-                template=theme["template"],
-                paper_bgcolor=theme["paper_bgcolor"],
-                plot_bgcolor=theme["plot_bgcolor"],
-                font=dict(color=theme["font_color"]),
-                xaxis=dict(gridcolor=theme["gridcolor"], title="Revenue ($)"),
-                yaxis=dict(gridcolor=theme["gridcolor"]),
-                height=400
-            )
-            
+            layout = get_plotly_layout()
+            fig.update_layout(height=400, **layout)
             st.plotly_chart(fig, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
         
         with col2:
-            st.markdown("<div class='chart-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='chart-title'>📦 Category Mix</div>", unsafe_allow_html=True)
-            
+            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+            st.subheader("Category Performance")
             category_data = sales_filtered.groupby('Category')['TotalSales'].sum().reset_index()
             fig = px.pie(category_data, values='TotalSales', names='Category',
-                        color_discrete_sequence=get_chart_colors(len(category_data)),
-                        hole=0.4)
+                        hole=0.4, color_discrete_sequence=get_chart_colors(len(category_data)))
             fig.update_traces(textposition='inside', textinfo='percent+label')
-            
-            theme = get_plotly_theme()
-            fig.update_layout(
-                template=theme["template"],
-                paper_bgcolor=theme["paper_bgcolor"],
-                plot_bgcolor=theme["plot_bgcolor"],
-                font=dict(color=theme["font_color"]),
-                height=400,
-                legend=dict(orientation='h', yanchor='bottom', y=-0.2)
-            )
-            
+            layout = get_plotly_layout()
+            fig.update_layout(height=400, **layout)
             st.plotly_chart(fig, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
     
     with tab4:
-        if customers is not None:
+        if customers is not None and not customers.empty:
+            st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+            st.subheader("Customer Analysis")
+            customer_analysis = sales_filtered.merge(
+                customers[['CustomerID', 'Tier', 'Segment']], on='CustomerID', how='left'
+            )
             col1, col2 = st.columns(2)
-            
             with col1:
-                st.markdown("<div class='chart-card'>", unsafe_allow_html=True)
-                st.markdown("<div class='chart-title'>👥 Customer Segments</div>", unsafe_allow_html=True)
-                
-                if 'Segment' in customers.columns:
-                    segment_counts = customers['Segment'].value_counts().reset_index()
-                    segment_counts.columns = ['Segment', 'Count']
-                    fig = px.pie(segment_counts, values='Count', names='Segment',
-                                color_discrete_sequence=get_chart_colors(len(segment_counts)))
-                    fig.update_traces(textposition='inside', textinfo='percent+label')
-                    
-                    theme = get_plotly_theme()
-                    fig.update_layout(
-                        template=theme["template"],
-                        paper_bgcolor=theme["paper_bgcolor"],
-                        plot_bgcolor=theme["plot_bgcolor"],
-                        font=dict(color=theme["font_color"]),
-                        height=400
-                    )
-                    
-                    st.plotly_chart(fig, use_container_width=True)
-                st.markdown("</div>", unsafe_allow_html=True)
-            
+                segment_data = customer_analysis.groupby('Segment').agg({
+                    'CustomerID': 'nunique'
+                }).reset_index().rename(columns={'CustomerID': 'Count'})
+                fig = px.pie(segment_data, values='Count', names='Segment',
+                            title='Customer Distribution by Segment',
+                            color_discrete_sequence=get_chart_colors(len(segment_data)))
+                layout = get_plotly_layout()
+                fig.update_layout(height=400, **layout)
+                st.plotly_chart(fig, use_container_width=True)
             with col2:
-                st.markdown("<div class='chart-card'>", unsafe_allow_html=True)
-                st.markdown("<div class='chart-title'>🏆 Customer Tiers</div>", unsafe_allow_html=True)
-                
-                if 'Tier' in customers.columns:
-                    tier_order = ['Platinum', 'Gold', 'Silver', 'Bronze']
-                    tier_counts = customers['Tier'].value_counts().reindex(tier_order).reset_index()
-                    tier_counts.columns = ['Tier', 'Count']
-                    fig = px.bar(tier_counts, x='Tier', y='Count',
-                                color='Tier', text='Count',
-                                color_discrete_sequence=get_chart_colors(4))
-                    fig.update_traces(textposition='outside')
-                    
-                    theme = get_plotly_theme()
-                    fig.update_layout(
-                        template=theme["template"],
-                        paper_bgcolor=theme["paper_bgcolor"],
-                        plot_bgcolor=theme["plot_bgcolor"],
-                        font=dict(color=theme["font_color"]),
-                        yaxis=dict(gridcolor=theme["gridcolor"]),
-                        height=400,
-                        showlegend=False
-                    )
-                    
-                    st.plotly_chart(fig, use_container_width=True)
-                st.markdown("</div>", unsafe_allow_html=True)
+                tier_data = customer_analysis.groupby('Tier').agg({
+                    'TotalSales': 'sum'
+                }).reset_index()
+                fig = px.bar(tier_data, x='Tier', y='TotalSales',
+                            color='Tier', text=tier_data['TotalSales'].apply(lambda x: f"${x/1e6:.1f}M"),
+                            color_discrete_sequence=get_chart_colors(len(tier_data)))
+                fig.update_traces(textposition='outside')
+                layout = get_plotly_layout()
+                fig.update_layout(height=400, showlegend=False, **layout)
+                st.plotly_chart(fig, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
+        else:
+            st.info("Customer data not available.")
     
     with tab5:
-        st.markdown("<div class='chart-card'>", unsafe_allow_html=True)
-        st.markdown("<div class='chart-title'>🔍 Transaction Explorer</div>", unsafe_allow_html=True)
-        
-        col1, col2, col3 = st.columns([2, 1, 1])
+        st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+        st.subheader("Detailed Sales Data")
+        col1, col2, col3 = st.columns([2,1,1])
         with col2:
-            search_term = st.text_input("🔍 Search", placeholder="Product, customer...")
-        with col3:
-            if st.button("📥 Export Data", use_container_width=True):
+            if st.button("📥 Export CSV"):
                 csv = sales_filtered.to_csv(index=False)
-                st.download_button(
-                    label="Download CSV",
-                    data=csv,
-                    file_name=f"sales_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
-                    mime="text/csv"
-                )
-        
-        display_data = sales_filtered.copy()
-        if search_term:
-            mask = display_data.astype(str).apply(lambda x: x.str.contains(search_term, case=False)).any(axis=1)
-            display_data = display_data[mask]
-        
-        st.markdown(f"**{len(display_data):,} transactions**")
+                st.download_button("Download CSV", csv, file_name=f"sales_{datetime.now():%Y%m%d_%H%M%S}.csv", mime="text/csv")
+        with col3:
+            if st.button("📊 Summary Stats"):
+                with st.expander("Summary Statistics"):
+                    st.dataframe(sales_filtered[['TotalSales','Profit','Quantity','ProfitMargin']].describe())
+        st.markdown(f"**{len(sales_filtered):,} records**")
+        search = st.text_input("🔍 Search")
+        display = sales_filtered.copy()
+        if search:
+            mask = display.astype(str).apply(lambda x: x.str.contains(search, case=False)).any(axis=1)
+            display = display[mask]
         st.dataframe(
-            display_data[['OrderDate', 'Region', 'Country', 'ProductName', 'Category',
-                         'SalesChannel', 'Quantity', 'UnitPrice', 'TotalSales', 'Profit']].head(100),
+            display.sort_values('OrderDate', ascending=False).head(100),
             use_container_width=True,
             column_config={
-                "OrderDate": "Date",
-                "UnitPrice": st.column_config.NumberColumn("Unit Price", format="$%.2f"),
-                "TotalSales": st.column_config.NumberColumn("Revenue", format="$%.2f"),
+                "OrderDate": st.column_config.DateColumn("Date"),
+                "TotalSales": st.column_config.NumberColumn("Sales", format="$%.2f"),
                 "Profit": st.column_config.NumberColumn("Profit", format="$%.2f"),
+                "ProfitMargin": st.column_config.NumberColumn("Margin %", format="%.1f%%")
             }
         )
         st.markdown("</div>", unsafe_allow_html=True)
     
     # Footer
-    st.markdown(f"""
-    <div style='margin-top: 2rem; padding: 1rem 0; border-top: 1px solid #E5E7EB; display: flex; justify-content: space-between; font-size: 0.85rem; opacity: 0.7;'>
-        <span>📊 Sales Intelligence Platform v3.0</span>
-        <span>🌍 {len(sales_filtered['Region'].unique())} Regions | {sales_filtered['Country'].nunique()} Countries | {len(sales_filtered):,} Transactions</span>
-        <span>⚡ Updated: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}</span>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("---")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(f"**📈 Last Updated:** {datetime.now():%Y-%m-%d %H:%M}")
+    with col2:
+        unique_regions = sales_filtered['Region'].nunique()
+        unique_countries = sales_filtered['Country'].nunique()
+        st.markdown(f"**🌐 Data Coverage:** {unique_regions} Regions, {unique_countries} Countries, {len(sales_filtered):,} Transactions")
+    with col3:
+        mode_text = "🌙 Dark" if st.session_state.dark_mode else "☀️ Light"
+        st.markdown(f"**📊 Dashboard Version:** 3.0 | Mode: {mode_text}")
 
 else:
-    st.error("❌ Failed to load data. Please check your data files.")
+    st.error("❌ Failed to load data.")
